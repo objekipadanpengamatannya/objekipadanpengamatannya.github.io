@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="/CSS/master.css" />
+    <link rel="stylesheet" href="/SUB BAB 1/CSS/subbabsatu.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="/IMAGE/favicon.png">
+    <title>Objek IPA dan Pengamatannya</title>
+</head>
+
+<body>
+    <header>
+        <div class="burgerMenu">☰ Menu</div>
+        <h1>PENYELIDIKAN IPA</h1>
+    </header>
+
+    <div class="container-master">
+        <aside>
+            <center>
+                <a href="/Index.html"><img src="/IMAGE/logo.png" alt="home" style="width: 50%;"></a>
+            </center>
+
+            <a class="dropdownBtnSatu">PENYELIDIKAN IPA</a>
+            <div class="dropdownContainer dropdownContainerSatu">
+                <a href="/SUB BAB 1/penyelidikan.html">1.1 Penyelidikan IPA</a>
+                <a href="/SUB BAB 1/kegunaan mempelajari IPA.html">1.2 Kegunaan Mempalajari IPA</a>
+                <a href="">1.3 Objek Dalam IPA</a>
+                <a href="">Kuis 1</a>
+            </div>
+            <a class="dropdownBtnDua">PENGUKURAN SEBAGIAN DARI PENGAMATAN</a>
+            <div class="dropdownContainer dropdownContainerDua">
+                <a href="/SUB BAB 2/HTML/2.1 pengukuran.html">2.1 Pengukuran</a>
+                <a href="">2.2 Besaran Pokok</a>
+                <a href="">2.3 Besaran Turunan</a>
+                <a href="#">Kuis 2</a>
+            </div>
+            <a href="#">EVALUASI</a>
+        </aside>
+
+        <div class="container">
+            <div class="container-content">
+                <div class="judul-materi">Objek dalam IPA</div>
+                <div class="card">
+                    <p>
+                        &nbsp; &nbsp; &nbsp; Objek yang dipelajari dalam IPA adalah seluruh benda di alam dengan segala interaksinya untuk
+                        dipelajari pola-pola
+                        keteraturannya. Objek IPA dapat berupa benda berukuran sangat kecil (mikroskopis), misalnya bakteri, virus, dan atom
+                        atau benda yang berukuran sangat besar seperti lautan, bumi, dan tata surya. Obejek IPA terbagi menjadi dua yaitu
+                        Objek
+                        biotik (makhluk hidup) dan objek abiotik (makhluk tak hidup).
+                    </p>
+                </div>
+                <table style="line-height: 1.5;">
+                    <tr>
+                        <th>No.</th>
+                        <th>Tujuan Pembelajaran</th>
+                    </tr>
+                    <td>1</td>
+                    <td>Peseta didik dapat menyebutkan objek yang dipelajari dalam IPA.</td>
+                </table>
+                <div class="batas-dotted"></div>
+                <div class="kotak-judul"><img src="/IMAGE/mencoba.png" alt="coba">&nbsp;&nbsp; <b>Mari Mencoba</b></div>
+                <p>
+                    &nbsp; &nbsp; &nbsp; Perhatikan Tabel berikut ini! Jawablah pertanyaan berikut apakah termasuk Objek <b>BIOTIK</b> atau <b>ABIOTIK</b>.
+                </p>
+                <br>
+                <div class="kotak-petunjuk">
+                    <b>Petunjuk Pengerjaan</b>
+                    <ol>
+                        <li>Pilihlah salah satu jawaban antara Objek <b>BIOTIK</b> atau <b>ABIOTIK</b>. </li>
+                        <li>Jika jawabannya benar, akan muncul tulisan <span style="color: green;">JAWABAN ANDA BENAR</span> </li>
+                        <li>Jika jawabannya salah, akan muncul tulisan <span style="color: red;"> JAWABAN ANDA KURANG TEPAT</span> </li>
+                    </ol>
+                </div>
+                <br>
+                <center>
+                    <table style="width: 50%; line-height: 2;">
+                        <tr>
+                            <th>No.</th>
+                            <th>Pertanyaan</th>
+                            <th>Pilihan</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Pohon</td>
+                            <td>
+                                <button class="btn-objek" id="btnBiotikSatu">BIOTIK</button>
+                                <button class="btn-objek" id="btnAbiotikSatu">ABIOTIK</button>
+                                <p id="ketSatu" style="text-align: center;"></p>
+                            </td>
+                        </tr>
+                        <tr class="hide tr-color" id="munculDua">
+                            <td>2</td>
+                            <td>Kayu</td>
+                            <td>
+                                <button class="btn-objek" id="btnBiotikDua">BIOTIK</button>
+                                <button class="btn-objek" id="btnAbiotikDua">ABIOTIK</button>
+                                <p id="ketDua" style="text-align: center;"></p>
+                            </td>
+                        </tr>
+                        <tr class="hide" id="munculTiga">
+                            <td>3</td>
+                            <td>Pasir</td>
+                            <td>
+                                <button class="btn-objek" id="btnBiotikTiga">BIOTIK</button>
+                                <button class="btn-objek" id="btnAbiotikTiga">ABIOTIK</button>
+                                <p id="ketTiga" style="text-align: center;"></p>
+                            </td>
+                        </tr>
+                        <tr class="hide  tr-color" id="munculEmpat">
+                            <td>4</td>
+                            <td>Cicak</td>
+                            <td>
+                                <button class="btn-objek" id="btnBiotikEmpat">BIOTIK</button>
+                                <button class="btn-objek" id="btnAbiotikEmpat">ABIOTIK</button>
+                                <p id="ketEmpat" style="text-align: center;"></p>
+                            </td>
+                        </tr>
+                        <tr class="hide" id="munculLima">
+                            <td>5</td>
+                            <td>Air</td>
+                            <td>
+                                <button class="btn-objek" id="btnBiotikLima">BIOTIK</button>
+                                <button class="btn-objek" id="btnAbiotikLima">ABIOTIK</button>
+                                <p id="ketLima" style="text-align: center;"></p>
+                            </td>
+                        </tr>
+                        <tr class="hide tr-color" id="munculEnam">
+                            <td>6</td>
+                            <td>Tanah</td>
+                            <td>
+                                <button class="btn-objek" id="btnBiotikEnam">BIOTIK</button>
+                                <button class="btn-objek" id="btnAbiotikEnam">ABIOTIK</button>
+                                <p id="ketEnam" style="text-align: center;"></p>
+                            </td>
+                        </tr>
+                        <tr class="hide" id="munculTujuh">
+                            <td>7</td>
+                            <td>Orang Hutan</td>
+                            <td>
+                                <button class="btn-objek" id="btnBiotikTujuh">BIOTIK</button>
+                                <button class="btn-objek" id="btnAbiotikTujuh">ABIOTIK</button>
+                                <p id="ketTujuh" style="text-align: center;"></p>
+                            </td>
+                        </tr>
+                        <tr class="hide tr-color" id="munculDelapan">
+                            <td>8</td>
+                            <td>Padi</td>
+                            <td>
+                                <button class="btn-objek" id="btnBiotikDelapan">BIOTIK</button>
+                                <button class="btn-objek" id="btnAbiotikDelapan">ABIOTIK</button>
+                                <p id="ketDelapan" style="text-align: center;"></p>
+                            </td>
+                        </tr>
+                        <tr class="hide" id="munculSembilan">
+                            <td>9</td>
+                            <td>Udara</td>
+                            <td>
+                                <button class="btn-objek" id="btnBiotikSembilan">BIOTIK</button>
+                                <button class="btn-objek" id="btnAbiotikSembilan">ABIOTIK</button>
+                                <p id="ketSembilan" style="text-align: center;"></p>
+                            </td>
+                        </tr>
+                        <tr class="hide tr-color" id="munculSepuluh">
+                            <td>10</td>
+                            <td>Awan</td>
+                            <td>
+                                <button class="btn-objek" id="btnBiotikSepuluh">BIOTIK</button>
+                                <button class="btn-objek" id="btnAbiotikSepuluh">ABIOTIK</button>
+                                <p id="ketSepuluh" style="text-align: center;"></p>
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+                <br>
+                <div class="kotak-judul"><img src="/IMAGE/diskusi.png" alt="pembahasan">&nbsp;&nbsp;<b>Pembahasan</b></div>
+                <div class="pembahasan">
+                    <section id="munculSectionPembahasanKet">
+                        <center><b style="color: green;">PEMBAHASAN AKAN MUNCUL SETELAH ANDA MENYELESAIKAN PERTANYAAN</b></center>
+                    </section>
+                    <section class="hide" id="munculSectionPembahasanObjek">
+                        <center>
+                            <h4><u>PEMBAHASAN</u></h4>
+                        </center>
+                        <br>
+                        <ol>
+                            <li>Biotik memiliki arti makhluk hidup dalam hal ini tumbuhan, hewan, dan manusia baik yang mikro maupun makro
+                                serta
+                                prosesnya.</li>
+                            <li>Abiotik memiliki arti makhluk tak hidup, tidak memiliki ciri hidup atau tidak hidup.</li>
+                        </ol>
+                    </section>
+                </div>
+            </div>
+            <div class="container-halaman">
+                <a class="halaman" href="/SUB BAB 1/1.2.1 Objek dalam IPA.html">Selanjutnya</a>
+            </div>
+        </div>
+    </div>
+    <script src="/JS/master.js"></script>
+    <script src="/SUB BAB 1/JS/main.js"></script>
+</body>
+
+</html>

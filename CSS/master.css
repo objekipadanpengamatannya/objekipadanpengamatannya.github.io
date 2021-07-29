@@ -1,0 +1,324 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 100vw;
+  max-height: 100vh;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  height: 10vh;
+  background-color: #07889b;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1vh solid #e37222;
+}
+
+p {
+  line-height: 1.5;
+  text-align: justify;
+  font-size: 1rem;
+}
+
+.burgerMenu {
+  font-size: 20px;
+  cursor: pointer;
+  color: white;
+  width: max-content;
+  margin-left: 0.5em;
+  padding: 1%;
+  display: none;
+}
+
+.container-master {
+  display: flex;
+  height: 89vh;
+}
+
+/*
+**********************
+*** SETUP SIDE BAR ***
+**********************
+*/
+
+aside {
+  width: 20vw;
+  background-color: #66b9bf;
+  padding: 1.5rem 0rem;
+  transition: 0.5s;
+}
+aside a {
+  color: whitesmoke;
+  display: block;
+  text-decoration: none;
+  padding: 5%;
+  border-top: 1px solid #e37222;
+  border-bottom: 1px solid #e37222;
+  list-style: none;
+}
+aside a:hover {
+  color: #e37222;
+  cursor: pointer;
+}
+
+.dropdownContainer {
+  display: none;
+  background-color: #07889b;
+  padding-left: 8px;
+}
+
+/*
+*****************
+*** SETUP ISI ***
+*****************
+*/
+
+.container {
+  width: 80vw;
+  height: 89vh;
+}
+
+.container-content {
+  height: 75.1vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  border: 0.5vh double #66b9bf;
+  padding: 1.5vh;
+}
+.container-content table {
+  width: 100%;
+  text-align: center;
+}
+.container-content table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.container-content table th {
+  background-color: #07889b;
+  color: white;
+}
+
+.container-halaman {
+  height: 10vh;
+  background-color: #07889b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.judul-materi {
+  border-bottom: 5px solid #e37222;
+  background-color: #66b9bf;
+  font-size: 1.5em;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 2%;
+  margin-bottom: 1%;
+}
+
+.batas-dotted {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border-top: 5px dotted #e37222;
+}
+
+.kotak-judul {
+  background-color: #07889b;
+  padding: 0.5%;
+  border-radius: 10px;
+  width: max-content;
+  color: whitesmoke;
+  align-items: center;
+  font-size: 1em;
+  display: flex;
+  align-items: center;
+}
+.kotak-judul > img {
+  width: 40px;
+}
+
+.kotak-petunjuk {
+  border: 0.3vw solid #07889b;
+  padding: 0.5% 2% 0.5% 2%;
+  border-radius: 7px;
+  color: black;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.kotak-petunjuk > ol {
+  padding: 0 5%;
+}
+
+.simpulan {
+  border-right: 10px solid #eeaa7b;
+  background-color: #66b9bf;
+  padding: 2%;
+  color: black;
+  margin: 2% 0;
+  text-align: justify;
+  font-size: 1em;
+}
+.simpulan > ol {
+  margin-left: 2em;
+  padding-top: 1%;
+  line-height: 1.5;
+  font-size: 1em;
+}
+.simpulan > input {
+  text-align: center;
+  width: 10%;
+}
+
+.rumus {
+  background-color: #e37222;
+  color: white;
+  width: 25%;
+  padding: 1.5%;
+  border: 5px dotted #07889b;
+  text-align: center;
+  float: left;
+  margin-right: 1%;
+}
+
+.pembahasan {
+  border-left: 10px solid #66b9bf;
+  background-color: #eeaa7b;
+  padding: 2%;
+  color: black;
+  margin: 1vw 0;
+  text-align: justify;
+  font-size: 1em;
+  line-height: 1.5;
+}
+.pembahasan ol {
+  padding-left: 1.5vw;
+  font-size: 1em;
+}
+
+.card {
+  background: #eeaa7b;
+  padding: 1em;
+  margin: 1em 0;
+}
+.card-soal {
+  border: 2px solid #07889b;
+  padding: 1em;
+  margin: 1em 0;
+}
+.card-petunjuk {
+  width: 98%;
+  border: 0.2vw dotted #07889b;
+  padding: 1%;
+}
+.card-pertanyaan {
+  width: 98%;
+  border: 0.2vw dashed #07889b;
+  padding: 1%;
+  margin: 1em 0;
+}
+.card-pertanyaan h3 {
+  margin-bottom: 1em;
+  border-bottom: 0.2vw dotted #66b9bf;
+}
+.card-pilihan {
+  background-color: #e37222;
+  padding: 1vw;
+  margin: 0.5em 0;
+}
+.card-pilihan:hover {
+  background-color: #eeaa7b;
+}
+
+input {
+  cursor: pointer;
+}
+
+.hide {
+  display: none;
+}
+
+/*
+*********************
+*** SETUP HALAMAN ***
+*********************
+*/
+
+.halaman {
+  height: 35%;
+  width: fit-content;
+  margin: 0.2%;
+  padding: 0.5%;
+  color: whitesmoke;
+  border: 2px solid #e37222;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+
+.halaman:hover {
+  background-color: #e37222;
+  color: black;
+}
+
+.active {
+  background-color: #e37222;
+  color: black;
+}
+
+.disable {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/*
+********************
+*** SETUP MOBILE ***
+********************
+*/
+
+@media screen and (max-width: 800px) {
+  header {
+    justify-content: left;
+  }
+
+  header h1 {
+    display: none;
+  }
+
+  .burgerMenu {
+    display: flex;
+    align-items: center;
+  }
+
+  aside {
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: all 1s;
+    font-size: 1em;
+  }
+
+  aside.kembali {
+    transform: translateX(0);
+    cursor: pointer;
+  }
+
+  .container {
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .container-content {
+    height: 96.5vh;
+  }
+}

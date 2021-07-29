@@ -1,0 +1,136 @@
+.card-soal-isi > button {
+  border-style: none;
+  padding: 0.5em;
+  cursor: pointer;
+  background: #e37222;
+  margin: 0.5em;
+  font-size: 1em;
+}
+.card-soal-isi > button:hover {
+  border-style: none;
+  padding: 0.5em;
+  cursor: pointer;
+  margin: 0.5em;
+  font-size: 1em;
+  border: 2px solid #e37222;
+  background: none;
+}
+
+.btn-objek {
+  border-style: none;
+  padding: 0.5em;
+  margin: 0.5vw 0;
+  cursor: pointer;
+  background: #e37222;
+  color: whitesmoke;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.btn-objek:hover {
+  background: #eeaa7b;
+}
+
+.tr-color {
+  background-color: #66b9bf;
+}
+.btn-objek-aktif {
+  background: #eeaa7b;
+}
+/*
+########################
+### SETUP PERTANYAAN ###
+########################
+*/
+
+.petunjuk {
+  width: 96%;
+  background-color: #eeaa7b;
+  padding: 0.5% 2% 0.5% 2%;
+  border-radius: 7px;
+  color: black;
+  align-items: center;
+  font-size: 1em;
+  margin: 1em 0 0 0;
+  line-height: 1.5;
+}
+
+.isi {
+  display: flex;
+  margin-top: 0.5%;
+}
+
+.pilihan {
+  flex: 1;
+  background: #66b9bf;
+  color: black;
+  border-radius: 20px 0 0 0;
+  padding: 1%;
+}
+.pilihan ol {
+  list-style-type: upper-latin;
+  padding: 0 10%;
+  line-height: 2;
+}
+
+.soal {
+  flex: 2;
+  border-radius: 0 0 20px 0;
+  background-color: #e37222;
+  padding: 1%;
+  height: max-content;
+}
+.soal .jawab {
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  cursor: text;
+}
+.soal form {
+  line-height: 2;
+}
+
+.btn-soal {
+  display: flex;
+  justify-content: center;
+}
+.btn-soal > button {
+  margin-right: 2%;
+  text-decoration: none;
+  background: #66b9bf;
+  border: none;
+  padding: 0.5em;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+.btn-soal > button:nth-child(3) {
+  display: none;
+}
+.btn-soal > button:hover {
+  border: 1px solid #66b9bf;
+  background: white;
+  cursor: pointer;
+}
+.btn-soal > button > a {
+  text-decoration: none;
+  color: black;
+}
+
+/*
+********************
+*** SETUP MOBILE ***
+********************
+*/
+
+@media screen and (max-width: 800px) {
+  .isi {
+    flex-direction: column;
+  }
+
+  .pilihan > p {
+    padding: 2%;
+  }
+
+  .soal {
+    padding-left: 2%;
+  }
+}
