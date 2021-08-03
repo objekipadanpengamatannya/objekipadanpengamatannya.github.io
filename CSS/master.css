@@ -204,7 +204,6 @@ td {
 }
 
 .card {
-  background: #eeaa7b;
   padding: 1em;
   margin: 1em 0;
 }
@@ -243,6 +242,19 @@ input {
 
 .hide {
   display: none;
+}
+
+.bg-kuning {
+  background: #eeaa7b;
+}
+.bg-biru {
+  background: #66b9bf;
+}
+.bg-orange {
+  background: #e37222;
+}
+.bg-navy {
+  background: #07889b;
 }
 
 /*

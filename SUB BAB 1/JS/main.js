@@ -1,3 +1,95 @@
+/*
+*************************
+*** SETUP VIDEO ***
+*************************
+*/
+const videoPenyelidikan = document.getElementById("videoPenyelidikan");
+
+videoPenyelidikan.onended = function() {
+  document.getElementById("qw").classList.add("hide");
+  document.getElementById("we").classList.remove("hide");
+};
+
+
+/*
+********************************************
+*** SETUP PERTANYAAN BUTTON PENYELIDIKAN ***
+********************************************
+*/
+
+// NO 1
+
+const btnSatuA = document.getElementById("btnSatuA");
+const btnSatuB = document.getElementById("btnSatuB");
+const btnSatuC = document.getElementById("btnSatuC");
+const btnSatuD = document.getElementById("btnSatuD");
+
+btnSatuA.addEventListener('click',function(){
+  document.getElementById("salahSatu").classList.remove("hide");
+  document.getElementById("soalDua").classList.remove("hide");
+})
+btnSatuB.addEventListener('click',function(){
+  document.getElementById("benarSatu").classList.remove("hide");
+  document.getElementById("soalDua").classList.remove("hide");
+})
+btnSatuC.addEventListener('click',function(){
+  document.getElementById("salahSatu").classList.remove("hide");
+  document.getElementById("soalDua").classList.remove("hide");
+})
+btnSatuD.addEventListener('click',function(){
+  document.getElementById("salahSatu").classList.remove("hide");
+  document.getElementById("soalDua").classList.remove("hide");
+})
+
+// NO 2
+
+const btnDuaA = document.getElementById("btnDuaA");
+const btnDuaB = document.getElementById("btnDuaB");
+const btnduaC = document.getElementById("btnDuaC");
+const btnDuaD = document.getElementById("btnDuaD");
+
+btnDuaA.addEventListener('click',function(){
+  document.getElementById("benarDua").classList.remove("hide");
+  document.getElementById("soalTiga").classList.remove("hide");
+})
+btnDuaB.addEventListener('click',function(){
+  document.getElementById("salahDua").classList.remove("hide");
+  document.getElementById("soalTiga").classList.remove("hide");
+})
+btnDuaC.addEventListener('click',function(){
+  document.getElementById("salahDua").classList.remove("hide");
+  document.getElementById("soalTiga").classList.remove("hide");
+})
+btnDuaD.addEventListener('click',function(){
+  document.getElementById("salahDua").classList.remove("hide");
+  document.getElementById("soalTiga").classList.remove("hide");
+})
+
+// NO 3
+
+const btnTigaA = document.getElementById("btnTigaA");
+const btnTigaB = document.getElementById("btnTigaB");
+const btnTigaC = document.getElementById("btnTigaC");
+const btnTigaD = document.getElementById("btnTigaD");
+
+btnTigaA.addEventListener('click',function(){
+  document.getElementById("salahTiga").classList.remove("hide");
+  document.querySelector(".pembahasan span").classList.add("hide");
+  document.querySelector(".pembahasan section").classList.remove("hide");
+})
+btnTigaB.addEventListener('click',function(){
+  document.getElementById("salahTiga").classList.remove("hide");
+  document.getElementById("soalTiga").classList.remove("hide");
+})
+btnTigaC.addEventListener('click',function(){
+  document.getElementById("benarTiga").classList.remove("hide");
+  document.getElementById("soalTiga").classList.remove("hide");
+})
+btnTigaD.addEventListener('click',function(){
+  document.getElementById("salahTiga").classList.remove("hide");
+  document.getElementById("soalTiga").classList.remove("hide");
+})
+
 
 /*
 *************************

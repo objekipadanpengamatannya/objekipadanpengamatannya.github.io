@@ -42,7 +42,7 @@
         <div class="container">
             <div class="container-content">
                 <div class="judul-materi">Keterampilan Penyelidikan IPA</div>
-                <div class="card">
+                <div>
                     <p>
                         &nbsp; &nbsp; &nbsp; Penyelidikan IPA adalah bagaimana cara kita mencari sebuah informasi gejala
                         yang ada dialam
@@ -51,6 +51,7 @@
                         pengamatan.
                     </p>
                 </div>
+                <br>
                 <table style="line-height: 1.5;">
                     <tr>
                         <th>No.</th>
@@ -79,37 +80,46 @@
                 </div>
                 <div class="kotak-judul"><img src="/IMAGE/mencoba.png" alt="coba">&nbsp;&nbsp;<b>Pertanyaan</b></div>
                 <div class="card-soal">
-                    <section id="qw">
+                    <section class="hide" id="qw">
                         <center>
                             <b style="color: green;">LATIHAN AKAN MUNCUL SETELAH ANDA MENONTON VIDIO</b>
                         </center>
                     </section>
-                    <section id="we" class="hide">
-                        <div class="card-soal-isi">
+                    <section id="we" class="">
+                        <div class="card-soal-isi" id="soalSatu">
                             <span>1. Aktivitas menonton atau melihat dengan maksud memahami sesuatu yang terjadi disebut
                                 proses . . .</span><br>
-                            <button>Inferensi</button>
-                            <button>Pengamatan</button>
-                            <button>Mengkomunikasikan</button>
-                            <button>Penyelidikan</button>
+                            <button id="btnSatuA">Inferensi</button>
+                            <button id="btnSatuB">Pengamatan</button>
+                            <button id="btnSatuC">Mengkomunikasikan</button>
+                            <button id="btnSatuD">Penyelidikan</button>
+
+                                <section class="hide card bg-biru" id="benarSatu">JAWABAN ANDA BENAR</section>
+                                <section class="hide card bg-biru" id="salahSatu">JAWABAN ANDA SALAH</section>
                         </div>
-                        <div class="card-soal-isi" style="display: none;">
+                        <div class="card-soal-isi hide" id="soalDua">
                             <span>2. Proses menarik kesimpulan tentang apa yang terjadi pada tisu ketika dimasukkan
                                 kedalam gelas disebut . .
                                 .</span><br>
-                            <button>Inferensi</button>
-                            <button>Pengamatan</button>
-                            <button>Mengkomunikasikan</button>
-                            <button>Penyelidikan</button>
+                            <button id="btnDuaA">Inferensi</button>
+                            <button id="btnDuaB">Pengamatan</button>
+                            <button id="btnDuaC">Mengkomunikasikan</button>
+                            <button id="btnDuaD">Penyelidikan</button>
+
+                                <section class="hide card bg-biru" id="benarDua">JAWABAN ANDA BENAR</section>
+                                <section class="hide card bg-biru" id="salahDua">JAWABAN ANDA SALAH</section>
                         </div>
-                        <div class="card-soal-isi" style="display: none;">
+                        <div class="card-soal-isi hide" id="soalTiga">
                             <span>3. Proses ketika memberitahu atau menjelaskan apa yang terjadi pada tisu yang
                                 dicelupkan kedalam gelas disebut
                                 . . . .</span><br>
-                            <button>Inferensi</button>
-                            <button>Pengamatan</button>
-                            <button>Mengkomunikasikan</button>
-                            <button>Penyelidikan</button>
+                            <button id="btnTigaA">Inferensi</button>
+                            <button id="btnTigaB">Pengamatan</button>
+                            <button id="btnTigaC">Mengkomunikasikan</button>
+                            <button id="btnTigaD">Penyelidikan</button>
+
+                                <section class="hide card bg-biru" id="benarTiga">JAWABAN ANDA BENAR</section>
+                                <section class="hide card bg-biru" id="salahTiga">JAWABAN ANDA SALAH</section>
                         </div>
                     </section>
                 </div>
@@ -121,7 +131,7 @@
                             <b style="color: green;">PEMBAHASAN AKAN MUNCUL SETELAH ANDA MENYELESAIKAN PERTANYAAN</b>
                         </center>
                     </span>
-                    <section style="display: none;">
+                    <section class="hide">
                         <p>
                             &nbsp;&nbsp;&nbsp;Pengamatan, inferensi dan mengkomunikasikan merupakan 3 langkah penting
                             dalam penyelidikan IPA,
