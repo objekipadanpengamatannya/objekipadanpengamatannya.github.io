@@ -244,7 +244,7 @@ input {
   display: none;
 }
 
-.bg-kuning {
+.bg-peach {
   background: #eeaa7b;
 }
 .bg-biru {
@@ -255,6 +255,12 @@ input {
 }
 .bg-navy {
   background: #07889b;
+}
+.bg-hijau {
+  background: green;
+}
+.bg-merah {
+  background: red;
 }
 
 /*
