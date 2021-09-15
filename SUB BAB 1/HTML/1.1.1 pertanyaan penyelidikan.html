@@ -43,8 +43,19 @@
             <div class="container-content">
                 <div class="judul-materi">Pertanyaan Keterampilan Penyelidikan IPA</div>
             <div class="card-soal">
-                <div class="card-petunjuk"></div>
-                <div class="card-pertanyaan">
+                <div class="card-petunjuk">
+                    <b>Pentujuk</b>
+                    <ol style="padding-left: 2em; line-height: 1.5;">
+                        <li>Tipe soal pilihan ganda.</li>
+                        <li>Pilihlah satu jawaban yang menurut anda benar.</li>
+                        <li>Tekan tombol lanjut untuk berganti soal selanjutnya.</li>
+                        <li>Tekan tombol kembali untuk berganti soal sebelumnya.</li>
+                    </ol>
+                    <div class="btn-soal" id="btnPetunjuk">
+                        <button>Selesai Membaca</button>
+                    </div>
+                </div>
+                <div class="card-pertanyaan hide" id="soalMuncul">
                     <h3 id="soal"></h3>
                     <div class="card-pilihan">
                         <input type="radio" name="pilihan" data-id="0" id="pilihan0">
@@ -70,7 +81,7 @@
             </div>
             </div>
             <div class="container-halaman">
-                <a class="halaman" href="">Selanjutnya</a>
+                <a class="halaman disable" href="">Selanjutnya</a>
             </div>
         </div>
     </div>

@@ -83,3 +83,10 @@ function btnKembali(){
   setupKuis()
 }
 
+// Button Selesai membaca petunjuk
+const btnPetunjuk = document.querySelector('#btnPetunjuk');
+
+btnPetunjuk.addEventListener("click", function(){
+  document.querySelector('.card-petunjuk').classList.add('hide');
+  document.getElementById('soalMuncul').classList.remove('hide');
+});
