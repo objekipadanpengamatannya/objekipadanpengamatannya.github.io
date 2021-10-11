@@ -52,14 +52,16 @@ function setupKuis(){
 function tombolLanjut(){
   kuisJalan++
 
-  // // menjalankan fungsi simpan jawaban
-  // cekJawaban()
+  // menjalankan fungsi simpan jawaban
+  cekJawaban()
 
   // sebuah aksi ketika soal sudah selesai
   if (kuisJalan > SOAL.length -1) {
-      kuisSelesai();
+      kuisSelesai()
   }
+
   resetPilihan()
+
   //menjalankan fungsi kuis
   setupKuis()
 }
@@ -67,21 +69,53 @@ function tombolLanjut(){
 function resetPilihan(){
   const pilihan = document.querySelector('input[name="pilihan"]:checked');
     if (pilihan != null) {
-      pilihan.checked = null
+        pilihan.checked = false
     }
 }
 
 // aksi ketika soal sudah selesai dijawab
 function kuisSelesai() {
   nilai();
-  alert('SELESAI')
+
+  if (skor <= 50) {
+      document.getElementById('nilai').innerHTML = "SKOR KAMU " + skor;
+      document.getElementById('ket').innerHTML = "Silahkan baca kembali materi penyelidikan IPA";
+      document.getElementById('tombolKembali').classList.remove('hide');
+  } else {
+      document.getElementById('nilai').innerHTML = "SKOR KAMU" + skor;
+      document.getElementById('ket').innerHTML = "Silahkan lanjutkan ke materi berikutnya dengan menekan tombol dibawah ini";
+      document.getElementById('tombolLanjut').classList.remove('hide');
+  }
+
+  document.getElementById('soalMuncul').classList.add('hide')
+  document.getElementById('soalSelesai').classList.remove('hide')
   return
 }
 
-function btnKembali(){
-  kuisJalan--
-  setupKuis()
+// aksi untuk membuat nilai
+
+function cekJawaban() {
+  const jawaban = document.querySelector('input[name="pilihan"]:checked');
+if (jawaban != null) {
+  simpanJawaban.push(parseInt(jawaban.getAttribute('data-id')))
+  console.log(simpanJawaban)
+} else {
+  simpanJawaban.push(0)
 }
+}
+
+function nilai(){
+ for (var i = 0; i < simpanJawaban.length; i++) {
+   if (simpanJawaban[i] == kunciJawaban[i]) {
+        skor+= 50
+   }
+ }
+}
+
+// function btnKembali(){
+//   kuisJalan--
+//   setupKuis()
+// }
 
 // Button Selesai membaca petunjuk
 const btnPetunjuk = document.querySelector('#btnPetunjuk');

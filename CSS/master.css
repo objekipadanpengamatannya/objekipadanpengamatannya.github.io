@@ -235,6 +235,12 @@ td {
 .card-pilihan:hover {
   background-color: #eeaa7b;
 }
+.card-nilai {
+  width: 98%;
+  border: 0.2vw dashed #07889b;
+  padding: 1%;
+  margin: 1em 0;
+}
 
 input {
   cursor: pointer;
