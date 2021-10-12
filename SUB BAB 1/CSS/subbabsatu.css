@@ -92,6 +92,7 @@
 .btn-soal {
   display: flex;
   justify-content: center;
+  padding-top: 1em;
 }
 .btn-soal > button {
   margin-right: 2%;
@@ -113,6 +114,37 @@
 .btn-soal > button > a {
   text-decoration: none;
   color: black;
+}
+
+.btn-bgpeach {
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+}
+.btn-bgpeach > button {
+  margin-right: 2%;
+  text-decoration: none;
+  background: #66b9bf;
+  border: none;
+  padding: 0.5em;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+.btn-bgpeach > button:nth-child(3) {
+  display: none;
+}
+.btn-bgpeach > button:hover {
+  border: 2px solid #66b9bf;
+  background: #eeaa7b;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-bgpeach > .btn-bgpeach-aktif {
+  border: 2px solid #66b9bf;
+  background: #eeaa7b;
+  color: white;
+  cursor: pointer;
 }
 
 /*

@@ -25,6 +25,12 @@ p {
   font-size: 1rem;
 }
 
+div > p {
+  line-height: 1.5;
+  text-align: justify;
+  font-size: 1rem;
+}
+
 .burgerMenu {
   font-size: 20px;
   cursor: pointer;
@@ -139,6 +145,8 @@ td {
   font-size: 1em;
   display: flex;
   align-items: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 .kotak-judul > img {
   width: 40px;
@@ -239,6 +247,11 @@ td {
   width: 98%;
   border: 0.2vw dashed #07889b;
   padding: 1%;
+  margin: 1em 0;
+}
+.card-border-blue {
+  border: 4px double #07889b;
+  padding: 1em;
   margin: 1em 0;
 }
 
