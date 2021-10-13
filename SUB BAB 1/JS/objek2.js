@@ -18,8 +18,6 @@ const btnBumi = document.querySelector('#btnBumi');
 const btnMatahari = document.querySelector('#btnMatahari');
 const btnLautan = document.querySelector('#btnLautan');
 
-
-
 btnAtom.addEventListener("click", function(){
   atom.classList.remove('hide');
   virus.classList.add('hide');

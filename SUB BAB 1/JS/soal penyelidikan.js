@@ -20,11 +20,19 @@ const SOAL = [
               'C.	Membuat laporan tertulis tentang kesimpulan akhir dari hasil pengamatan',
               'D.	Melakukan pengamatan menggunakan pancaindra/alat peraga'
             ]
+  },{
+    soal: "3. Proses mengamati suatu objek dengan menggunakan panca indra/alat peraga yang sesuai disebut . . . .",
+    pilihan:[
+              'A. Penyelidikan',
+              'B. Pengamatan',
+              'C. Mengkomunikasikan',
+              'D. Menyajikan'
+    ]
   }
 ]
 
 // membuat kunci jawaban
-const kunciJawaban = [1,0]
+const kunciJawaban = [1,0,1]
 
 // deklarasi untuk menambah tombol
 let kuisJalan = 0
@@ -82,7 +90,7 @@ function resetPilihan(){
 function kuisSelesai() {
   nilai();
 
-  if (skor > 80) {
+  if (skor >= 60) {
       document.getElementById('nilai').innerHTML = "SKOR KAMU " + skor;
       document.getElementById('ket').innerHTML = "Silahkan lanjutkan ke materi berikutnya dengan menekan tombol dibawah ini";
       document.getElementById('tombolLanjut').classList.remove('hide');
@@ -112,7 +120,7 @@ if (jawaban != null) {
 function nilai(){
  for (var i = 0; i < simpanJawaban.length; i++) {
    if (simpanJawaban[i] == kunciJawaban[i]) {
-        skor+= 50
+        skor+= 33,33333333333333
    }
  }
 }

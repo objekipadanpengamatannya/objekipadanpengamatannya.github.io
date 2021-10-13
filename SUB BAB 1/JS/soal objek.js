@@ -5,26 +5,42 @@
 */
 const SOAL = [
   {
-    soal: "1. Langkah awal yang harus dilakukan dalam sebuah penyelidikan IPA adalah . . . .",
+    soal: "1. Berikut ini yang termasuk makhluk hidup (biotik), kecuali . . . .",
     pilihan:[
-              'A.	Melakukan Inferensi',
-              'B.	Melakukan Pengamatan',
-              'C.	Mengkomunikasikan',
-              'D.	Menanyakan'
+              'A.	Capung',
+              'B.	Pohon',
+              'C.	Kupu-kupu',
+              'D.	Matahari'
             ]
   },{
-    soal: "2. Pengertian inferensi dalam penyelidikan IPA adalah . . . .",
+    soal: "2. Air, tanah, dan batu termasuk kategori objek . . . .",
     pilihan:[
-              'A.	Mengumpulkan data dan informasi melalui pengamatan',
-              'B.	Merumuskan penjelasan berdasarkan pengamatan',
-              'C.	Membuat laporan tertulis tentang kesimpulan akhir dari hasil pengamatan',
-              'D.	Melakukan pengamatan menggunakan pancaindra/alat peraga'
+              'A.	Abiotik',
+              'B.	Biotik',
+              'C.	Biotop',
+              'D.	Makhluk hidup'
+            ]
+  },{
+    soal: "3. Berikut pernyataan objek IPA yang dipelajari yang benar adalah . . . .",
+    pilihan:[
+              'A.	Meliputi seluruh benda alam dengan luar bumi',
+              'B.	Meliputi seluruh benda alam dan bumi antariksa',
+              'C.	Meliputi seluruh benda alam dengan segala interaksinya',
+              'D.	Meliputi seluruh benda alam baik hidup maupun tidak hidup'
+            ]
+  },{
+    soal: "4. Di bawah ini adalah bagian dari ilmu IPA, kecuali . . . .",
+    pilihan:[
+              'A.	Fisika',
+              'B.	Biologi',
+              'C.	Geografi',
+              'D.	Kimia'
             ]
   }
 ]
 
 // membuat kunci jawaban
-const kunciJawaban = [1,0]
+const kunciJawaban = [3,0,3,2]
 
 // deklarasi untuk menambah tombol
 let kuisJalan = 0
@@ -82,13 +98,13 @@ function resetPilihan(){
 function kuisSelesai() {
   nilai();
 
-  if (skor > 80) {
+  if (skor >= 75) {
       document.getElementById('nilai').innerHTML = "SKOR KAMU " + skor;
-      document.getElementById('ket').innerHTML = "Silahkan lanjutkan ke materi berikutnya dengan menekan tombol dibawah ini";
+      document.getElementById('ket').innerHTML = "Silahkan lanjutkan ke aktivitas berikutnya dengan menekan tombol dibawah ini";
       document.getElementById('tombolLanjut').classList.remove('hide');
   } else {
       document.getElementById('nilai').innerHTML = "SKOR KAMU " + skor;
-      document.getElementById('ket').innerHTML = "Silahkan baca kembali materi penyelidikan IPA";
+      document.getElementById('ket').innerHTML = "Silahkan baca kembali materi Objek IPA";
       document.getElementById('tombolKembali').classList.remove('hide');
   }
 
@@ -112,7 +128,7 @@ if (jawaban != null) {
 function nilai(){
  for (var i = 0; i < simpanJawaban.length; i++) {
    if (simpanJawaban[i] == kunciJawaban[i]) {
-        skor+= 50
+        skor+= 25
    }
  }
 }
