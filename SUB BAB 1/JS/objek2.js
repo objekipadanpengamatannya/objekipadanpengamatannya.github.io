@@ -27,6 +27,13 @@ btnAtom.addEventListener("click", function(){
   bumi.classList.add('hide');
   matahari.classList.add('hide');
   lautan.classList.add('hide');
+
+  btnAtom.classList.add('btn-bgpeach-aktif');
+  btnVirus.classList.remove('btn-bgpeach-aktif');
+  btnBakteri.classList.remove('btn-bgpeach-aktif');
+  btnBumi.classList.remove('btn-bgpeach-aktif');
+  btnMatahari.classList.remove('btn-bgpeach-aktif');
+  btnLautan.classList.remove('btn-bgpeach-aktif');
 })
 
 btnVirus.addEventListener("click", function(){
@@ -37,8 +44,12 @@ btnVirus.addEventListener("click", function(){
   matahari.classList.add('hide');
   lautan.classList.add('hide');
 
-//   btnAtom.classList.remove('btn-bgpeach-aktif');
-//   btnVirus.classList.add('btn-bgpeach-aktif');
+  btnVirus.classList.add('btn-bgpeach-aktif');
+  btnAtom.classList.remove('btn-bgpeach-aktif');
+  btnBakteri.classList.remove('btn-bgpeach-aktif');
+  btnBumi.classList.remove('btn-bgpeach-aktif');
+  btnMatahari.classList.remove('btn-bgpeach-aktif');
+  btnLautan.classList.remove('btn-bgpeach-aktif');
 })
 
 btnBakteri.addEventListener("click", function(){
@@ -49,6 +60,12 @@ btnBakteri.addEventListener("click", function(){
   matahari.classList.add('hide');
   lautan.classList.add('hide');
 
+  btnBakteri.classList.add('btn-bgpeach-aktif');
+  btnAtom.classList.remove('btn-bgpeach-aktif');
+  btnVirus.classList.remove('btn-bgpeach-aktif');
+  btnBumi.classList.remove('btn-bgpeach-aktif');
+  btnMatahari.classList.remove('btn-bgpeach-aktif');
+  btnLautan.classList.remove('btn-bgpeach-aktif');
 })
 
 btnBumi.addEventListener("click", function(){
@@ -59,6 +76,12 @@ btnBumi.addEventListener("click", function(){
   matahari.classList.add('hide');
   lautan.classList.add('hide');
 
+  btnBumi.classList.add('btn-bgpeach-aktif');
+  btnAtom.classList.remove('btn-bgpeach-aktif');
+  btnVirus.classList.remove('btn-bgpeach-aktif');
+  btnBakteri.classList.remove('btn-bgpeach-aktif');
+  btnMatahari.classList.remove('btn-bgpeach-aktif');
+  btnLautan.classList.remove('btn-bgpeach-aktif');
 })
 
 btnMatahari.addEventListener("click", function(){
@@ -69,6 +92,13 @@ btnMatahari.addEventListener("click", function(){
   bumi.classList.add('hide');
   lautan.classList.add('hide');
 
+
+  btnMatahari.classList.add('btn-bgpeach-aktif');
+  btnAtom.classList.remove('btn-bgpeach-aktif');
+  btnVirus.classList.remove('btn-bgpeach-aktif');
+  btnBakteri.classList.remove('btn-bgpeach-aktif');
+  btnBumi.classList.remove('btn-bgpeach-aktif');
+  btnLautan.classList.remove('btn-bgpeach-aktif');
 })
 
 btnLautan.addEventListener("click", function(){
@@ -79,4 +109,10 @@ btnLautan.addEventListener("click", function(){
   bumi.classList.add('hide');
   matahari.classList.add('hide');
 
+  btnLautan.classList.add('btn-bgpeach-aktif');
+  btnAtom.classList.remove('btn-bgpeach-aktif');
+  btnVirus.classList.remove('btn-bgpeach-aktif');
+  btnBakteri.classList.remove('btn-bgpeach-aktif');
+  btnBumi.classList.remove('btn-bgpeach-aktif');
+  btnMatahari.classList.remove('btn-bgpeach-aktif');
 })

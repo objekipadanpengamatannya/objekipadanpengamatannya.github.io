@@ -263,6 +263,7 @@ btnBiotikSepuluh.addEventListener('click', function(){
   
   document.getElementById("munculSectionPembahasanKet").classList.add("hide");
   document.getElementById("munculSectionPembahasanObjek").classList.remove("hide");
+   document.getElementById('halaman').classList.remove("hide");
 })
 
 btnAbiotikSepuluh.addEventListener('click', function(){
@@ -275,4 +276,5 @@ btnAbiotikSepuluh.addEventListener('click', function(){
   
   document.getElementById("munculSectionPembahasanKet").classList.add("hide");
   document.getElementById("munculSectionPembahasanObjek").classList.remove("hide");
+  document.getElementById('halaman').classList.remove("hide");
 })
