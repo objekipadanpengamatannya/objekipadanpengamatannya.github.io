@@ -68,7 +68,7 @@ function tombolLanjut(){
       kuisSelesai()
   } 
   
-  if (kuisJalan == 1) {
+  if (kuisJalan == 2) {
       document.getElementById('btnLanjut').innerHTML = "SELESAI";
   }
 
