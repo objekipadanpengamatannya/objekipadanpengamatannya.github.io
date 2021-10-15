@@ -110,7 +110,6 @@ td {
   background-color: #07889b;
   color: white;
 }
-
 .container-halaman {
   height: 10vh;
   background-color: #07889b;
@@ -280,6 +279,45 @@ input {
 }
 .bg-merah {
   background: red;
+}
+
+/* SETUP FORM */
+.form-box {
+  display: grid;
+  position: absolute;
+  left: 40vw;
+  padding-top: 20vh;
+}
+.form-wrapper {
+  width: 20vw;
+}
+.form-judul {
+  background-color: #e37222;
+  height: 10vh;
+  text-align: center;
+}
+
+.form-isi {
+  background-color: whitesmoke;
+  height: 35vh;
+  padding: 2em;
+}
+.form-isi > form > input {
+  padding: 0.3em;
+  margin: 0.2em 0 1em 0;
+  width: auto;
+}
+.form-isi > form > select {
+  padding: 0.3em;
+  margin: 0 0 1em 0;
+  cursor: pointer;
+  width: auto;
+}
+
+.form-button > button {
+  padding: 0.5em;
+  border-style: none;
+  background-color: #07889b;
 }
 
 /*

@@ -90,12 +90,12 @@ function resetPilihan(){
 function kuisSelesai() {
   nilai();
 
-  if (skor >= 60) {
-      document.getElementById('nilai').innerHTML = "SKOR KAMU " + skor;
+  if (skor >= 2) {
+      document.getElementById('nilai').innerHTML = "ANDA BENAR " + skor + " dari 3";
       document.getElementById('ket').innerHTML = "Silahkan lanjutkan ke materi berikutnya dengan menekan tombol dibawah ini";
       document.getElementById('tombolLanjut').classList.remove('hide');
   } else {
-      document.getElementById('nilai').innerHTML = "SKOR KAMU " + skor;
+      document.getElementById('nilai').innerHTML = "ANDA BENAR " + skor + " dari 3";
       document.getElementById('ket').innerHTML = "Silahkan baca kembali materi penyelidikan IPA";
       document.getElementById('tombolKembali').classList.remove('hide');
   }
@@ -120,7 +120,7 @@ if (jawaban != null) {
 function nilai(){
  for (var i = 0; i < simpanJawaban.length; i++) {
    if (simpanJawaban[i] == kunciJawaban[i]) {
-        skor+= 33,33333333333333
+        skor+= 1
    }
  }
 }

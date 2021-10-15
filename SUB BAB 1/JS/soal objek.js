@@ -98,12 +98,12 @@ function resetPilihan(){
 function kuisSelesai() {
   nilai();
 
-  if (skor >= 75) {
-      document.getElementById('nilai').innerHTML = "SKOR KAMU " + skor;
+  if (skor >= 3) {
+      document.getElementById('nilai').innerHTML = "ANDA BENAR " + skor + " dari 4";
       document.getElementById('ket').innerHTML = "Silahkan lanjutkan ke aktivitas berikutnya dengan menekan tombol dibawah ini";
       document.getElementById('tombolLanjut').classList.remove('hide');
   } else {
-      document.getElementById('nilai').innerHTML = "SKOR KAMU " + skor;
+      document.getElementById('nilai').innerHTML = "ANDA BENAR " + skor + " dari 4";
       document.getElementById('ket').innerHTML = "Silahkan baca kembali materi Objek IPA";
       document.getElementById('tombolKembali').classList.remove('hide');
   }
@@ -128,7 +128,7 @@ if (jawaban != null) {
 function nilai(){
  for (var i = 0; i < simpanJawaban.length; i++) {
    if (simpanJawaban[i] == kunciJawaban[i]) {
-        skor+= 25
+        skor+= 1
    }
  }
 }
