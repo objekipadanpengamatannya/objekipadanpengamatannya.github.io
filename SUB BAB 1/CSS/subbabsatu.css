@@ -159,22 +159,26 @@
 }
 
 .container-soal {
-  width: 100%;
+  width: 90vw;
+  height: 89vh;
 }
 
 .container-soal-isi {
-  /* box-shadow: 0 5px 10px rgb(0 0 0 / 0.2); */
-  padding: 2em 2em 0 2em;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
+  /* margin: 0 1em 0 1em; */
+  margin: auto;
 }
 
 .wrapper-soal {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 1.2rem;
+  padding: 1em 1em 0 1em;
 }
 
 .wrapper-btn {
   display: flex;
   justify-content: space-between;
+  padding: 0 1em 1em 1em;
 }
 .wrapper-btn > button {
   padding: 0.5em;
