@@ -282,17 +282,21 @@ input {
 }
 
 /* SETUP FORM */
+
 .form-box {
   display: grid;
-  position: absolute;
+  margin: auto;
+  /* position: absolute;
   left: 40vw;
-  padding-top: 20vh;
+  padding-top: 20vh; */
 }
 .form-wrapper {
-  width: 20vw;
+  width: 30vw;
+  box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
 }
 .form-judul {
   background-color: #e37222;
+  border-bottom: 1vmin solid #eeaa7b;
   height: 10vh;
   text-align: center;
 }
@@ -305,19 +309,25 @@ input {
 .form-isi > form > input {
   padding: 0.3em;
   margin: 0.2em 0 1em 0;
-  width: auto;
+  width: 100%;
 }
 .form-isi > form > select {
   padding: 0.3em;
   margin: 0 0 1em 0;
   cursor: pointer;
-  width: auto;
+  width: 100%;
 }
 
 .form-button > button {
-  padding: 0.5em;
+  padding: 0.7em;
   border-style: none;
   background-color: #07889b;
+  cursor: pointer;
+  color: white;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-button > button:hover {
+  background-color: #66b9bf;
 }
 
 /*

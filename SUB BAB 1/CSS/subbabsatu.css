@@ -149,6 +149,69 @@
 
 /*
 ********************
+**** SETUP KUIS ****
+********************
+*/
+
+.kepala-kuis {
+  justify-content: space-between;
+  padding: 0 2em;
+}
+
+.container-soal {
+  width: 100%;
+}
+
+.container-soal-isi {
+  /* box-shadow: 0 5px 10px rgb(0 0 0 / 0.2); */
+  padding: 2em 2em 0 2em;
+}
+
+.wrapper-soal {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.2rem;
+}
+
+.wrapper-btn {
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper-btn > button {
+  padding: 0.5em;
+  background-color: #e37222;
+  border-style: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+.wrapper-btn > button:hover {
+  background-color: #eeaa7b;
+}
+
+.pilihan-kuis {
+  background-color: #66b9bf;
+  padding: 1em;
+  display: flex;
+  margin-bottom: 1em;
+}
+.pilihan-kuis:hover {
+  background-color: #07889b;
+  cursor: pointer;
+}
+.soal-kuis {
+  margin: 1em 0;
+  font-size: 1em;
+}
+
+.kuis-no {
+  background-color: #07889b;
+  color: white;
+  padding: 0.3em;
+  border-radius: 5px;
+}
+
+/*
+********************
 *** SETUP MOBILE ***
 ********************
 */
