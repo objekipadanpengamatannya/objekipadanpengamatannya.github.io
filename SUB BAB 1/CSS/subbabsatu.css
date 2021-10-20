@@ -167,6 +167,8 @@
   box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
   /* margin: 0 1em 0 1em; */
   margin: auto;
+  width: 95%;
+  height: auto;
 }
 
 .wrapper-soal {
