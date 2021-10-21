@@ -258,7 +258,18 @@
   background-color: white;
   color: #07889b;
 }
+.btn-soal-aktif {
+  background-color: white;
+  color: #07889b;
+}
 
+.wrapper-petunjuk-soal {
+  position: absolute;
+  width: 90vw;
+  height: 40%;
+  background-color: #eeaa7b;
+  padding: 2vmax 5vmax;
+}
 /*
 ********************
 *** SETUP MOBILE ***

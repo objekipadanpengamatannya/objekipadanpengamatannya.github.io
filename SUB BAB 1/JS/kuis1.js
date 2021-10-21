@@ -47,4 +47,24 @@ btnLanjut.addEventListener("click", function(){
     a++
     bgSoal[a].classList.toggle('hide')
     bgSoal[a-1].classList.toggle('hide')
+});
+
+const btnPetunjuk = document.getElementById("btnPetunjuk");
+const wrapperPetunjuk = document.getElementById("wrapperPetunjuk");
+
+btnPetunjuk.addEventListener("click", function(){
+    btnPetunjuk.classList.toggle('btn-soal-aktif')
+    btnDaftar.classList.remove('btn-soal-aktif')
+    wrapperPetunjuk.classList.toggle('hide');
+    document.getElementById("containerNavigasi").classList.add('hide')
+});
+
+const btnDaftar = document.getElementById("btnDaftar");
+const containerNavigasi = document.getElementById("containerNavigasi");
+
+btnDaftar.addEventListener("click", function(){
+    btnDaftar.classList.toggle('btn-soal-aktif')
+    btnPetunjuk.classList.remove('btn-soal-aktif')
+    containerNavigasi.classList.toggle('hide');
+    document.getElementById("wrapperPetunjuk").classList.add('hide')
 })
