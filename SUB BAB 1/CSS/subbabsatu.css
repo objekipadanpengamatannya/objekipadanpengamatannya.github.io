@@ -216,6 +216,49 @@
   border-radius: 5px;
 }
 
+.container-navigasi {
+  position: absolute;
+  background-color: sienna;
+}
+.wrapper-navigasi-soal {
+  display: flex;
+}
+
+.navigasi-soal {
+  background-color: seagreen;
+  margin: 2%;
+  width: 3vmax;
+  height: 3vmax;
+  border-radius: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+}
+
+.btn-daftar-soal,
+.btn-petunjuk-soal {
+  padding: 0.5em;
+  border-radius: 15px;
+  color: white;
+  font-weight: bold;
+  border: 2px solid white;
+  cursor: pointer;
+  margin-right: 1vmax;
+}
+.btn-daftar-soal:hover {
+  background-color: white;
+  color: #07889b;
+}
+.btn-petunjuk-soal:hover {
+  background-color: white;
+  color: #07889b;
+}
+
 /*
 ********************
 *** SETUP MOBILE ***
