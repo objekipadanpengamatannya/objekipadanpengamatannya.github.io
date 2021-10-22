@@ -42,6 +42,7 @@ DBSOAL.send();
 
 let a = 0
 const btnLanjut = document.getElementById("btnLanjut");
+const btnKembali = document.getElementById("btnKembali");
 
 btnLanjut.addEventListener("click", function(){
     a++
@@ -49,6 +50,17 @@ btnLanjut.addEventListener("click", function(){
     bgSoal[a-1].classList.toggle('hide')
 });
 
+
+
+btnKembali.addEventListener("click", function(){
+    a--
+    bgSoal[a].classList.toggle('hide')
+    bgSoal[a+1].classList.toggle('hide')
+});
+
+
+
+// button header  
 const btnPetunjuk = document.getElementById("btnPetunjuk");
 const wrapperPetunjuk = document.getElementById("wrapperPetunjuk");
 
