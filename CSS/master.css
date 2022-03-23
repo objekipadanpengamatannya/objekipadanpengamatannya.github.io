@@ -281,6 +281,23 @@ input {
   background: red;
 }
 
+.bg-peach-border {
+  border: 3px solid #eeaa7b;
+}
+
+.bg-biru-border {
+  border: 3px solid #66b9bf;
+}
+
+.bg-orange-border {
+  border: 3px solid #e37222;
+}
+
+.bg-navy-border {
+  border: 3px solid #07889b;
+}
+
+
 /* SETUP FORM */
 
 .form-box {
