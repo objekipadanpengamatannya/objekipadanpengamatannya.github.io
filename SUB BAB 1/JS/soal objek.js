@@ -96,7 +96,7 @@ function resetPilihan() {
 function kuisSelesai() {
   nilai();
 
-  if (skor >= 3) {
+  if (skor >= 0) {
     document.getElementById('nilai').innerHTML = "ANDA BENAR " + skor + " dari 4";
     document.getElementById('ket').innerHTML = "Silahkan lanjutkan ke aktivitas berikutnya dengan menekan tombol dibawah ini";
     document.getElementById('tombolLanjut').classList.remove('hide');

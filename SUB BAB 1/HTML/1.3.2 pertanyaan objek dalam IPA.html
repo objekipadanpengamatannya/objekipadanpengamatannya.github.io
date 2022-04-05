@@ -42,53 +42,55 @@
         <div class="container">
             <div class="container-content">
                 <div class="judul-materi">Pertanyaan Objek dalam IPA</div>
-            <div class="card-soal">
-                <div class="card-petunjuk">
-                    <b>Pentujuk</b>
-                    <ol style="padding-left: 2em; line-height: 1.5;">
-                        <li>Tipe soal pilihan ganda.</li>
-                        <li>Jumlah soal ada 4 butir.</li>
-                        <li>Pilihlah satu jawaban yang menurut anda benar.</li>
-                        <li>Tekan tombol lanjut untuk berganti soal selanjutnya.</li>
-                        <li>Jika anda menjawab benar kurang dari 3 maka anda diharuskan mengulang kembali materi yang dipelajari </li>
-                    </ol>
-                    <div class="btn-soal" id="btnPetunjuk">
-                        <button>Selesai Membaca</button>
+                <div class="card-soal">
+                    <div class="card-petunjuk">
+                        <b>Pentujuk</b>
+                        <ol style="padding-left: 2em; line-height: 1.5;">
+                            <li>Tipe soal pilihan ganda.</li>
+                            <li>Jumlah soal ada 4 butir.</li>
+                            <li>Pilihlah satu jawaban yang menurut anda benar.</li>
+                            <li>Tekan tombol lanjut untuk berganti soal selanjutnya.</li>
+                            <!-- <li>Jika anda menjawab benar kurang dari 3 maka anda diharuskan mengulang kembali materi yang dipelajari </li> -->
+                        </ol>
+                        <div class="btn-soal" id="btnPetunjuk">
+                            <button>Selesai Membaca</button>
+                        </div>
+                    </div>
+                    <div class="card-pertanyaan hide" id="soalMuncul">
+                        <h3 id="soal"></h3>
+                        <div class="card-pilihan">
+                            <input type="radio" name="pilihan" data-id="0" id="pilihan0">
+                            <label for="pilihan0" id="teksPilihan0"></label>
+                        </div>
+                        <div class="card-pilihan">
+                            <input type="radio" name="pilihan" data-id="1" id="pilihan1">
+                            <label for="pilihan1" id="teksPilihan1"></label>
+                        </div>
+                        <div class="card-pilihan">
+                            <input type="radio" name="pilihan" data-id="2" id="pilihan2">
+                            <label for="pilihan2" id="teksPilihan2"></label>
+                        </div>
+                        <div class="card-pilihan">
+                            <input type="radio" name="pilihan" data-id="3" id="pilihan3">
+                            <label for="pilihan3" id="teksPilihan3"></label>
+                        </div>
+                        <div class="btn-soal">
+                            <button id="btnLanjut" onclick="tombolLanjut()">LANJUT</button>
+                        </div>
+                    </div>
+                    <div class="card-nilai hide" id="soalSelesai">
+                        <center>
+                            <h2 id="nilai"></h2>
+                            <span id="ket"></span>
+                        </center> <br>
+                        <div class="btn-soal">
+                            <button class="hide" id="tombolKembali"><a
+                                    href="/SUB BAB 1/HTML/1.3 objek dalam IPA.html">MATERI OBJEK IPA</a></button>
+                            <button class="hide" id="tombolLanjut"><a href="login kuis.html">KUIS SUBBAB
+                                    1</a></button>
+                        </div>
                     </div>
                 </div>
-                <div class="card-pertanyaan hide" id="soalMuncul">
-                    <h3 id="soal"></h3>
-                    <div class="card-pilihan">
-                        <input type="radio" name="pilihan" data-id="0" id="pilihan0">
-                        <label for="pilihan0" id="teksPilihan0"></label>
-                    </div>
-                    <div class="card-pilihan">
-                        <input type="radio" name="pilihan" data-id="1" id="pilihan1">
-                        <label for="pilihan1" id="teksPilihan1"></label>
-                    </div>
-                    <div class="card-pilihan">
-                        <input type="radio" name="pilihan" data-id="2" id="pilihan2">
-                        <label for="pilihan2" id="teksPilihan2"></label>
-                    </div>
-                    <div class="card-pilihan">
-                        <input type="radio" name="pilihan" data-id="3" id="pilihan3">
-                        <label for="pilihan3" id="teksPilihan3"></label>
-                    </div>
-                    <div class="btn-soal">
-                        <button id="btnLanjut" onclick="tombolLanjut()">LANJUT</button>
-                    </div>
-                </div>
-                <div class="card-nilai hide" id="soalSelesai">
-                    <center>
-                        <h2 id="nilai"></h2>
-                        <span id="ket"></span>
-                    </center> <br>
-                    <div class="btn-soal">
-                        <button class="hide" id="tombolKembali"><a href="/SUB BAB 1/HTML/1.3 objek dalam IPA.html">MATERI OBJEK IPA</a></button>
-                        <button class="hide" id="tombolLanjut"><a href="/SUB BAB 1/HTML/kuis 1.html">KUIS SUBBAB 1</a></button>
-                    </div>
-                </div>
-            </div>
             </div>
             <div class="container-halaman">
                 <a class="halaman disable" href="">Selanjutnya</a>

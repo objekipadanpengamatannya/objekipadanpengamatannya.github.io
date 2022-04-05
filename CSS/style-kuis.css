@@ -5,7 +5,8 @@
 }
 
 body {
-    background: linear-gradient(120deg, #2980b9, #8e44ad);
+    background-image: url(/IMAGE/bg-kuis.jpg);
+    background-size: cover;
     width: 100vw;
     height: 100vh;
 }
@@ -16,7 +17,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 400px;
-    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.582);
     border-radius: 10px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.05);
 }
@@ -97,5 +98,12 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     border-color: #2691d9;
+    transition: 0.5s;
+}
+
+.qq {
+    width: 100%;
+    padding: 0.5em;
     transition: .5s;
+    color: #494949;
 }

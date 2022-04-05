@@ -3,47 +3,45 @@
 ##### SETUP SOAL PG #######
 ###########################
 */
-const SOAL = [
-  {
-    soal: "1. Langkah awal yang harus dilakukan dalam sebuah penyelidikan IPA adalah . . . .",
-    pilihan:[
-              'A.	Melakukan Inferensi',
-              'B.	Melakukan Pengamatan',
-              'C.	Mengkomunikasikan',
-              'D.	Menanyakan'
-            ]
-  },{
-    soal: "2. Pengertian inferensi dalam penyelidikan IPA adalah . . . .",
-    pilihan:[
-              'A.	Mengumpulkan data dan informasi melalui pengamatan',
-              'B.	Merumuskan penjelasan berdasarkan pengamatan',
-              'C.	Membuat laporan tertulis tentang kesimpulan akhir dari hasil pengamatan',
-              'D.	Melakukan pengamatan menggunakan pancaindra/alat peraga'
-            ]
-  },{
-    soal: "3. Proses mengamati suatu objek dengan menggunakan panca indra/alat peraga yang sesuai disebut . . . .",
-    pilihan:[
-              'A. Penyelidikan',
-              'B. Pengamatan',
-              'C. Mengkomunikasikan',
-              'D. Menyajikan'
-    ]
-  }
-]
+const SOAL = [{
+  soal: "1. Langkah awal yang harus dilakukan dalam sebuah penyelidikan IPA adalah . . . .",
+  pilihan: [
+    'A.	Melakukan Inferensi',
+    'B.	Melakukan Pengamatan',
+    'C.	Mengkomunikasikan',
+    'D.	Menanyakan'
+  ]
+}, {
+  soal: "2. Pengertian inferensi dalam penyelidikan IPA adalah . . . .",
+  pilihan: [
+    'A.	Mengumpulkan data dan informasi melalui pengamatan',
+    'B.	Merumuskan penjelasan berdasarkan pengamatan',
+    'C.	Membuat laporan tertulis tentang kesimpulan akhir dari hasil pengamatan',
+    'D.	Melakukan pengamatan menggunakan pancaindra/alat peraga'
+  ]
+}, {
+  soal: "3. Proses mengamati suatu objek dengan menggunakan panca indra/alat peraga yang sesuai disebut . . . .",
+  pilihan: [
+    'A. Penyelidikan',
+    'B. Pengamatan',
+    'C. Mengkomunikasikan',
+    'D. Menyajikan'
+  ]
+}]
 
 // membuat kunci jawaban
-const kunciJawaban = [1,0,1]
+const kunciJawaban = [1, 0, 1]
 
 // deklarasi untuk menambah tombol
 let kuisJalan = 0
 let skor = 0
 let simpanJawaban = []
 
-document.addEventListener("DOMContentLoaded", function(event){
+document.addEventListener("DOMContentLoaded", function (event) {
   setupKuis()
 });
 
-function setupKuis(){
+function setupKuis() {
   document.getElementById('soal').innerText = SOAL[kuisJalan]['soal']
   document.getElementById('teksPilihan0').innerText = SOAL[kuisJalan]['pilihan'][0]
   document.getElementById('teksPilihan1').innerText = SOAL[kuisJalan]['pilihan'][1]
@@ -52,24 +50,24 @@ function setupKuis(){
 }
 
 /*
-**************************
-***** SETUP TOMBOL *****
-**************************
-*/
+ **************************
+ ***** SETUP TOMBOL *****
+ **************************
+ */
 
-function tombolLanjut(){
+function tombolLanjut() {
   kuisJalan++
 
   // menjalankan fungsi simpan jawaban
   cekJawaban()
 
   // sebuah aksi ketika soal sudah selesai
-  if (kuisJalan > SOAL.length -1) {
-      kuisSelesai()
-  } 
-  
+  if (kuisJalan > SOAL.length - 1) {
+    kuisSelesai()
+  }
+
   if (kuisJalan == 2) {
-      document.getElementById('btnLanjut').innerHTML = "SELESAI";
+    document.getElementById('btnLanjut').innerHTML = "SELESAI";
   }
 
 
@@ -79,25 +77,25 @@ function tombolLanjut(){
   setupKuis()
 }
 
-function resetPilihan(){
+function resetPilihan() {
   const pilihan = document.querySelector('input[name="pilihan"]:checked');
-    if (pilihan != null) {
-        pilihan.checked = false
-    }
+  if (pilihan != null) {
+    pilihan.checked = false
+  }
 }
 
 // aksi ketika soal sudah selesai dijawab
 function kuisSelesai() {
   nilai();
 
-  if (skor >= 2) {
-      document.getElementById('nilai').innerHTML = "ANDA BENAR " + skor + " dari 3";
-      document.getElementById('ket').innerHTML = "Silahkan lanjutkan ke materi berikutnya dengan menekan tombol dibawah ini";
-      document.getElementById('tombolLanjut').classList.remove('hide');
+  if (skor >= 1) {
+    document.getElementById('nilai').innerHTML = "ANDA BENAR " + skor + " dari 3";
+    document.getElementById('ket').innerHTML = "Silahkan lanjutkan ke materi berikutnya dengan menekan tombol dibawah ini";
+    document.getElementById('tombolLanjut').classList.remove('hide');
   } else {
-      document.getElementById('nilai').innerHTML = "ANDA BENAR " + skor + " dari 3";
-      document.getElementById('ket').innerHTML = "Silahkan baca kembali materi penyelidikan IPA";
-      document.getElementById('tombolKembali').classList.remove('hide');
+    document.getElementById('nilai').innerHTML = "ANDA BENAR " + skor + " dari 3";
+    document.getElementById('ket').innerHTML = "Silahkan baca kembali materi penyelidikan IPA";
+    document.getElementById('tombolKembali').classList.remove('hide');
   }
 
   document.getElementById('soalMuncul').classList.add('hide')
@@ -109,20 +107,20 @@ function kuisSelesai() {
 
 function cekJawaban() {
   const jawaban = document.querySelector('input[name="pilihan"]:checked');
-if (jawaban != null) {
-  simpanJawaban.push(parseInt(jawaban.getAttribute('data-id')))
-  console.log(simpanJawaban)
-} else {
-  simpanJawaban.push()
-}
+  if (jawaban != null) {
+    simpanJawaban.push(parseInt(jawaban.getAttribute('data-id')))
+    console.log(simpanJawaban)
+  } else {
+    simpanJawaban.push()
+  }
 }
 
-function nilai(){
- for (var i = 0; i < simpanJawaban.length; i++) {
-   if (simpanJawaban[i] == kunciJawaban[i]) {
-        skor+= 1
-   }
- }
+function nilai() {
+  for (var i = 0; i < simpanJawaban.length; i++) {
+    if (simpanJawaban[i] == kunciJawaban[i]) {
+      skor += 1
+    }
+  }
 }
 
 // function btnKembali(){
@@ -133,7 +131,7 @@ function nilai(){
 // Button Selesai membaca petunjuk
 const btnPetunjuk = document.querySelector('#btnPetunjuk');
 
-btnPetunjuk.addEventListener("click", function(){
+btnPetunjuk.addEventListener("click", function () {
   document.querySelector('.card-petunjuk').classList.add('hide');
   document.getElementById('soalMuncul').classList.remove('hide');
 });

@@ -8,10 +8,12 @@
   color: white;
   margin-top: 1vmax;
 }
+
 .btn:hover {
   background-color: #07889b;
   color: black;
 }
+
 .btn-aktif {
   background-color: #07889b;
   color: black;
@@ -33,10 +35,6 @@
   border-radius: 5px;
 }
 
-.btn-bgpeach>button:nth-child(3) {
-  display: none;
-}
-
 .btn-bgpeach>button:hover {
   border: 2px solid #66b9bf;
   background: #eeaa7b;
@@ -51,4 +49,3 @@
   color: white;
   cursor: pointer;
 }
-

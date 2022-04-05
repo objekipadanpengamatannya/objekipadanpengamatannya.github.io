@@ -1,21 +1,21 @@
 /*
-*****************************
-*** SETUP TOMBOL PETUNTUK ***
-*****************************
-*/
+ *****************************
+ *** SETUP TOMBOL PETUNTUK ***
+ *****************************
+ */
 
 const btnPetunjuk = document.querySelector("#btnPetunjuk")
 
-btnPetunjuk.addEventListener('click', function(){
-    document.getElementById("soalMuncul").classList.remove("hide");
-    document.getElementById("petunjukHilang").classList.add("hide");
+btnPetunjuk.addEventListener('click', function () {
+  document.getElementById("soalMuncul").classList.remove("hide");
+  document.getElementById("petunjukHilang").classList.add("hide");
 })
 
 /*
-*************************
-*** SETUP CEK JAWABAN ***
-*************************
-*/
+ *************************
+ *** SETUP CEK JAWABAN ***
+ *************************
+ */
 
 function cekJawaban() {
   satu = soal.jwb1.value;
@@ -69,10 +69,10 @@ function ulang() {
 }
 
 /*
-*******************
-*** SETUP RESET ***
-*******************
-*/
+ *******************
+ *** SETUP RESET ***
+ *******************
+ */
 function ulang() {
   document.getElementById("ulang").reset();
   document.getElementById("no1").style = "none";

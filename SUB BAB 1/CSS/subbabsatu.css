@@ -1,4 +1,4 @@
-.card-soal-isi > button {
+.card-soal-isi>button {
   border-style: none;
   padding: 0.5em;
   cursor: pointer;
@@ -6,7 +6,8 @@
   margin: 0.5em;
   font-size: 1em;
 }
-.card-soal-isi > button:hover {
+
+.card-soal-isi>button:hover {
   border-style: none;
   padding: 0.5em;
   cursor: pointer;
@@ -26,6 +27,7 @@
   font-weight: bold;
   border-radius: 5px;
 }
+
 .btn-objek:hover {
   background: #eeaa7b;
 }
@@ -33,9 +35,11 @@
 .tr-color {
   background-color: #66b9bf;
 }
+
 .btn-objek-aktif {
   background: #eeaa7b;
 }
+
 /*
 ########################
 ### SETUP PERTANYAAN ###
@@ -66,6 +70,7 @@
   border-radius: 20px 0 0 0;
   padding: 1%;
 }
+
 .pilihan ol {
   list-style-type: upper-latin;
   padding: 0 10%;
@@ -79,12 +84,14 @@
   padding: 1%;
   height: max-content;
 }
+
 .soal .jawab {
   width: 40px;
   height: 20px;
   text-align: center;
   cursor: text;
 }
+
 .soal form {
   line-height: 2;
 }
@@ -94,7 +101,8 @@
   justify-content: center;
   padding-top: 1em;
 }
-.btn-soal > button {
+
+.btn-soal>button {
   margin-right: 2%;
   text-decoration: none;
   background: #66b9bf;
@@ -103,15 +111,18 @@
   font-size: 1rem;
   border-radius: 5px;
 }
-.btn-soal > button:nth-child(3) {
+
+.btn-soal>button:nth-child(3) {
   display: none;
 }
-.btn-soal > button:hover {
+
+.btn-soal>button:hover {
   border: 1px solid #66b9bf;
   background: white;
   cursor: pointer;
 }
-.btn-soal > button > a {
+
+.btn-soal>button>a {
   text-decoration: none;
   color: black;
 }
@@ -121,7 +132,8 @@
   justify-content: center;
   padding-top: 1em;
 }
-.btn-bgpeach > button {
+
+.btn-bgpeach>button {
   margin-right: 2%;
   text-decoration: none;
   background: #66b9bf;
@@ -130,17 +142,16 @@
   font-size: 1rem;
   border-radius: 5px;
 }
-.btn-bgpeach > button:nth-child(3) {
-  display: none;
-}
-.btn-bgpeach > button:hover {
+
+.btn-bgpeach>button:hover {
   border: 2px solid #66b9bf;
   background: #eeaa7b;
   color: white;
   font-weight: bold;
   cursor: pointer;
 }
-.btn-bgpeach > .btn-bgpeach-aktif {
+
+.btn-bgpeach>.btn-bgpeach-aktif {
   border: 2px solid #66b9bf;
   background: #eeaa7b;
   color: white;
@@ -182,7 +193,8 @@
   justify-content: space-between;
   padding: 0 1em 1em 1em;
 }
-.wrapper-btn > button {
+
+.wrapper-btn>button {
   padding: 0.5em;
   background-color: #e37222;
   border-style: none;
@@ -190,7 +202,8 @@
   color: white;
   cursor: pointer;
 }
-.wrapper-btn > button:hover {
+
+.wrapper-btn>button:hover {
   background-color: #eeaa7b;
 }
 
@@ -200,10 +213,12 @@
   display: flex;
   margin-bottom: 1em;
 }
+
 .pilihan-kuis:hover {
   background-color: #07889b;
   cursor: pointer;
 }
+
 .soal-kuis {
   margin: 1em 0;
   font-size: 1em;
@@ -220,6 +235,7 @@
   position: absolute;
   background-color: sienna;
 }
+
 .wrapper-navigasi-soal {
   display: flex;
 }
@@ -250,14 +266,17 @@
   cursor: pointer;
   margin-right: 1vmax;
 }
+
 .btn-daftar-soal:hover {
   background-color: white;
   color: #07889b;
 }
+
 .btn-petunjuk-soal:hover {
   background-color: white;
   color: #07889b;
 }
+
 .btn-soal-aktif {
   background-color: white;
   color: #07889b;
@@ -270,6 +289,7 @@
   background-color: #eeaa7b;
   padding: 2vmax 5vmax;
 }
+
 /*
 ********************
 *** SETUP MOBILE ***
@@ -281,7 +301,7 @@
     flex-direction: column;
   }
 
-  .pilihan > p {
+  .pilihan>p {
     padding: 2%;
   }
 
