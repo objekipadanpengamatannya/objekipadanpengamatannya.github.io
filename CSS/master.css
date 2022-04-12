@@ -25,7 +25,7 @@ p {
   font-size: 1rem;
 }
 
-div > p {
+div>p {
   line-height: 1.5;
   text-align: justify;
   font-size: 1rem;
@@ -46,6 +46,24 @@ div > p {
   height: 89vh;
 }
 
+ul {
+  padding-left: 2em;
+  margin-top: 0.5em;
+}
+
+ol {
+  padding-left: 2em;
+  margin-top: 0.5em;
+}
+
+section {
+  line-height: 1.5;
+}
+
+section>p {
+  padding-left: 2em;
+}
+
 /*
 **********************
 *** SETUP SIDE BAR ***
@@ -58,6 +76,7 @@ aside {
   padding: 1.5rem 0rem;
   transition: 0.5s;
 }
+
 aside a {
   color: whitesmoke;
   display: block;
@@ -67,6 +86,7 @@ aside a {
   border-bottom: 1px solid #e37222;
   list-style: none;
 }
+
 aside a:hover {
   color: #e37222;
   cursor: pointer;
@@ -96,20 +116,24 @@ aside a:hover {
   border: 0.5vh double #66b9bf;
   padding: 1.5vh;
 }
+
 .container-content table {
   width: 100%;
   text-align: center;
 }
+
 .container-content table,
 th,
 td {
   border: 1px solid black;
   border-collapse: collapse;
 }
+
 .container-content table th {
   background-color: #07889b;
   color: white;
 }
+
 .container-halaman {
   height: 10vh;
   background-color: #07889b;
@@ -147,7 +171,8 @@ td {
   margin-top: 1em;
   margin-bottom: 1em;
 }
-.kotak-judul > img {
+
+.kotak-judul>img {
   width: 40px;
 }
 
@@ -160,7 +185,7 @@ td {
   line-height: 1.5;
 }
 
-.kotak-petunjuk > ol {
+.kotak-petunjuk>ol {
   padding: 0 5%;
 }
 
@@ -173,13 +198,15 @@ td {
   text-align: justify;
   font-size: 1em;
 }
-.simpulan > ol {
+
+.simpulan>ol {
   margin-left: 2em;
   padding-top: 1%;
   line-height: 1.5;
   font-size: 1em;
 }
-.simpulan > input {
+
+.simpulan>input {
   text-align: center;
   width: 10%;
 }
@@ -205,6 +232,7 @@ td {
   font-size: 1em;
   line-height: 1.5;
 }
+
 .pembahasan ol {
   padding-left: 1.5vw;
   font-size: 1em;
@@ -214,40 +242,48 @@ td {
   padding: 1em;
   margin: 1em 0;
 }
+
 .card-soal {
   border: 2px solid #07889b;
   padding: 1em;
   margin: 1em 0;
 }
+
 .card-petunjuk {
   width: 98%;
   border: 0.2vw dotted #07889b;
   padding: 1%;
 }
+
 .card-pertanyaan {
   width: 98%;
   border: 0.2vw dashed #07889b;
   padding: 1%;
   margin: 1em 0;
 }
+
 .card-pertanyaan h3 {
   margin-bottom: 1em;
   border-bottom: 0.2vw dotted #66b9bf;
 }
+
 .card-pilihan {
   background-color: #e37222;
   padding: 1vw;
   margin: 0.5em 0;
 }
+
 .card-pilihan:hover {
   background-color: #eeaa7b;
 }
+
 .card-nilai {
   width: 98%;
   border: 0.2vw dashed #07889b;
   padding: 1%;
   margin: 1em 0;
 }
+
 .card-border-blue {
   border: 4px double #07889b;
   padding: 1em;
@@ -265,18 +301,23 @@ input {
 .bg-peach {
   background: #eeaa7b;
 }
+
 .bg-biru {
   background: #66b9bf;
 }
+
 .bg-orange {
   background: #e37222;
 }
+
 .bg-navy {
   background: #07889b;
 }
+
 .bg-hijau {
   background: green;
 }
+
 .bg-merah {
   background: red;
 }
@@ -303,10 +344,12 @@ input {
 .form-box {
   margin: auto;
 }
+
 .form-wrapper {
   width: 30vw;
   box-shadow: 0 5px 10px rgb(0 0 0 / 0.2);
 }
+
 .form-judul {
   background-color: #e37222;
   border-bottom: 1vmin solid #eeaa7b;
@@ -319,19 +362,21 @@ input {
   height: 35vh;
   padding: 2em;
 }
-.form-isi > form > input {
+
+.form-isi>form>input {
   padding: 0.3em;
   margin: 0.2em 0 1em 0;
   width: 100%;
 }
-.form-isi > form > select {
+
+.form-isi>form>select {
   padding: 0.3em;
   margin: 0 0 1em 0;
   cursor: pointer;
   width: 100%;
 }
 
-.form-button > button {
+.form-button>button {
   padding: 0.7em;
   border-style: none;
   background-color: #07889b;
@@ -339,7 +384,8 @@ input {
   color: white;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
-.form-button > button:hover {
+
+.form-button>button:hover {
   background-color: #66b9bf;
 }
 

@@ -47,5 +47,6 @@
   border: 2px solid #66b9bf;
   background: #eeaa7b;
   color: white;
+  font-weight: bold;
   cursor: pointer;
 }
