@@ -12,35 +12,30 @@
   padding: 5% 0 0 0;
 }
 
-.judul > p:nth-child(1) {
-  font-size: 3vw;
-  color: #e37222;
+.judul>p:nth-child(1) {
+  font-size: 3em;
+  color: #07889b;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-weight: bold;
 }
 
-.judul > p:nth-child(2) {
-  font-size: 2vw;
+.judul>p:nth-child(2) {
+  font-size: 2em;
   font-family: optima;
 }
 
-.menu {
+.menu center {
   display: flex;
   justify-content: space-evenly;
-  padding: 10% 0 0 0;
+  padding: 80px 0 0 0;
 }
 
-.menu > a {
-  border: 2px solid #e37222;
-  border-radius: 5%;
-  padding: 2%;
-  text-decoration: none;
-  color: #e37222;
+.menu center>a {
+  transition: transform 0.5s ease-in-out;
 }
 
-.menu > a:hover {
-  background-color: #e37222;
-  color: white;
+.menu center>a:hover {
+  transform: scale(1.2);
 }
 
 .hide {
@@ -73,17 +68,10 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.kembali {
-  text-decoration: none;
-  color: #e37222;
-  padding: 1em;
-}
-.kembali > img {
-  height: 7%;
-}
 
 .container-isi {
-  height: 75%;
+  width: 100%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,6 +97,7 @@
   font-weight: bolder;
   font-family: Helvetica, sans-serif;
 }
+
 .btn-menu:hover {
   background-color: #66b9bf;
   border-radius: 5pt 5pt 0 0;
@@ -137,33 +126,47 @@
   overflow: auto;
 }
 
-.isi-ki-kd > section > table {
+.isi-ki-kd>section>table {
   padding-top: 1%;
 }
 
-.isi-ki-kd > section:nth-child(1) > center > h1 {
+.isi-ki-kd>section:nth-child(1)>center>h1 {
   border-bottom: 2px solid #07889b;
   padding-bottom: 0.5%;
 }
 
-.isi-ki-kd > section:nth-child(2) > center > h1 {
+.isi-ki-kd>section:nth-child(2)>center>h1 {
   border-bottom: 2px solid #9b0707;
   padding-bottom: 0.5%;
 }
 
-.isi-ki-kd > section:nth-child(3) > center > h1 {
+.isi-ki-kd>section:nth-child(3)>center>h1 {
   border-bottom: 2px solid #07889b;
   padding-bottom: 0.5%;
 }
+
 
 /*
 ********************
 *** SETUP MOBILE ***
 ********************
 */
+@media only screen and (max-width: 992px) {
+  .menu img {
+    width: 80%;
+  }
+}
+
 @media only screen and (max-width: 600px) {
-  .menu {
-    flex-direction: column;
-    padding: 2vh;
+  .container {
+    background-image: none;
+  }
+
+  .menu center {
+    flex-direction: column-reverse;
+  }
+
+  .menu img {
+    width: 60%;
   }
 }
