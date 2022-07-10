@@ -298,6 +298,10 @@ input {
   display: none;
 }
 
+.bg-grey {
+  background: #f3f3f3;
+}
+
 .bg-peach {
   background: #eeaa7b;
 }
