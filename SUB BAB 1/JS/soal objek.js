@@ -3,138 +3,195 @@
 ##### SETUP SOAL PG #######
 ###########################
 */
-const SOAL = [{
-  soal: "1. Berikut ini yang termasuk makhluk hidup (biotik), kecuali . . . .",
-  pilihan: [
-    'A.	Capung',
-    'B.	Pohon',
-    'C.	Kupu-kupu',
-    'D.	Matahari'
-  ]
-}, {
-  soal: "2. Air, tanah, dan batu termasuk kategori objek . . . .",
-  pilihan: [
-    'A.	Abiotik',
-    'B.	Biotik',
-    'C.	Biotop',
-    'D.	Makhluk hidup'
-  ]
-}, {
-  soal: "3. Berikut pernyataan objek IPA yang dipelajari yang benar adalah . . . .",
-  pilihan: [
-    'A.	Meliputi seluruh benda alam dengan luar bumi',
-    'B.	Meliputi seluruh benda alam dan bumi antariksa',
-    'C.	Meliputi seluruh benda alam dengan segala interaksinya',
-    'D.	Meliputi seluruh benda alam baik hidup maupun tidak hidup'
-  ]
-}, {
-  soal: "4. Di bawah ini adalah bagian dari ilmu IPA, kecuali . . . .",
-  pilihan: [
-    'A.	Fisika',
-    'B.	Biologi',
-    'C.	Geografi',
-    'D.	Kimia'
-  ]
-}]
 
-// membuat kunci jawaban
-const kunciJawaban = [3, 0, 3, 2]
+// soal nomor 1
+const satuA = document.getElementById("satuA");
+const satuB = document.getElementById("satuB");
+const satuC = document.getElementById("satuC");
+const satuD = document.getElementById("satuD");
 
-// deklarasi untuk menambah tombol
-let kuisJalan = 0
-let skor = 0
-let simpanJawaban = []
+satuA.addEventListener('click', function () {
+  document.getElementById("salahSatu").classList.remove("hide");
+  document.getElementById("soalDua").classList.remove("hide");
+  satuA.style.background = "red";
 
-document.addEventListener("DOMContentLoaded", function (event) {
-  setupKuis()
-});
+  satuA.disabled = true;
+  satuB.disabled = true;
+  satuC.disabled = true;
+  satuD.disabled = true;
+})
+satuB.addEventListener('click', function () {
+  document.getElementById("salahSatu").classList.remove("hide");
+  document.getElementById("soalDua").classList.remove("hide");
+  satuB.style.background = "red";
 
-function setupKuis() {
-  document.getElementById('soal').innerText = SOAL[kuisJalan]['soal']
-  document.getElementById('teksPilihan0').innerText = SOAL[kuisJalan]['pilihan'][0]
-  document.getElementById('teksPilihan1').innerText = SOAL[kuisJalan]['pilihan'][1]
-  document.getElementById('teksPilihan2').innerText = SOAL[kuisJalan]['pilihan'][2]
-  document.getElementById('teksPilihan3').innerText = SOAL[kuisJalan]['pilihan'][3]
-}
+  satuA.disabled = true;
+  satuB.disabled = true;
+  satuC.disabled = true;
+  satuD.disabled = true;
+})
+satuC.addEventListener('click', function () {
+  document.getElementById("salahSatu").classList.remove("hide");
+  document.getElementById("soalDua").classList.remove("hide");
+  satuC.style.background = "red";
 
-/*
- **************************
- ***** SETUP TOMBOL *****
- **************************
- */
+  satuA.disabled = true;
+  satuB.disabled = true;
+  satuC.disabled = true;
+  satuD.disabled = true;
+})
+satuD.addEventListener('click', function () {
+  document.getElementById("benarSatu").classList.remove("hide");
+  document.getElementById("soalDua").classList.remove("hide");
+  satuD.style.background = "green";
 
-function tombolLanjut() {
-  kuisJalan++
+  satuA.disabled = true;
+  satuB.disabled = true;
+  satuC.disabled = true;
+  satuD.disabled = true;
+})
 
-  // menjalankan fungsi simpan jawaban
-  cekJawaban()
+// soal nomor 2
+const duaA = document.getElementById("duaA");
+const duaB = document.getElementById("duaB");
+const duaC = document.getElementById("duaC");
+const duaD = document.getElementById("duaD");
 
-  // sebuah aksi ketika soal sudah selesai
-  if (kuisJalan > SOAL.length - 1) {
-    kuisSelesai()
-  }
+duaA.addEventListener('click', function () {
+  document.getElementById("benarDua").classList.remove("hide");
+  document.getElementById("soalTiga").classList.remove("hide");
+  duaA.style.background = "green";
 
-  if (kuisJalan == 3) {
-    document.getElementById('btnLanjut').innerHTML = "SELESAI";
-  }
+  duaA.disabled = true;
+  duaB.disabled = true;
+  duaC.disabled = true;
+  duaD.disabled = true;
+})
+duaB.addEventListener('click', function () {
+  document.getElementById("salahDua").classList.remove("hide");
+  document.getElementById("soalTiga").classList.remove("hide");
+  duaB.style.background = "red";
 
+  duaA.disabled = true;
+  duaB.disabled = true;
+  duaC.disabled = true;
+  duaD.disabled = true;
+})
+duaC.addEventListener('click', function () {
+  document.getElementById("salahDua").classList.remove("hide");
+  document.getElementById("soalTiga").classList.remove("hide");
+  duaC.style.background = "red";
 
-  resetPilihan()
+  duaA.disabled = true;
+  duaB.disabled = true;
+  duaC.disabled = true;
+  duaD.disabled = true;
+})
+duaD.addEventListener('click', function () {
+  document.getElementById("salahDua").classList.remove("hide");
+  document.getElementById("soalTiga").classList.remove("hide");
+  duaD.style.background = "red";
 
-  //menjalankan fungsi kuis
-  setupKuis()
-}
+  duaA.disabled = true;
+  duaB.disabled = true;
+  duaC.disabled = true;
+  duaD.disabled = true;
+})
 
-function resetPilihan() {
-  const pilihan = document.querySelector('input[name="pilihan"]:checked');
-  if (pilihan != null) {
-    pilihan.checked = false
-  }
-}
+// soal nomor 3
+const tigaA = document.getElementById("tigaA");
+const tigaB = document.getElementById("tigaB");
+const tigaC = document.getElementById("tigaC");
+const tigaD = document.getElementById("tigaD");
 
-// aksi ketika soal sudah selesai dijawab
-function kuisSelesai() {
-  nilai();
+tigaA.addEventListener('click', function () {
+  document.getElementById("salahTiga").classList.remove("hide");
+  document.getElementById("soalEmpat").classList.remove("hide");
+  tigaA.style.background = "red";
 
-  if (skor >= 0) {
-    document.getElementById('nilai').innerHTML = "ANDA BENAR " + skor + " dari 4";
-    document.getElementById('ket').innerHTML = "Silahkan lanjutkan ke aktivitas berikutnya dengan menekan tombol dibawah ini";
-    document.getElementById('tombolLanjut').classList.remove('hide');
-  } else {
-    document.getElementById('nilai').innerHTML = "ANDA BENAR " + skor + " dari 4";
-    document.getElementById('ket').innerHTML = "Silahkan baca kembali materi Objek IPA";
-    document.getElementById('tombolKembali').classList.remove('hide');
-  }
+  tigaA.disabled = true;
+  tigaB.disabled = true;
+  tigaC.disabled = true;
+  tigaD.disabled = true;
+})
+tigaB.addEventListener('click', function () {
+  document.getElementById("salahTiga").classList.remove("hide");
+  document.getElementById("soalEmpat").classList.remove("hide");
+  tigaB.style.background = "red";
 
-  document.getElementById('soalMuncul').classList.add('hide')
-  document.getElementById('soalSelesai').classList.remove('hide')
-  return
-}
+  tigaA.disabled = true;
+  tigaB.disabled = true;
+  tigaC.disabled = true;
+  tigaD.disabled = true;
+})
+tigaC.addEventListener('click', function () {
+  document.getElementById("salahTiga").classList.remove("hide");
+  document.getElementById("soalEmpat").classList.remove("hide");
+  tigaC.style.background = "red";
 
-// aksi untuk membuat nilai
+  tigaA.disabled = true;
+  tigaB.disabled = true;
+  tigaC.disabled = true;
+  tigaD.disabled = true;
+})
+tigaD.addEventListener('click', function () {
+  document.getElementById("benarTiga").classList.remove("hide");
+  document.getElementById("soalEmpat").classList.remove("hide");
+  tigaD.style.background = "green";
 
-function cekJawaban() {
-  const jawaban = document.querySelector('input[name="pilihan"]:checked');
-  if (jawaban != null) {
-    simpanJawaban.push(parseInt(jawaban.getAttribute('data-id')))
-    console.log(simpanJawaban)
-  } else {
-    simpanJawaban.push()
-  }
-}
+  tigaA.disabled = true;
+  tigaB.disabled = true;
+  tigaC.disabled = true;
+  tigaD.disabled = true;
+})
 
-function nilai() {
-  for (var i = 0; i < simpanJawaban.length; i++) {
-    if (simpanJawaban[i] == kunciJawaban[i]) {
-      skor += 1
-    }
-  }
-}
+// soal nomor 4
+const empatA = document.getElementById("empatA");
+const empatB = document.getElementById("empatB");
+const empatC = document.getElementById("empatC");
+const empatD = document.getElementById("empatD");
 
-// function btnKembali(){
-//   kuisJalan--
-//   setupKuis()
-// }
+empatA.addEventListener('click', function () {
+  document.getElementById("salahEmpat").classList.remove("hide");
+  document.getElementById("hal").classList.remove("disable");
+  empatA.style.background = "red";
+
+  empatA.disabled = true;
+  empatB.disabled = true;
+  empatC.disabled = true;
+  empatD.disabled = true;
+})
+empatB.addEventListener('click', function () {
+  document.getElementById("salahEmpat").classList.remove("hide");
+  document.getElementById("hal").classList.remove("disable");
+  empatB.style.background = "red";
+
+  empatA.disabled = true;
+  empatB.disabled = true;
+  empatC.disabled = true;
+  empatD.disabled = true;
+})
+empatC.addEventListener('click', function () {
+  document.getElementById("benarEmpat").classList.remove("hide");
+  document.getElementById("hal").classList.remove("disable");
+  empatC.style.background = "green";
+
+  empatA.disabled = true;
+  empatB.disabled = true;
+  empatC.disabled = true;
+  empatD.disabled = true;
+})
+empatD.addEventListener('click', function () {
+  document.getElementById("salahEmpat").classList.remove("hide");
+  document.getElementById("hal").classList.remove("disable");
+  empatD.style.background = "red";
+
+  empatA.disabled = true;
+  empatB.disabled = true;
+  empatC.disabled = true;
+  empatD.disabled = true;
+})
+
 
 // Button Selesai membaca petunjuk
 const btnPetunjuk = document.querySelector('#btnPetunjuk');

@@ -49,7 +49,7 @@
                             <li>Tipe soal pilihan ganda.</li>
                             <li>Jumlah soal ada 4 butir.</li>
                             <li>Pilihlah satu jawaban yang menurut anda benar.</li>
-                            <li>Tekan tombol lanjut untuk berganti soal selanjutnya.</li>
+                            <li>Tombol selanjutnya akan muncul ketika kalian telah selesai menjawab semua.</li>
                             <!-- <li>Jika anda menjawab benar kurang dari 3 maka anda diharuskan mengulang kembali materi yang dipelajari </li> -->
                         </ol>
                         <div class="btn-soal" id="btnPetunjuk">
@@ -57,43 +57,60 @@
                         </div>
                     </div>
                     <div class="card-pertanyaan hide" id="soalMuncul">
-                        <h3 id="soal"></h3>
-                        <div class="card-pilihan">
-                            <input type="radio" name="pilihan" data-id="0" id="pilihan0">
-                            <label for="pilihan0" id="teksPilihan0"></label>
+                        <div class="card-soal-isi" id="soalSatu">
+                            <h4>1. Berikut ini yang termasuk makhluk hidup (biotik), kecuali . . . .</h4>
+                            <button id="satuA">Capung</button>
+                            <button id="satuB">Pohon</button>
+                            <button id="satuC">Kupu-Kupu</button>
+                            <button id="satuD">Matahari</button>
+
+                            <section class="card bg-navy hide" id="benarSatu">JAWBAN ANDA TEPAT</section>
+                            <section class="card bg-navy hide" id="salahSatu">JAWBAN ANDA SALAH <br>
+                                <p>Jawaban yang benar adalah Matahari, Karena Matahari termasuk makhluk tidak hidup
+                                    (Abiotik).</p>
+                            </section>
                         </div>
-                        <div class="card-pilihan">
-                            <input type="radio" name="pilihan" data-id="1" id="pilihan1">
-                            <label for="pilihan1" id="teksPilihan1"></label>
+                        <div class="card-soal-isi hide" id="soalDua">
+                            <h4>2. Air, tanah, dan batu termasuk kategori objek . . . .</h4>
+                            <button id="duaA">Abiotik</button>
+                            <button id="duaB">Biotik</button>
+                            <button id="duaC">Biotop</button>
+                            <button id="duaD">Makhluk Hidup</button>
+
+                            <section class="card bg-navy hide" id="benarDua">JAWBAN ANDA TEPAT</section>
+                            <section class="card bg-navy hide" id="salahDua">JAWBAN ANDA SALAH <br>
+                                <p>Jawaban yang benar adalah abiotik, karena Air, Tanah, dan Batu tidak memiliki ciri
+                                    hidup.</p>
+                            </section>
                         </div>
-                        <div class="card-pilihan">
-                            <input type="radio" name="pilihan" data-id="2" id="pilihan2">
-                            <label for="pilihan2" id="teksPilihan2"></label>
+                        <div class="card-soal-isi hide" id="soalTiga">
+                            <h4>3. Berikut pernyataan objek IPA yang dipelajari yang benar adalah . .</h4>
+                            <button id="tigaA">Meliputi seluruh benda alam dengan luar bumi</button><br>
+                            <button id="tigaB">Meliputi seluruh benda alam dan bu mi antariksa</button><br>
+                            <button id="tigaC">Meliputi seluruh benda alam dengan segala interaksinya</button><br>
+                            <button id="tigaD">Meliputi seluruh benda alam baik hidup maupun tidak hidup</button>
+
+                            <section class="card bg-navy hide" id="benarTiga">JAWBAN ANDA TEPAT</section>
+                            <section class="card bg-navy hide" id="salahTiga">JAWBAN ANDA SALAH</section>
                         </div>
-                        <div class="card-pilihan">
-                            <input type="radio" name="pilihan" data-id="3" id="pilihan3">
-                            <label for="pilihan3" id="teksPilihan3"></label>
-                        </div>
-                        <div class="btn-soal">
-                            <button id="btnLanjut" onclick="tombolLanjut()">LANJUT</button>
-                        </div>
-                    </div>
-                    <div class="card-nilai hide" id="soalSelesai">
-                        <center>
-                            <h2 id="nilai"></h2>
-                            <span id="ket"></span>
-                        </center> <br>
-                        <div class="btn-soal">
-                            <button class="hide" id="tombolKembali"><a
-                                    href="/SUB BAB 1/HTML/1.3 objek dalam IPA.html">MATERI OBJEK IPA</a></button>
-                            <button class="hide" id="tombolLanjut"><a href="login kuis.html">KUIS SUBBAB
-                                    1</a></button>
+                        <div class="card-soal-isi hide" id="soalEmpat">
+                            <h4>4. Di bawah ini adalah bagian dari ilmu IPA, kecuali . . . .</h4>
+                            <button id="empatA">Fisika</button>
+                            <button id="empatB">Biologi</button>
+                            <button id="empatC">Sosiologi</button>
+                            <button id="empatD">Kimia</button>
+
+                            <section class="card bg-navy hide" id="benarEmpat">JAWBAN ANDA TEPAT</section>
+                            <section class="card bg-navy hide" id="salahEmpat">JAWBAN ANDA SALAH <br>
+                                <p>Jawaban yang benar adalah Geografi, karena Soiologi bukan termasuk bagian dari Ilmu
+                                    IPA, Sosiologi termasuk bagian dari Ilmu Pengetahuan Sosial. </p>
+                            </section>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="container-halaman">
-                <a class="halaman disable" href="">Selanjutnya</a>
+                <a class="halaman disable" href="login kuis.html" id="hal">Selanjutnya</a>
             </div>
         </div>
     </div>

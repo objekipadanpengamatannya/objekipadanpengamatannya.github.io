@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
 body {
   max-width: 100vw;
   max-height: 100vh;
@@ -110,7 +114,7 @@ aside a:hover {
 }
 
 .container-content {
-  height: 75.1vh;
+  height: 75vh;
   overflow-x: hidden;
   overflow-y: auto;
   border: 0.5vh double #66b9bf;
