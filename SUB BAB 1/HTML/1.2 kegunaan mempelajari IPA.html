@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="/CSS/master.css" />
+    <link rel="stylesheet" href="/SUB BAB 1/CSS/subbabsatu.css">
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/IMAGE/favicon.png">
@@ -76,12 +77,23 @@
                     </center>
                 </div>
                 <div class="kotak-judul"><img src="/IMAGE/video.png" alt="vidio">&nbsp;&nbsp;<b>Ayo Mengamati</b></div>
-                <div class="card bg-peach"></div>
-                <div class="kotak-judul"><img src="/IMAGE/diskusi.png" alt="pembahasan">&nbsp;&nbsp;<b>Pembahasan</b>
+                <div class="card bg-peach">
+                    <center>
+                        <video id="videoManfaat" style="width: 70%;" controls="false">
+                            <source src="/SUB BAB 1/VIDEO/Manfaat Mempelajari Ipa.m4v" type="video/mp4">
+                        </video>
+                    </center>
+                </div>
+                <div class="kotak-judul"><img src="/IMAGE/diskusi.png" alt="pembahasan">&nbsp;&nbsp;<b>Kesimpulan</b>
                 </div>
                 <div class="simpulan">
-                    <p>
-                        &nbsp; &nbsp; &nbsp; &nbsp; Dengan contoh api tersebut maka dari
+                    <span id="qw">
+                        <center>
+                            <b style="color: green;">KESIMPULAN AKAN MUNCUL SETELAH ANDA MENYELESAIKAN PERTANYAAN</b>
+                        </center>
+                    </span>
+                    <section id="we" class="hide">
+                        &nbsp; &nbsp; &nbsp; &nbsp; Dengan contoh tersebut maka dari
                         itu mempelajari Ilmu Pengetahuan Alam sangat lah penting, karena
                         dengan mempelajari IPA kita dapat memahami sifat-sifat dari alam
                         untuk digunakan pada kehidupan sehari-hari seperti berikut ini:
@@ -99,16 +111,87 @@
                                 ? dengan itu
                                 kita dapat menentukan tanaman yang cocok untuk ditanam pada suatu wilayah tertentu.</li>
                         </ol>
-                    </p>
+                    </section>
+                </div>
+                <div class="kotak-judul"><img src="/IMAGE/diskusi.png" alt="pembahasan">&nbsp;&nbsp;<b>Pertanyaan</b>
+                </div>
+                <div class="card bg-navy-border">
+                    <span class="" id="qw1">
+                        <center>
+                            <b style="color: green;">PERTANYAAN AKAN MUNCUL SETELAH ANDA MENONTON VIDEO</b>
+                        </center>
+                    </span>
+                    <!-- Setup Petunjuk -->
+                    <section class="hide" id="petunjukHilang">
+                        <p><b>PETUNJUK</b></p>
+                        1. Jawablah kolom yang kosong dengan huruf <b>A,B,C atau D</b> sesuai pilihan yang tersedia.
+                        <br>
+                        2. Tekan tombol <b>cek jawaban</b> untuk memeriksa jawban apakah benar atau salah. <br>
+                        3. Jika jawaban <b>benar</b>, maka kotak akan berwarna <b style="color: green;">hijau</b>.
+                        <br>
+                        4. jika jawaban <b>salah</b>, maka kotak akan berwarna <b style="color: red;">merah</b>.
+                        <br>
+                        5. Tekan tombol <b>ulang</b> untuk mereset jawaban. <br>
+                        6. Jika seluruh jawaban benar maka akan muncul tombol <b>materi selanjutnya</b>, maka materi
+                        selanjutnya dapat
+                        diakses.
+                        <br><br>
+                        <div class="btn-soal" id="btnPetunjuk">
+                            <button>Selesai Membaca</button>
+                        </div>
+                    </section>
+                    <!-- Setup pertanyaan -->
+                    <section class="hide" id="soalMuncul">
+                        <h4>Pasangkan pernyataan berikut dengan benar!</h4>
+                        <div class="isi">
+                            <div class="pilihan">
+                                <p><b>Pilihan Jawaban</b></p>
+                                <ol>
+                                    <li>Memahami berbagai hal disekitar kita</li>
+                                    <li>Meningkatkan kualitas hidup</li>
+                                    <li>Menyelesaikan masalah</li>
+                                    <li>Berpikir logis dan sistematis</li>
+                                </ol>
+                            </div>
+                            <div class="soal">
+                                <p><b>Soal</b></p>
+                                <form name="soal" id="ulang">
+                                    1. Membuat air yang semulanya keruh menjadi bersih merupakan contoh dari &nbsp;
+                                    <input type="text" name="jwb1" class="jawab" id="no1" maxlength="1"
+                                        placeholder="..." autocomplete="off">
+                                    <br>
+                                    2. Seorang profesor sedang melakukan penelitian kemudian beliau menyimpulkan
+                                    hasil penelitiannya
+                                    kegiatan yang dilakukan profesor merupakan contoh dari &nbsp;
+                                    <input type="text" name="jwb2" class="jawab" id="no2" maxlength="1"
+                                        placeholder="..." autocomplete="off">
+                                    <br>
+                                    3. Doni dapat menentukan tanaman yang cocok ditanam untuk didataran tinggi, hal
+                                    tersebut merupakan
+                                    contoh dari &nbsp;
+                                    <input type="text" name="jwb3" class="jawab" id="no3" maxlength="1"
+                                        placeholder="..." autocomplete="off">
+                                </form>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="btn-soal">
+                            <button onclick="cekJawaban()">CEK JAWABAN</button>
+                            <button onclick="ulang()" onchange="a()">ULANG</button>
+                            <!-- <button id="muncul"><a href="/SUB BAB 1/HTML/1.3 objek dalam IPA.html">LANJUT MATERI
+                                    BERIKUTNYA</a></button> -->
+                        </div>
+                    </section>
                 </div>
             </div>
             <div class="container-halaman">
                 <a class="halaman" href="1.1 penyelidikan.html">Sebelumnya</a>
-                <a class="halaman" href="1.2.1 pertanyaan kegunaan.html">Selanjutnya</a>
+                <a class="halaman hide" id="muncul" href="1.3 objek dalam IPA.html">Selanjutnya</a>
             </div>
         </div>
     </div>
     <script src="/JS/master.js"></script>
+    <script src="../JS/kegunaan.js"></script>
 </body>
 
 </html>
