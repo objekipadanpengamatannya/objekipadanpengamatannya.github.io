@@ -4,7 +4,7 @@
  *******************
  */
 
-const videoIlmu = document.getElementById("videoilmu");
+const videoIlmu = document.getElementById("videoIlmu");
 
 videoIlmu.onended = function () {
     document.getElementById("qw").classList.add("hide");
