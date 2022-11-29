@@ -169,20 +169,21 @@
                 <div class="kotak-judul"><img src="/IMAGE/lamp.png" alt="pertanyaan">&nbsp;&nbsp;<b>Petanyaan</b>
                 </div>
                 <div class="card-border-blue">
-                    <section id="" class="hide">
+                    <section id="ket">
                         <center>
                             <b style="color: green;">LATIHAN AKAN MUNCUL SETELAH ANDA MENONTON VIDIO</b>
                         </center>
                     </section>
-                    <section id="">
+                    <!-- SETUP AWAL SOAL 1 -->
+                    <section class="hide" id="soal">
                         <div class="card-soal-isi" id="soalSatu">
-                            <!--SETUP AWAL SOAL 1-->
+                            <!--SETUP AWAL ISI SOAL 1-->
                             <span>
                                 1. Mempelajari tentang aspek mendasar alam, misalnya materi, energi,
                                 gaya, gerak, panas, cahaya, dan berbagai gejala alam fisik lainnya merupakan pengertian
                                 dari ?
                             </span>
-                            <!--SETUP AKHIR SOAL 1-->
+                            <!--SETUP AKHIR ISI SOAL 1-->
                             <!--SETUP AWAL PILIHAN 1-->
                             <br>
                             <button id="btnSatuA">FISIKA</button>
@@ -191,47 +192,43 @@
                             <button id="btnSatuD">ILMU BUMI</button>
                             <!--SETUP AKHIR PILIHAN 1-->
                             <!--SETUP AWAL JAWABAN 1 -->
-                            <section class="hide card bg-biru" id="benarSatu">JAWABAN ANDA BENAR</section>
+                            <section class="hide card bg-biru" id="benarSatu"><b>JAWABAN ANDA BENAR</b></section>
                             <section class="hide card bg-biru" id="salahSatu">
-                                <b>JAWABAN ANDA SALAH, JAWABAN YANG BENAR ADALAH PENGAMATAN</b> <br><br>
-                                <p>Pengamatan adalah kegiatan mengamati suatu objek dengan menggunakan panca indra
-                                    seperti mata, telinga, mulut serta alat
-                                    peraga berupa penggaris, kaca pembesar, teropong, dan lain sebagainya.</p>
-                                <center>
-                                    <img src="/SUB BAB 1/IMAGE/pengamatan.png" alt="gambar objek" style="width: 20%;">
-                                    <img src="/SUB BAB 1/IMAGE/mengamati alat.png" alt="gambar objek"
-                                        style="width: 20%;">
-                                </center>
+                                <b>JAWABAN ANDA SALAH, JAWABAN YANG BENAR ADALAH FISIKA</b> <br><br>
+                                <p>Seperti Penjelasan Sebelumnya <b>Fisika</b>, mempelajari tentang aspek mendasar
+                                    alam,
+                                    misalnya materi, energi, gaya, gerak, panas, cahaya, dan berbagai
+                                    gejala alam fisik lainnya.</li>
+                                </p>
                             </section>
                             <!--SETUP AKHIR JAWABAN 1 -->
                         </div>
+                        <!-- SETUP AKHIR SOAL 1 -->
                     </section>
-                    <section id="">
-                        <div class="card-soal-isi">
+                    <!-- SETUP AWAL SOAL 2 -->
+                    <section>
+                        <div class="card-soal-isi hide" id="soalDua">
+                            <!-- SETUP AWAL ISI SOAL 2 -->
                             <span> <br>
                                 2. Berikut pernyataan objek IPA yang dipelajari yang benar adalah . . . .
                             </span>
+                            <!-- SETUP AKHIR ISI SOAL 2 -->
                             <br>
+                            <!-- SETUP AWAL PILIHAN 2 -->
                             <button id="btnDuaA">Meliputi seluruh benda alam dengan luar bumi</button> <br>
                             <button id="btnDuaB">Meliputi seluruh benda alam dan bu mi antariksa</button> <br>
                             <button id="btnDuaC">Meliputi seluruh benda alam dengan segala interaksinya</button> <br>
                             <button id="btnDuaD">Meliputi seluruh benda alam baik hidup maupun tidak hidup</button>
-
-
-                            <section class="hide card bg-biru" id="benarDua">JAWABAN ANDA BENAR</section>
+                            <!-- SETUP AKHIR PILIHAN 2 -->
+                            <!-- SETUP AWAL KETERANGAN JAWABAN 2 -->
+                            <section class="hide card bg-biru" id="benarDua"><b>JAWABAN ANDA BENAR</b></section>
                             <section class="hide card bg-biru" id="salahDua">
                                 <b>JAWABAN ANDA SALAH, JAWABAN YANG BENAR ADALAH INFERENSI</b> <br><br>
-                                <p>Inferensi adalah tindakan yang dilakukan untuk mendapatkan kesimpulan berdasarkan
-                                    apa
-                                    yang sudah diketahui atau
-                                    didapatkan dari hasil pengamatan.</p>
-
-                                <center>
-                                    <img src="/SUB BAB 1/IMAGE/inferensi.png" alt="gambar objek" style="width: 20%;">
-                                </center>
                             </section>
+                            <!-- SETUP AKHIR KETERANGAN JAWABAN 2 -->
                         </div>
                     </section>
+                    <!-- SETUP AKHIR SOAL 2 -->
                 </div>
             </div>
             <div class="container-halaman">
@@ -241,7 +238,6 @@
     </div>
     <script src="/JS/master.js"></script>
     <script src="/SUB BAB 1/JS/objek2.js"></script>
-    <script src="/SUB BAB 1/JS/ilmuipa.js"></script>
 </body>
 
 </html>

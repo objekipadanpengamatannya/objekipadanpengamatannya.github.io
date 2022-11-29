@@ -1,4 +1,20 @@
 /*
+ *******************
+ *** SETUP Video ***
+ *******************
+ */
+
+const videoIlmu = document.getElementById("videoIlmu");
+
+videoIlmu.onended = function () {
+  document.getElementById("qw").classList.add("hide");
+  document.getElementById("we").classList.remove("hide");
+  // setup memunculkan soal latihan
+  document.getElementById("ket").classList.add("hide");
+  document.getElementById("soal").classList.remove("hide");
+};
+
+/*
  **********************************
  ***** SETUP SOAL OBJEK 1 *********
  **********************************
@@ -13,7 +29,7 @@ const btnSatuD = document.getElementById("btnSatuD");
 
 btnSatuA.addEventListener('click', function () {
   document.getElementById("benarSatu").classList.remove("hide");
-  // document.getElementById("soalDua").classList.remove("hide");
+  document.getElementById("soalDua").classList.remove("hide");
   btnSatuA.style.background = "green";
 
   btnSatuA.disabled = true;
@@ -23,7 +39,7 @@ btnSatuA.addEventListener('click', function () {
 })
 btnSatuB.addEventListener('click', function () {
   document.getElementById("salahSatu").classList.remove("hide");
-  // document.getElementById("soalDua").classList.remove("hide");
+  document.getElementById("soalDua").classList.remove("hide");
   btnSatuB.style.background = "red";
 
   btnSatuA.disabled = true;
@@ -33,7 +49,7 @@ btnSatuB.addEventListener('click', function () {
 })
 btnSatuC.addEventListener('click', function () {
   document.getElementById("salahSatu").classList.remove("hide");
-  // document.getElementById("soalDua").classList.remove("hide");
+  document.getElementById("soalDua").classList.remove("hide");
   btnSatuC.style.background = "red";
 
   btnSatuA.disabled = true;
@@ -43,7 +59,7 @@ btnSatuC.addEventListener('click', function () {
 })
 btnSatuD.addEventListener('click', function () {
   document.getElementById("salahSatu").classList.remove("hide");
-  // document.getElementById("soalDua").classList.remove("hide");
+  document.getElementById("soalDua").classList.remove("hide");
   btnSatuD.style.background = "red";
 
   btnSatuA.disabled = true;
