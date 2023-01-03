@@ -15,24 +15,32 @@
         <h1>DATA DIRI</h1>
         <form method="post">
             <div class="txt_field">
-                <input type="text" required>
+                <input data-input="nama" type="text" required>
                 <span></span>
                 <label>Nama Lengkap</label>
             </div>
-            <select class="qq" name="kelas" id="kelas">
+            <select data-input="kelas" class="qq" name="kelas" id="kelas">
                 <option value="0" selected="selected">--PILIH KELAS--</option>
                 <option value="1">VIIA</option>
                 <option value="2">VIIB</option>
                 <option value="3">VIIC</option>
             </select>
-            <div class="txt_field">
-                <input type="password" required>
+            <div data-input="sekolah" class="txt_field">
+                <input type="text" required>
                 <span></span>
                 <label>Asal Sekolah</label>
             </div>
-            <input type="submit" value="Masuk">
+            <input data-input="masuk" type="submit" value="Masuk">
         </form>
     </div>
+    <!-- FIREBASE PROJECT CORE -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <!-- MEMANGGIL FIREBASE REALTIME -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <!-- MEMANGGIL KONFIGURASI DATABASE -->
+    <script src="/JS/firebase-config.js"></script>
+    <!-- MEMANGGIL -->
+    <script src="/JS/firebase-main.js"></script>
 </body>
 
 </html>

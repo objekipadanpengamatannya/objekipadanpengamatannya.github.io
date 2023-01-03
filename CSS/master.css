@@ -220,7 +220,7 @@ td {
   font-size: 1em;
 }
 
-.simpulan>input {
+.simpulan>span>input {
   text-align: center;
   width: 10%;
 }
@@ -252,6 +252,7 @@ td {
   font-size: 1em;
 }
 
+
 .card {
   padding: 1em;
   margin: 1em 0;
@@ -264,7 +265,6 @@ td {
 }
 
 .card-petunjuk {
-  width: 98%;
   border: 0.2vw dotted #07889b;
   padding: 1%;
 }
@@ -302,6 +302,15 @@ td {
   border: 4px double #07889b;
   padding: 1em;
   margin: 1em 0;
+}
+
+.card-informasi {
+  background-color: #d8e3e4;
+  padding: 1em 2em;
+  font-size: 1rem;
+  color: black;
+  border-radius: 5px;
+  margin: 10px 0;
 }
 
 input {
