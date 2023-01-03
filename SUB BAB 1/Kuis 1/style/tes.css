@@ -1,0 +1,346 @@
+@font-face {
+    font-family: Scheherazade;
+    src: url(../font/Scheherazade-Regular.ttf);
+}
+
+.jdl1,
+.jdl2,
+.jdl3 {
+    color: var(--head1txt);
+    padding: 8px 0;
+    text-align: left;
+}
+
+.jdl1 {
+    background-color: var(--head1);
+}
+
+.jdl2,
+.jdl3 {
+    background-color: var(--head2);
+}
+
+.judul {
+    height: 10vh;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    text-align: justify;
+}
+
+.petunjuk,
+form {
+    flex-basis: 50%;
+    margin: 30px 10px;
+    background-color: var(--head1txt);
+    border-radius: 5px;
+    border: 2px solid var(--head2);
+}
+
+.petunjuk {
+    padding: 20px;
+    height: max-content;
+}
+
+.petunjuk ol {
+    margin: 10px 20px;
+}
+
+form {
+    padding: 20px 3%;
+}
+
+.input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    outline: none;
+    font-size: 14px;
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 5px;
+}
+
+.input:focus {
+    box-shadow: 0 4px 8px 0 rgba(153, 153, 153, 0.418);
+    border-left: 8px solid var(--head2);
+}
+
+.btn {
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.kembali,
+.mulai {
+    width: 48%;
+    padding: 10px 0;
+}
+
+.kembali {
+    background-color: rgb(230, 0, 0);
+    color: var(--head1txt);
+}
+
+.kembali:hover {
+    background-color: rgb(209, 0, 0);
+}
+
+.mulai,
+.prev,
+.next,
+.selesai {
+    text-align: center;
+    background-color: var(--head3);
+    color: var(--head1txt);
+}
+
+.mulai:hover,
+.prev:hover,
+.next:hover,
+.selesai:hover {
+    background-color: var(--btnhvr);
+}
+
+/* #time {
+    border: 2px solid #07575B;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: 35px;
+    margin-bottom: -60px;
+    margin-top: 50px;
+} */
+
+.divSoal,
+.papanNo {
+    margin: 32px 5px;
+    background-color: var(--head1txt);
+    border-radius: 5px;
+    border: 2px solid var(--head2);
+}
+
+.divSoal {
+    flex-basis: 75%;
+    height: 65vh;
+    padding: 15px;
+    overflow: auto;
+}
+
+.papanNo {
+    flex-basis: 25%;
+    height: max-content;
+}
+
+hr {
+    margin: 10px 0;
+}
+
+/* radio button */
+
+.bg_pilihan {
+    width: max-content;
+    position: relative;
+    margin: 15px 0 5px 0;
+    display: inline-block;
+    padding: -5px;
+    cursor: pointer !important;
+    display: flex;
+    font-size: 1.2em;
+}
+
+.bg_pilihan input {
+    position: absolute;
+    margin: 5px;
+    padding: 0;
+    visibility: hidden;
+}
+
+.bg_pilihan .textnya {
+    margin-left: 30px;
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.nav_pilihan {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--head1);
+    background-color: #ccf0d8;
+}
+
+.nav_pilihan:after {
+    content: "";
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 14px;
+    height: 14px;
+    background: var(--head1);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.nav_pilihan {
+    border-radius: 50%;
+}
+
+.nav_pilihan:after {
+    border-radius: 50%;
+}
+
+input[type="radio"]:checked+span .nav_pilihan:after {
+    display: block;
+}
+
+.prev,
+.next {
+    width: 20%;
+    margin-top: 20px;
+    padding: 7px 0;
+    display: inline-block;
+}
+
+.next {
+    margin-left: 10px;
+}
+
+/* nomor soal */
+.bg_soal {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.bg_soal span {
+    padding: 2px;
+    display: inline-block;
+    width: 60px;
+    margin-bottom: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.soal_nav {
+    width: 45px;
+    height: 45px;
+    padding: 2px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--head1);
+    border-radius: 50%;
+    float: left;
+    margin-left: 8.5%;
+    margin-top: 10px;
+    box-sizing: border-box;
+    font-size: 1.2em;
+}
+
+.soal_nav:hover {
+    cursor: pointer;
+    background-color: var(--head2);
+    color: var(--head1txt);
+}
+
+.belum {
+    background-color: var(--head1txt);
+    border: 1px solid var(--head1);
+}
+
+.clear {
+    clear: both;
+}
+
+.ket {
+    width: 100%;
+    margin-left: 8.5%;
+    margin-top: 15px;
+}
+
+.ket>span {
+    margin-top: 5px;
+}
+
+.sudah {
+    background-color: var(--head3);
+    color: var(--head1txt);
+}
+
+.selesai {
+    padding: 5px 0;
+    width: 90%;
+}
+
+.hasill {
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.hasil {
+    background-color: white;
+    border: 2px solid var(--head2);
+    border-radius: 5px;
+    padding: 15px 25px;
+}
+
+.t_hasil {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.hilang {
+    display: none;
+}
+
+.kanan_text {
+    text-align: right;
+    font-family: 'Scheherazade', sans-serif !important;
+    font-size: 25px;
+}
+
+.disable {
+    background-color: rgba(187, 187, 187, 0.959) !important;
+    color: white;
+    cursor: default !important;
+    border: black;
+}
+
+mjx-container {
+    display: inline-block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.hasilnya {
+    border-radius: 5px;
+    border: 2px solid var(--head2);
+    width: 40%;
+    background-color: white;
+    margin: 30px auto;
+}
+
+.hasilnya>table {
+    font-size: 19px;
+}
+
+table td {
+    padding: 10px;
+}

@@ -1,0 +1,26 @@
+/*ganti warna*/
+:root {
+    --color1: #07575B;
+    --colortxt: white;
+    --head2: #07575B;
+    --head3: #07575B;
+    --btnhvr: #043436;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Quicksand;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/bg-kuis.jpg);
+    background-size: cover;
+}
+
+a {
+    text-decoration: none !important;
+}

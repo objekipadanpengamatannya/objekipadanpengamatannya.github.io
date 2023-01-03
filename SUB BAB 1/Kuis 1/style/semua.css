@@ -1,0 +1,115 @@
+/*ganti warna*/
+/* :root {
+    --head1: #07575B;
+    --head1txt: white;
+    --head2: #07575B;
+    --head3: #07575B;
+    --btnhvr: #043436;
+} */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Quicksand;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/bg-kuis.jpg);
+    background-size: cover;
+}
+
+a {
+    text-decoration: none !important;
+} */
+
+.back,
+.help {
+    float: left;
+    position: absolute;
+    cursor: pointer;
+}
+
+.back img,
+.help img {
+    width: 40px;
+    margin: 13px 0px 0px 13px;
+}
+
+.nav-top {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid rgba(179, 179, 179, 0.767);
+    z-index: 100;
+
+}
+
+.nav-top>.top {
+    font-size: 20px;
+    padding: 12px 0;
+    font-weight: 400;
+    text-decoration: none;
+    display: inline;
+    list-style-type: none;
+    text-align: center;
+    flex-grow: 1;
+    color: var(--head3) !important;
+}
+
+.nav-top>.top>a {
+    color: var(--head3) !important;
+}
+
+.nav-top>.top:hover {
+    background-color: var(--head2);
+    cursor: pointer;
+    font-weight: 600;
+    color: white !important;
+}
+
+.nav-top>.nav-top-active {
+    border-bottom: 3px solid var(--head3);
+    font-weight: 600;
+}
+
+.nav-isi {
+    padding: 30px 50px;
+    background-color: white;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.hilang {
+    display: none;
+}
+
+.setengah {
+    width: 80%;
+    margin: 1px auto;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .back img,
+    .help img {
+        width: 30px;
+        margin: 13px 0 0 10px
+    }
+
+    .bg-nav {
+        width: 90%;
+        margin: 10px auto;
+        font-size: 14px;
+    }
+
+    .nav-isi {
+        padding: 20px 40px;
+    }
+}

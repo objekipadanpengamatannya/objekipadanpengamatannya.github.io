@@ -1,0 +1,311 @@
+/* CSS DESKTOP */
+.sideNavDisplay {
+    display: none;
+}
+
+.btnSide {
+    display: none;
+}
+
+.bar_samping {
+    width: 18%;
+    height: 100vh;
+    background-color: #b9e7d3;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+    padding-top: 10px;
+    color: var(--head1);
+    float: left;
+    position: fixed;
+    overflow: auto;
+    padding-bottom: 40px;
+}
+
+.bar_samping a {
+    text-decoration: none;
+    color: var(--head1);
+}
+
+.logo {
+    float: none;
+    margin: 0;
+    font-size: 15px;
+    text-align: center;
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+
+.logo img {
+    width: 20%;
+    margin-bottom: 5%;
+}
+
+hr {
+    margin-bottom: 10px;
+}
+
+.listMateri {
+    padding-left: 10px;
+}
+
+.dropdown-btn,
+.peng {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--head1);
+    display: block;
+    border: none;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+}
+
+.peng {
+    margin-bottom: 5px;
+}
+
+.dropdown-btn:hover,
+.peng:hover {
+    font-weight: 700;
+}
+
+.dropdown-btn img {
+    /* float: right; */
+    padding-left: 8px;
+    width: 20px;
+}
+
+.active {
+    background-color: #369d70;
+    color: white !important;
+    font-weight: 700;
+}
+
+.aktif {
+    background-color: #369d70;
+    color: white !important;
+    font-weight: 700;
+}
+
+.dropdown-container {
+    display: none;
+}
+
+.dropdown-container,
+.dropdown-containerr {
+    background-color: #a6dbc4;
+    padding-bottom: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.dropdown-container a,
+.dropdown-containerr a {
+    color: var(--head1) !important;
+    padding: 5px 8px 5px 15px;
+    display: block;
+}
+
+.dropdown-container a:hover,
+.dropdown-containerr a:hover {
+    font-weight: 700;
+}
+
+.active2 {
+    background-color: white;
+    font-weight: 900;
+}
+
+.isi {
+    float: right;
+    width: 82%;
+    height: fit-content;
+}
+
+.jdl1,
+.jdl2,
+.jdl3 {
+    color: var(--head1txt);
+    padding: 8px 0;
+    text-align: center;
+}
+
+.jdl1 {
+    background-color: var(--head1);
+}
+
+.jdl2,
+.jdl3 {
+    background-color: var(--head2);
+}
+
+.back2 {
+    float: left;
+    position: relative;
+    cursor: pointer;
+    top: 0;
+}
+
+.back2 img {
+    width: 40px;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+.isi2 {
+    padding: 10px 15px;
+}
+
+.materinya {
+    text-align: justify;
+    background-color: white;
+    border-radius: 8px;
+    border: 2px solid var(--head2);
+    padding: 15px;
+    height: 78vh;
+    margin-bottom: 15px;
+    overflow: auto;
+}
+
+.materinya img {
+    width: 25%;
+    margin: 10px 0;
+}
+
+.prf {
+    text-indent: 1.5em;
+    margin-top: 20px;
+}
+
+.nav_bawah {
+    color: white;
+    background-color: #1fb373;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.navAktif {
+    background-color: var(--head1);
+}
+
+.tuju {
+    font-weight: bold;
+    color: white;
+    background-color: var(--btnhvr);
+    width: fit-content;
+    padding: 8px;
+    border-radius: 8px 8px 0 0;
+}
+
+.tuju2 {
+    background-color: #cdffe9;
+    padding: 12px;
+    border-radius: 0 0 8px 8px;
+    border: 2px solid var(--btnhvr);
+    margin-bottom: 16px;
+}
+
+.dis {
+    background-color: gray;
+}
+
+/* CSS HANDPHONE */
+@media screen and (max-width: 900px) {
+    .bar_samping {
+        display: none;
+    }
+
+    .sideNavDisplay {
+        display: block;
+    }
+
+    .sideNav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        background-color: #b9e7d3;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+        overflow-x: hidden;
+        padding-top: 15px;
+        transition: 0.3s;
+        color: var(--head1);
+    }
+
+    .sideNav a {
+        text-decoration: none;
+    }
+
+    .tutup {
+        position: absolute;
+        top: 15px;
+        right: 5px;
+        float: right;
+    }
+
+    .tutup img {
+        width: 15px;
+        margin-right: 10px;
+    }
+
+    .btnSide {
+        display: inline-block;
+        background: none;
+        outline: none;
+        border: none;
+        position: relative;
+        cursor: pointer;
+        top: 0;
+    }
+
+    .btnSide {
+        float: left;
+    }
+
+    .btnSide img {
+        width: 20px;
+        margin: 10px 5px 0px 10px;
+    }
+
+    .jdl1,
+    .jdl2 {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .back2 {
+        display: none;
+    }
+
+    .back22 img {
+        width: 40px;
+        cursor: pointer;
+    }
+
+    /* halaman */
+    .isi {
+        width: 100%;
+        float: none;
+    }
+
+    .isi2 {
+        padding: 15px;
+        padding-bottom: 20px;
+    }
+
+    .materinya {
+        font-size: 16px;
+        margin-bottom: 20px;
+        height: fit-content;
+    }
+
+    .materinya img {
+        width: 65%;
+        margin-bottom: 5px;
+    }
+}

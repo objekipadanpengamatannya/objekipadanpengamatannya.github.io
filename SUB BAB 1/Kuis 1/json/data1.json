@@ -1,0 +1,103 @@
+[{
+    "soal0":{
+        "soal" : "Kemampuan untuk melakukan suatu usaha disebut …",
+        "a" : "gaya",
+        "b" : "energi",
+        "c" : "usaha",
+        "d" : "gaya",
+        "benar" : "b",
+        "nih": "energi"
+        }
+},{
+  "soal1":{
+      "soal" : "Sebuah benda bermassa 4 kg berada pada ketinggian 8 meter dari permukaan tanah. Besar energi potensial tersebut adalah …. (g = 10 m/s<sup>2</sup>)",
+      "a" : "200 Joule",
+      "b" : "320 Joule",
+      "c" : "400 Joule",
+      "d" : "520 Joule ",
+      "benar" : "d",
+      "nih": "520 Joule"
+      
+      }
+},{
+  "soal2":{
+      "soal" : "Perhatikan gambar di bawah ini!<br><img src='img/kelapa.png' style='width:25%'><br>Buah kelapa bermassa 2 kg jatuh. Besar energi potensial dan energi kinetik saat kelapa berada di titik K dan saat itu kecepatan kelapa adalah 8 m/s adalah… (g = 10 m/s<sup>2</sup>)",
+      "a" : "Ep = 90 Joule; Ek = 32 Joule",
+      "b" : "Ep = 108 Joule; Ek = 64 Joule",
+      "c" : "Ep = 80 Joule; Ek = 64 Joule",
+      "d" : "Ep = 70 Joule; Ek = 80 Joule",
+      "benar" : "c",
+      "nih": "Ep = 80 Joule; Ek = 64 Joule"
+      }
+},{
+  "soal3":{
+      "soal" : "Baterai bisa menggerakan jarum jam merupakan contoh dari energi….",
+      "a" : "Panas",
+      "b" : "Bunyi",
+      "c" : "listrik",
+      "d" : "Kimia",
+      "benar" : "d",
+      "nih": "Kimia"
+      
+      }
+},{
+  "soal4":{
+      "soal" : "Sebuah pegas memiliki konstanta sebesar 200 N/m. Jika pegas bertambah panjang 20 cm, energi potensial pegas tersebut sebesar … ",
+      "a" : "4 J",
+      "b" : "8 J",
+      "c" : "16 J",
+      "d" : "40 J",
+      "benar" : "a",
+      "nih": "4 J"
+      }
+},{
+  "soal5":{
+      "soal" : "Tiga buah mobil dengan massa dan kecepatan sesuai tabel berikut.<br><img src='img/tabel.png' style='width:35%'><br>Hubungan energi kinetik ketiga bola yang benar adalah …",
+      "a" : "Ek(\u2081) < Ek(\u2082) < Ek(\u2083)",
+      "b" : "Ek(\u2081) > Ek(\u2082) > Ek(\u2083)",
+      "c" : "Ek(\u2081) > Ek(\u2082) < Ek(\u2083)",
+      "d" : "Ek(\u2081) < Ek(\u2082) > Ek(\u2083)",
+      "benar" : "a",
+      "nih": "Ek(\u2081) < Ek(\u2082) < Ek(\u2083)"
+      }
+},{
+  "soal6":{
+      "soal" : "Perhatikan gambar di bawah ini!<br><img src='img/jam.jpeg' style='width:20%'><br>Gambar di atas menunjukkan perubahan energi yaitu ... ",
+      "a" : "listrik menjadi cahaya",
+      "b" : "kinetik menjadi cahaya",
+      "c" : "kimia menjadi kinetik ",
+      "d" : "panas menjadi listrik",
+      "benar" : "c",
+      "nih": "kimia menjadi kinetik"
+      }
+},{
+  "soal7":{
+      "soal" : "Perhatikan gambar berikut ini!<br><img src='img/4 gambar.png'><br>Alat-alat berikut di atas yang mempunyai perubahan energi yang sama saat digunakan ditunjukan oleh gambar nomor ….",
+      "a" : "(1) dan (2)",
+      "b" : "(1) dan (3)",
+      "c" : "(2) dan (3)",
+      "d" : "(3) dan (4)",
+      "benar" : "c",
+      "nih": "(2) dan (3)"
+      }
+},{
+  "soal8":{
+      "soal" : "Sebuah benda bermassa 4 kg bergerak dengan kecepatan 10 m/s pada ketingian 5 m. jika percepatan gravitasi 10 m/s<sup>2</sup>, energi mekanik benda tersebut adalah …",
+      "a" : "100 J",
+      "b" : "200 J",
+      "c" : "300 J",
+      "d" : "400 J",
+      "benar" : "d",
+      "nih": "400 J"
+      }
+},{
+  "soal9":{
+      "soal" : "Sebuah benda jatuh bebas dari ketinggian 10 m. jika percepatan gravitasi bumi 10 m/s<sup>2</sup>  maka kecepatan benda saat berada 5 meter di atas tanah adalah …",
+      "a" : "5 m/s",
+      "b" : "8 m/s",
+      "c" : "10 m/s",
+      "d" : "12 m/s",
+      "benar" : "c",
+      "nih": "10 m/s"
+      }
+}]

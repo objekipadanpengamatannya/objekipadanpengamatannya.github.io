@@ -1,0 +1,108 @@
+:root {
+    --head1: #07575B;
+    --head1txt: white;
+    --head2: #07575B;
+    --head3: #07575B;
+    --btnhvr: #043436;
+}
+
+
+.bgdt {
+    margin: 1px auto;
+    padding: 10px 20px;
+}
+
+.menubawah {
+    display: flex;
+}
+
+.kembali {
+    width: 60%;
+    padding: 5px 5px;
+    background-color: var(--head1);
+    border: none;
+    margin: 20px auto;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+/* .lanjut {
+    width: 35%;
+    padding: 5px 5px;
+    background-color: var(--head1);
+    border: none;
+    margin: 20px auto;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+}
+
+.lanjut:hover {
+    background-color: var(--btnhvr);
+    cursor: pointer;
+} */
+
+.kembali:hover {
+    background-color: var(--btnhvr);
+    cursor: pointer;
+}
+
+.tdt {
+    width: 100%;
+    font-size: 20px;
+}
+
+.tdt td {
+    padding-top: 10px;
+}
+
+#nama,
+#kelas,
+#sekolah {
+    width: 100%;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+
+.lah {
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+/* CSS HANDHPHONE */
+@media screen and (max-width: 900px) {
+    .bgdt {
+        width: 100%;
+    }
+
+    .tdt {
+        font-size: 15px;
+    }
+
+    .menubawah {
+        flex-direction: column;
+    }
+
+    .kembali {
+        width: fit-content;
+        margin-bottom: -10px;
+    }
+
+    #nama,
+    #kelas,
+    #sekolah {
+        font-size: 14px;
+    }
+
+    .lanjut,
+    .kembali {
+        font-size: 15px
+    }
+
+    .textdt {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,183 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Quicksand;
+}
+
+/* palette warna */
+:root {
+    --head1: #07575B;
+    --head1txt: white;
+    --head2: #07575B;
+    --head3: #07575B;
+    --btnhvr: #043436;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/bg-kuis.jpg);
+    background-size: cover;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+/* AWAL CSS DEKSTOP */
+/* HEADER */
+.kepala {
+    height: 20vh;
+    justify-content: center;
+    color: antiquewhite;
+    padding-left: 1vw;
+    padding-top: 1vh;
+    align-items: center;
+    display: flex;
+    justify-content: start;
+}
+
+.logo {
+    padding-right: 10px;
+}
+
+/* BADAN */
+.container-isi {
+    text-align: justify;
+    background-color: rgba(255, 255, 255, 0.568);
+    border-radius: 10px;
+    padding: 15px;
+    height: 75vh;
+    margin-bottom: 15px;
+    overflow: auto;
+    width: 30vw;
+    margin: auto;
+}
+
+.container-isi img {
+    width: 25%;
+    margin: 10px 0;
+}
+
+.container-isi td {
+    font-size: 1.2em;
+}
+
+.container-isi a {
+    color: white;
+}
+
+.petunjuk {
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.biodata {
+    margin: auto;
+    padding: 10px 20px;
+}
+
+.tb-biodata {
+    width: 100%;
+    font-size: 20px;
+}
+
+.tb-biodata td {
+    padding-top: 8px;
+}
+
+.biodata-input {
+    width: 100%;
+}
+
+.hide {
+    display: none;
+}
+
+.btn-custom {
+    background-color: var(--color1);
+    border-color: var(--color1);
+}
+
+.btn-custom:hover {
+    background-color: var(--btnhvr);
+    border-color: var(--color1);
+}
+
+.btn-custom-primary {
+    border-color: var(--color1);
+    color: var(--color1);
+}
+
+.btn-custom-primary:hover {
+    background-color: var(--btnhvr);
+    border-color: var(--color1);
+}
+
+/* style awal waktu */
+.ket-waktu {
+    padding-right: 5px;
+}
+
+.waktu {
+    border: 2px solid #07575B;
+    width: 16%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: 35px;
+    margin-bottom: -60px;
+    margin-top: 50px;
+    font-size: 1.2em;
+}
+
+/* #time {
+    border: 2px solid #07575B;
+    width: 50px;
+    height: 25px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    margin-left: 35px;
+    margin-bottom: -60px;
+    margin-top: 50px;
+} */
+
+/* style akhir waktu */
+
+/* STYLE AWAL KUIS */
+.container-judul {
+    height: 10vh;
+    background-color: var(--color1);
+    color: var(--colortxt);
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.pertanyaannya {
+    font-size: 1.2em;
+}
+
+.no {
+    font-size: 1.3em;
+}
+
+/* STYLE AKHIR KUIS */
+
+/* AKHIR CSS DEKTOP */
+/* AWAL CSS SMARTPHONE */
+@media screen and (max-width: 900px) {
+    .ket-waktu {
+        display: none;
+    }
+}
+
+/* AKHIR CSS SMARTPHONE */

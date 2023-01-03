@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="Text/html" charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="icon" type="image/png" href="img/logo2.png"> -->
+    <title>Objek IPA & Pengamatannya</title>
+
+
+    <!-- style -->
+    <link rel="stylesheet" type="text/css" href="style/semua.css">
+    <link rel="stylesheet" type="text/css" href="style/tes.css">
+    <!-- <link rel="stylesheet" type="text/css" href="style/tesHP.css"> -->
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/style-master.css">
+
+    <!-- prompt -->
+    <link rel="stylesheet" href="style/popupmodal.css">
+
+    <!-- matjax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+</head>
+
+<body>
+
+    <header>
+        <div class="container-judul">
+            <h1>Kuis 1 || Penyelidikan IPA</h1>
+        </div>
+    </header>
+
+    <!-- SETUP AWAL WAKTU -->
+    <div class="waktu">
+        <div class="ket-waktu">
+            Sisa Waktu
+        </div>
+        <div class="" id="time">
+            00:00
+        </div>
+    </div>
+    <!-- SETUP AKHIR WAKTU -->
+    <!-- SETUP AWAL SOAL -->
+    <div class="container">
+        <!-- setup halaman Soal -->
+        <div class="divSoal" id="divSoal"></div>
+        <!-- setup halaman nomor soal -->
+        <div class="papanNo">
+            <div class="jdl3">
+                <h3>&nbsp;&nbsp;Nomor Soal</h3>
+            </div>
+            <div class="bg_soal">
+                <div class='soal_nav belum'>
+                    <p>1</p>
+                </div>
+                <div class='soal_nav belum'>
+                    <p>2</p>
+                </div>
+                <div class='soal_nav belum'>
+                    <p>3</p>
+                </div>
+                <div class='soal_nav belum'>
+                    <p>4</p>
+                </div>
+                <div class='soal_nav belum'>
+                    <p>5</p>
+                </div>
+                <div class='soal_nav belum'>
+                    <p>6</p>
+                </div>
+                <div class='soal_nav belum'>
+                    <p>7</p>
+                </div>
+                <div class='soal_nav belum'>
+                    <p>8</p>
+                </div>
+                <div class='soal_nav belum'>
+                    <p>9</p>
+                </div>
+                <div class='soal_nav belum'>
+                    <p>10</p>
+                </div>
+                <div class="clear"></div>
+                <div class="ket fontsedang">
+                    Keterangan :<br>
+                    <span class="belum">Putih</span> = Belum dijawab<br>
+                    <span class="sudah">Hijau</span> = Sudah dijawab
+                </div>
+
+                <center>
+                    <button class="btn selesai">SELESAI</button>
+                </center>
+            </div>
+        </div>
+    </div>
+    <!-- SETUP AKHIR SOAL -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-database.js"></script>
+
+    <script src="./js/firebase-config.js"></script>
+    <script src="./js/data_latihan.js"></script>
+    <script src="js/polyfill.js"></script>
+    <script src="js/popupmodal-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>

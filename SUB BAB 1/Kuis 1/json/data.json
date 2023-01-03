@@ -1,0 +1,91 @@
+[{
+    "soal0":{
+        "soal" : "Langkah setelah pengamatan yang harus dilakukan dalam sebuah penyelidikan IPA adalah . . . .",
+        "a" : "Melakukan Inferensi",
+        "b" : "Mengkomunikasikan",
+        "c" : "Melakukan Pengamatan",
+        "d" : "Manayakan",
+        "benar" : "a"
+        }
+},{
+    "soal1":{
+        "soal" : "Pengertian pengamatan dalam penyelidikan IPA adalah . . . .",
+        "a" : "Mengumpulkan data dan informasi melalui pengamatan",
+        "b" : "Merumuskan penjelasan berdasarkan pengamatan",
+        "c" : "Membuat laporan tertulis tentang kesimpulan akhir dari hasil pengamatan",
+        "d" : "Melakukan pengamatan menggunakan pancaindra/alat peraga",
+        "benar" : "d"
+    }
+},{
+    "soal2":{
+        "soal" : "Langkah yang dapat dilakukan untuk kebenaran hipotesis adalah . . . .",
+        "a" : "Inferensi",
+        "b" : "Menentukan Hipotesis",
+        "c" : "Melakukan Eksperimen",
+        "d" : "Menarik kesimpulan",
+        "benar" : "c"
+    }
+},{
+    "soal3":{
+        "soal" : "Objek pengamatan IPA adalah . . . .",
+        "a" : "Hanya bumi dan makhluk hidup",
+        "b" : "Ruang angkara dan tata surya",
+        "c" : "Seluruh benda dialam dan segala interaksinya",
+        "d" : "Hanya makhluk hidup saja",
+        "benar" : "c"
+    }
+},{
+    "soal4":{
+        "soal" : "Dibawah ini adalah bagian dari ilmu IPA, kecuali . . . .",
+        "a" : "Biologi",
+        "b" : "Kimia",
+        "c" : "Fisika",
+        "d" : "PPKn",
+        "benar" : "d"
+    }
+},{
+    "soal5":{
+        "soal" : "Seorang ilmuan sedang melakukan penelitian dengan cermat di laboratorium. Dia meneliti suatu zat untuk mengetahui jenis zat tersebut. Bidang IPA yang sedang dipelajari oleh ilmuan tersebut adalah . . . .",
+        "a" : "Kimia",
+        "b" : "Kedokteran",
+        "c" : "Biologi",
+        "d" : "Komputer",
+        "benar" : "a"
+    }
+},{
+    "soal6":{
+        "soal" : "Bagian ilmu IPA yang mempelajari tentang gejala-gejala alam yang berkaitan dengan materi, perubahan energi, gerak benda, serta gejala alam lainnya adalah. . . .",
+        "a" : "Kimia",
+        "b" : "Biologi",
+        "c" : "Arkeologi",
+        "d" : "Fisika",
+        "benar" : "d"
+    }
+},{
+    "soal7":{
+        "soal" : "Air sumur di rumah ujang menjadi kesuh Ketika musim penghujan. Setelah mempelajari IPA ujang dapat membuat alat penyaring sederhana yang membuat air keruh menjadi lebih jernih. Kegunaan IPA berdasarkan peristiwa tersebut adalah . . .",
+        "a" : "Meningkatkan pemahaman tentang berbagai hal di sekitar kita",
+        "b" : "Mempertajam proses berpikir logis dan sistematis",
+        "c" : "Meningkatkan Kualitas Hidup",
+        "d" : "Menyelesaikan Masalah",
+        "benar" : "d"
+    }
+},{
+    "soal8":{
+        "soal" : "Langkah pertama dalam metode ilmiah adalah . . . .",
+        "a" : "Observasi",
+        "b" : "Merumuskan Masalah",
+        "c" : "Pengamatan",
+        "d" : "Menentukan Hipotesis",
+        "benar" : "b"
+    }
+},{
+    "soal9":{
+        "soal" : "Manfaat mempelajari IPA adalah, kecuali . . . .",
+        "a" : "Berpikir Logis dan Kritis",
+        "b" : "Meningkatkan Kualitas Hidup",
+        "c" : "Memahami berbagai hal disekitar",
+        "d" : "Memanfaatkan kekayaan alam sebanyak-banyaknya",
+        "benar" : "d"
+    }
+}]
