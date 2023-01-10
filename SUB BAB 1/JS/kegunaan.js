@@ -7,8 +7,8 @@
 const videoManfaat = document.getElementById("videoManfaat");
 
 videoManfaat.onended = function () {
-  document.getElementById("qw").classList.add("hide");
-  document.getElementById("we").classList.remove("hide");
+  // document.getElementById("qw").classList.add("hide");
+  // document.getElementById("we").classList.remove("hide");
   document.getElementById("qw1").classList.add("hide");
   document.getElementById("petunjukHilang").classList.remove("hide");
 };
@@ -72,6 +72,8 @@ function cekJawaban() {
   // memunculkan button materi selanjutnya
   if (score == 15) {
     document.getElementById("muncul").classList.remove("hide");
+    document.getElementById("we").classList.remove("hide");
+    document.getElementById("qw").classList.remove("hide");
   } else {
     // document.getElementById("muncul").style.display = "none";
   }
