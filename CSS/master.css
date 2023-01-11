@@ -452,6 +452,54 @@ input {
 
 /*
 ********************
+*** SETUP TOMBOL ***
+********************
+*/
+
+.btn-soal {
+  display: flex;
+  justify-content: center;
+  padding-top: 1em;
+}
+
+.btn-soal>button {
+  margin-right: 2%;
+  text-decoration: none;
+  background: #66b9bf;
+  border: none;
+  padding: 0.5em;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.btn-soal>button:hover {
+  border: 1px solid #66b9bf;
+  background: white;
+  cursor: pointer;
+}
+
+
+.card-soal-isi>button {
+  border-style: none;
+  padding: 0.5em;
+  cursor: pointer;
+  background: #e37222;
+  margin: 0.5em;
+  font-size: 1em;
+}
+
+.card-soal-isi>button:hover {
+  border-style: none;
+  padding: 0.5em;
+  cursor: pointer;
+  margin: 0.5em;
+  font-size: 1em;
+  border: 2px solid #e37222;
+  background: none;
+}
+
+/*
+********************
 *** SETUP MOBILE ***
 ********************
 */

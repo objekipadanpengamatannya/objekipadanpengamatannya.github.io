@@ -67,7 +67,49 @@
                     <figcaption>Gambar ilustrasi mengukur dengan satuan baku dan tidak baku</figcaption>
                 </center>
                 <br>
-                <div class="kotak-judul"><img src="/IMAGE/diskusi.png" alt="pembahasan">&nbsp;&nbsp;<b>Pembahasan</b>
+                <!-- SETUP AWAL PERTANYAAN -->
+                <!-- AWAL JUDUL -->
+                <div class="kotak-judul"><img src="/IMAGE/mencoba.png" alt="coba">&nbsp;&nbsp;<b>Pertanyaan</b>
+                </div>
+                <!-- AKHIR JUDUL -->
+
+                <!-- AWAL PERTANYAAN -->
+                <div class="card bg-biru-border">
+                    <section>
+                        <div class="card-informasi">
+                            <b>Petunjuk :</b> <br>
+                            <ol>
+                                <li>Soal berupa pilihan ganda</li>
+                                <li>Pilihlah jawaban yang menurut kamu benar.</li>
+                            </ol>
+                            <div class="btn-soal">
+                                <button>Selesai Membaca</button>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="card-soal-isi">
+                        <span>1. Agar hasil pengukuran yang kita lakukan bernilai sama dengan orang lain, maka
+                            satuan yang
+                            diperlukan adalah . . . .</span><br>
+                        <button id="btnTigaA">Satuan baku yang disepakati semua orang</button>
+                        <button id="btnTigaB">Satuan yang biasa digunakan oleh masyarakat</button>
+                        <button id="btnTigaC">Satuan yang digunakan oleh negara lain.</button>
+                        <button id="btnTigaD">Satuan yang ditetapkan oleh pemerintah suatu negara
+                        </button>
+
+                        <section class="hide card bg-biru" id="benarTiga">JAWABAN ANDA BENAR</section>
+                        <section class="hide card bg-biru" id="salahTiga">
+                            <!-- <b>JAWABAN ANDA SALAH, JAWABAN YANG BENAR ADALAH MENGKOMUNIKASIKAN</b> <br><br> -->
+                            <p>Agar hasil pengukuran yang kita lakukan bernilai sama dengan orang lain, maka diperlukan
+                                satuan baku yang telah disepakai oleh semua orang, tidak hanya oleh masyarakat atau
+                                negara tertentu, tetapi satuan baku yang disepakai oleh seluruh orang di dunia.
+                            </p>
+                        </section>
+                    </section>
+                </div>
+                <!-- AKHIR PERTANYAAN -->
+                <!-- SETUP AKHIR PERTANYAAN -->
+                <div class="kotak-judul"><img src="/IMAGE/diskusi.png" alt="pembahasan">&nbsp;&nbsp;<b>Kesimpulan</b>
                 </div>
                 <div class="pembahasan">
                     <p>
@@ -80,33 +122,6 @@
                             untuk dapat mengukur tekanan.</li>
                         <li>Agar tidak terjadi perbedaan ditempat satu dengan tempat lainnya.</li>
                     </ol>
-                </div>
-                <!-- SETUP AWAL PERTANYAAN -->
-                <!-- AWAL JUDUL -->
-                <div class="kotak-judul"><img src="/IMAGE/mencoba.png" alt="coba">&nbsp;&nbsp;<b>Pertanyaan</b>
-                </div>
-                <!-- AKHIR JUDUL -->
-                <!-- AWAL PERTANYAAN -->
-                <div class="card bg-biru-border"></div>
-                <!-- AKHIR PERTANYAAN -->
-                <!-- SETUP AKHIR PERTANYAAN -->
-                <!-- <p><b>PERTANYAAN PILIHAN GANDA</b></p> -->
-                <div class="pertanyaan hide">
-                    <h3 id="soal"></h3>
-                    <input type="radio" name="pilihan" data-id="0" id="pilihan0">
-                    <label for="pilihan0" id="teksPilihan0"></label>
-
-                    <input type="radio" name="pilihan" data-id="1" id="pilihan1">
-                    <label for="pilihan1" id="teksPilihan1"></label> <br>
-
-                    <input type="radio" name="pilihan" data-id="2" id="pilihan2">
-                    <label for="pilihan2" id="teksPilihan2"></label>
-
-                    <input type="radio" name="pilihan" data-id="3" id="pilihan3">
-                    <label for="pilihan3" id="teksPilihan3"></label> <br> <br>
-                    <center>
-                        <button type="button" name="button" onclick="tombolLanjut()">LANJUT</button>
-                    </center>
                 </div>
                 <!-- <div class="hilang">
                                 
