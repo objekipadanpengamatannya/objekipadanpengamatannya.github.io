@@ -50,3 +50,21 @@
   font-weight: bold;
   cursor: pointer;
 }
+
+/*
+*********************
+**** SETUP TABLE ****
+*********************
+*/
+
+table,
+th,
+td {
+  border: 1px solid white;
+  border-collapse: collapse;
+  height: 30px;
+}
+
+tr:nth-child(even) {
+  background-color: #96d4d465;
+}
