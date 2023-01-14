@@ -498,6 +498,21 @@ input {
   background: none;
 }
 
+.btn-contoh {
+  text-decoration: none;
+  background: darkorange;
+  border: none;
+  padding: 0.25em;
+  font-size: 1rem;
+  border-radius: 5px;
+  width: 50px;
+}
+
+.btn-contoh:hover {
+  background-color: rgba(255, 140, 0, 0.212);
+  cursor: pointer;
+}
+
 /*
 ********************
 *** SETUP MOBILE ***

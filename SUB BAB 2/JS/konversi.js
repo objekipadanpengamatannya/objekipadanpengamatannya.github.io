@@ -1,3 +1,35 @@
+/*
+ ********************************
+ *** SETUP TOMBOL KLIK CONTOH ***
+ ********************************
+ */
+
+//  Setup contoh 1
+
+let klikDikPan = document.getElementById("klikDikPan");
+let klikDitPan = document.getElementById("klikDitPan");
+let klikjawPan = document.getElementById("klikJawPan");
+
+let ditPan = document.getElementById("ditPan");
+let dikPan = document.getElementById("dikPan");
+let jawPan = document.getElementById("jawPan");
+
+klikDikPan.addEventListener('click', function () {
+    ditPan.classList.remove("hide");
+    klikDikPan.classList.add("hide");
+})
+
+klikDitPan.addEventListener('click', function () {
+    jawPan.classList.remove("hide");
+    klikDitPan.classList.add("hide");
+})
+
+/*
+ ****************************
+ *** SETUP TOMBOL LATIHAN ***
+ ****************************
+ */
+
 function cekKonversiPanjang() {
     var convP1 = document.getElementById("convP1").value;
     var convP2 = document.getElementById("convP2").value;
