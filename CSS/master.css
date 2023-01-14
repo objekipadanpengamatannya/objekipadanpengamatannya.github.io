@@ -513,6 +513,40 @@ input {
   cursor: pointer;
 }
 
+.btn-coba {
+  text-decoration: none;
+  background: #66b9bf;
+  border: none;
+  padding: 0.25em;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  width: 50px;
+  margin-top: 10px;
+}
+
+.btn-coba:hover {
+  background-color: rgba(245, 245, 245, 0.048);
+  border: 2px solid #66b9bf;
+  cursor: pointer;
+}
+
+.btn-coba2 {
+  text-decoration: none;
+  background: #e37222;
+  border: none;
+  padding: 0.25em;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  width: 50px;
+  margin-top: 10px;
+}
+
+.btn-coba2:hover {
+  background-color: rgba(245, 245, 245, 0.034);
+  border: 2px solid #e37222;
+  cursor: pointer;
+}
+
 /*
 ********************
 *** SETUP MOBILE ***

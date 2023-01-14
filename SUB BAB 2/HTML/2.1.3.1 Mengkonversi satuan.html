@@ -66,14 +66,11 @@
                             meter (m).</h4>
                         <br>
                         <h4>Pembahasan</h4> <br>
-                        <span id="dikPan">
-                            <button class="btn-contoh" id="klikDikPan">Klik</button>
-                            <p>Diketahui : 1 kilometer</p> <br>
-                        </span>
-                        <span class="hide" id="ditPan">
-                            <button class="btn-contoh" id="klikDitPan">Klik</button>
-                            <p>Ditanyakan : hektometer, dekameter, dan meter!</p> <br>
-                        </span>
+                        <button class="btn-contoh" id="klikDikPan">Klik</button>
+                        <p class="hide" id="dikPan">Diketahui : 1 kilometer</p>
+                        <button class="btn-contoh hide" id="klikDitPan">Klik</button>
+                        <p class="hide" id="ditPan">Ditanyakan : hektometer, dekameter, dan meter!</p> <br>
+                        <button class="btn-contoh hide" id="klikJawPan">Klik</button>
                         <span class="hide" id="jawPan">
                             <p>Jawaban :</p>
                             <span>1 kilometer (km) = 1 x 10 = 10 herktometer (hm)</span> <br>
@@ -94,15 +91,21 @@
                         <h4>Pembahasan</h4>
                         <p>Diketahui 1 kilometer</p>
                         <p>Ditanyakan hektometer, dekameter, dan meter!</p>
-                        <p>1 km = <input id="convP1" type="text" style="width:50px; text-align: center;" maxlength="2"
-                                placeholder="...">
-                            hm , <input id="convP2" type="text" style="width:50px; text-align: center;" maxlength="3"
-                                placeholder="..."> dam , <input id="convP3" type="text"
-                                style="width:50px; text-align: center;" maxlength="4" placeholder="..."> m
+                        <p>
+                            7 km = <input id="convP1" type="text" style="width:50px; text-align: center;" maxlength="2"
+                                placeholder="..."> hm.
                         </p>
-                        <button class="btn-bgpeach" onclick="cekKonversiPanjang()">CEK</button>
-                        <span></span>
+                        <p>
+                            7 km = <input id="convP2" type="text" style="width:50px; text-align: center;" maxlength="3"
+                                placeholder="..."> dam.
+                        </p>
+                        <p>
+                            7 km = <input id="convP3" type="text" style="width:50px; text-align: center;" maxlength="4"
+                                placeholder="..."> m.
+                        </p>
+                        <button class="btn-coba" onclick="cekKonversiPanjang()">CEK</button>
                     </div>
+                    <!-- AWAL KONVERSI SATUAN MASSA -->
                     <li>Mengkonversi satuan massa</li>
                     <p>&nbsp;&nbsp;&nbsp;Mengkonversi satuan massa, berarti mengubah satuan-satuan massa mulai dari yang
                         terbesar sampai yang terkecil.
@@ -119,17 +122,15 @@
                     <div class="card bg-biru-border">
                         <h4>Ubahlah satuan massa berikut dari 3 gram menjadi kilogram.</h4>
                         <br>
-                        <h4>Pembahasan</h4>
-                        <span>
-                            <button>Klik</button>
-                            <p>Diketahui : 3 gram</p>
-                        </span>
-                        <span>
-                            <button>Klik</button>
-                            <p>Ditanyakan : kilogram ?</p>
-                        </span>
-                        <span>
-                            <br>
+                        <h4>Pembahasan</h4> <br>
+                        <button class="btn-contoh" id="klikDikMas">Klik</button>
+                        <p class="hide" id="dikMas">Diketahui : 3 gram</p>
+                        <button class="btn-contoh hide" id="klikDitMas">Klik</button>
+                        <p class="hide" id="ditMas">Ditanyakan : kilogram ?</p>
+                        <button class="btn-contoh hide" id="klikJawMas">Klik</button>
+                        <br>
+                        <span class="hide" id="jawMas">
+                            <p>Jawaban :</p>
                             <span>3 gram (g) = 3 : 1000 = 0,003 kilogram (kg)</span>
                             <br><br>
                             <span>Jadi hasil konversi 3 gram menjadi kilogram adalah : <b>0,003 kilogram (kg)</b></span>
@@ -144,14 +145,21 @@
                         <p>Diketahui 3 kilogram</p>
                         <p>Ditanyakan hektogram, dekagram dan gram!</p>
                         <p>3 kg = <input id="convM1" type="text" style="width:50px; text-align: center;" maxlength="2"
-                                placeholder="..."> hg , <input id="convM2" type="text"
-                                style="width:50px; text-align: center;" maxlength="3" placeholder="..."> dag ,
-                            <input id="convM3" type="text" style="width:50px; text-align: center;" maxlength="4"
-                                placeholder="..."> g
+                                placeholder="..."> hg.
                         </p>
-                        <button class="btn" onclick="cekKonversiMassa()">CEK</button>
+                        <p>
+                            3 Kg = <input id="convM2" type="text" style="width:50px; text-align: center;" maxlength="3"
+                                placeholder="..."> dag.
+                        </p>
+                        <p>
+                            3 Kg = <input id="convM3" type="text" style="width:50px; text-align: center;" maxlength="4"
+                                placeholder="..."> g.
+                        </p>
+                        <button class="btn-coba2" onclick="cekKonversiMassa()">CEK</button>
                         <span></span>
                     </div>
+                    <!-- AKHIR KONVERSI SATUAN MASSA -->
+                    <!-- AWAL KONVERSI SATUAN WAKTU -->
                     <li>Mengkonversi satuan waktu</li>
                     <p>&nbsp;&nbsp;&nbsp;Mengkonversi satuan waktu, berarti mengubah satuan-satuan waktu ke satuan
                         waktu
@@ -174,19 +182,22 @@
                     <div class="card bg-biru-border">
                         <h4>Ubahlah satuan waktu berikut ini, 5 Jam menjadi menit dan detik.</h4>
                         <br>
-                        <h5>Pembahasan</h5>
-                        <button>Klik</button>
-                        <p>Diketahui : 5 Jam</p>
-                        <button>Klik</button>
-                        <p>Ditanyakan : menit dan detik ?</p>
-                        <button>Klik</button>
+                        <h4>Pembahasan</h4> <br>
+                        <button class="btn-contoh" id="klikDikWak">Klik</button>
+                        <p class="hide" id="dikWak">Diketahui : 5 Jam</p>
+                        <button class="btn-contoh hide" id="klikDitWak">Klik</button>
+                        <p class="hide" id="ditWak">Ditanyakan : menit dan detik ?</p>
+                        <button class="btn-contoh hide" id="klikJawWak">Klik</button>
                         <br>
-                        <span>5 Jam = 5 x 60 = 3000 menit</span> <br>
-                        <span>5 Jam = 5 x 3600 = 18000 detik</span> <br>
-
-                        <br><br>
-                        <span>Jadi hasil konversi 5 Jam menjadi menit adalah : <b>3000 menit</b> dan 5 Jam menjadi detik
-                            adalah : <b>18000 detik</b></span>
+                        <span class="hide" id="jawWak">
+                            <p>Jawaban :</p>
+                            <span>5 Jam = 5 x 60 = 3000 menit</span> <br>
+                            <span>5 Jam = 5 x 3600 = 18000 detik</span> <br>
+                            <br><br>
+                            <span>Jadi hasil konversi 5 Jam menjadi menit adalah : <b>3000 menit</b> dan 5 Jam menjadi
+                                detik
+                                adalah : <b>18000 detik</b></span>
+                        </span>
                     </div>
                     <div class="kotak-judul"><img src="/IMAGE/mencoba.png" alt="baca">&nbsp;&nbsp; <b>Mari Mencoba</b>
                     </div>
@@ -198,12 +209,16 @@
                         <p>Diketahui jarak kota A ke kota B = 1/3 jam</p>
                         <p>Ditanyakan menit dan detik</p>
                         <p>1/3 jam = <input id="convW1" type="text" style="width:50px; text-align: center;"
-                                maxlength="4" placeholder="..."> menit = <input id="convW2" type="text"
-                                style="width:50px; text-align: center;" maxlength="5" placeholder="..."> detik
+                                maxlength="4" placeholder="..."> menit.
                         </p>
-                        <button class="btn" onclick="cekKonversiWaktu()">CEK</button>
+                        <p>
+                            1/3 jam = <input id="convW2" type="text" style="width:50px; text-align: center;"
+                                maxlength="5" placeholder="..."> detik.
+                        </p>
+                        <button class="btn-coba" onclick="cekKonversiWaktu()">CEK</button>
                         <span></span>
                     </div>
+                    <!-- AKHIR KONVERSI SATUAN WAKTU -->
                 </ul>
             </div>
             <div class="container-halaman">
