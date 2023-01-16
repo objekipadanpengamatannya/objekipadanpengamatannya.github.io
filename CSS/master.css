@@ -547,6 +547,24 @@ input {
   cursor: pointer;
 }
 
+.btn-ulang {
+  text-decoration: none;
+  border: none;
+  color: white;
+  background-color: red;
+  padding: 0.5em;
+  font-size: 1rem;
+  border-radius: 5px;
+  width: 70px;
+}
+
+.btn-ulang:hover {
+  background-color: rgba(255, 140, 0, 0.212);
+  border: 2px solid red;
+  cursor: pointer;
+  color: black;
+}
+
 /*
 ********************
 *** SETUP MOBILE ***

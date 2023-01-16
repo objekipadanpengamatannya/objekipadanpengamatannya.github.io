@@ -111,9 +111,14 @@
                                     apabila ingin memperbesar tampilan video dan tekan tombol ⋮ untuk pengaturan
                                     lanjutan.</li>
                                 <li>Soal Berupa Pilihan Ganda Berjumlah Tiga Soal.</li>
-                                <li>Jika Jawaban Kamu Benar, Warna Tombol Akan Berubah Menjadi Hijau.</li>
-                                <li>Jika Jawaban Kamu Salah, Warna Tombol Akan Berubah Menjadi Merah & Muncul
+                                <li>Jika Jawaban Kamu Benar, Warna Tombol Akan Berubah Menjadi <b
+                                        style="color: green;">Hijau</b>.</li>
+                                <li>Jika Jawaban Kamu Salah, Warna Tombol Akan Berubah Menjadi <b
+                                        style="color: red;">Merah</b> & Muncul
                                     Penjelasan.</li>
+                                <li>
+                                    Ketika Jawaban kamu salah maka akan muncul tombol ulang, untuk mengulang soal.
+                                </li>
                             </ol>
                         </div>
                         <!-- SETUP AKHIR PETUNJUK SOAL -->
@@ -142,9 +147,8 @@
                                 <button id="btnSatuD">Penyelidikan</button>
                                 <!-- SETUP AKHIR PILIHAN 1 -->
                                 <!-- SETUP AWAL KETERANGAN JAWABAN 1 -->
-                                <section class="hide card bg-biru" id="benarSatu">JAWABAN ANDA BENAR</section>
-                                <section class="hide card bg-biru" id="salahSatu">
-                                    <b>JAWABAN ANDA SALAH, JAWABAN YANG BENAR ADALAH PENGAMATAN</b> <br><br>
+                                <section class="hide card bg-biru" id="benarSatu">
+                                    <b>JAWABAN ANDA BENAR</b> <br><br>
                                     <p>Pengamatan adalah kegiatan mengamati suatu objek dengan menggunakan panca
                                         indra
                                         seperti mata, telinga, mulut serta alat
@@ -156,6 +160,14 @@
                                         <img src="/SUB BAB 1/IMAGE/mengamati alat.png" alt="gambar objek"
                                             style="width: 20%;">
                                     </center>
+                                </section>
+                                <section class="hide" id="salahSatu">
+                                    <div class="card bg-biru">
+                                        <b>JAWABAN ANDA BELUM TEPAT, SILAHKAN COBA LAGI</b>
+                                    </div>
+                                    <!-- BUTTON AWAL ULANG -->
+                                    <button class="btn-ulang" id="ulang1">ULANG</button>
+                                    <!-- BUTTON AKHIR ULANG -->
                                 </section>
                                 <!-- SETUP AKHIR KETERANGAN JAWABAN 1 -->
                             </div>
@@ -174,20 +186,25 @@
                                 <button id="btnDuaB">Pengamatan</button>
                                 <button id="btnDuaC">Mengkomunikasikan</button>
                                 <button id="btnDuaD">Penyelidikan</button>
-
-                                <section class="hide card bg-biru" id="benarDua">JAWABAN ANDA BENAR</section>
-                                <section class="hide card bg-biru" id="salahDua">
-                                    <b>JAWABAN ANDA SALAH, JAWABAN YANG BENAR ADALAH INFERENSI</b> <br><br>
+                                <section class="hide card bg-biru" id="benarDua">
+                                    <b>JAWABAN ANDA BENAR</b> <br><br>
                                     <p>Inferensi adalah tindakan yang dilakukan untuk mendapatkan kesimpulan
                                         berdasarkan
                                         apa
                                         yang sudah diketahui atau
                                         didapatkan dari hasil pengamatan.</p>
-
                                     <center>
                                         <img src="/SUB BAB 1/IMAGE/inferensi.png" alt="gambar objek"
                                             style="width: 20%;">
                                     </center>
+                                </section>
+                                <section class="hide" id="salahDua">
+                                    <div class="card bg-biru">
+                                        <b>JAWABAN ANDA BELUM TEPAT, SILAHKAN COBA LAGI</b>
+                                    </div>
+                                    <!-- BUTTON AWAL ULANG -->
+                                    <button class="btn-ulang" id="ulang2">ULANG</button>
+                                    <!-- BUTTON AKHIR ULANG -->
                                 </section>
                             </div>
                             <div class="card-soal-isi hide" id="soalTiga">
@@ -200,18 +217,23 @@
                                 <button id="btnTigaB">Pengamatan</button>
                                 <button id="btnTigaC">Mengkomunikasikan</button>
                                 <button id="btnTigaD">Penyelidikan</button>
-
-                                <section class="hide card bg-biru" id="benarTiga">JAWABAN ANDA BENAR</section>
-                                <section class="hide card bg-biru" id="salahTiga">
-                                    <b>JAWABAN ANDA SALAH, JAWABAN YANG BENAR ADALAH MENGKOMUNIKASIKAN</b> <br><br>
+                                <section class="hide card bg-biru" id="benarTiga">
+                                    <b>JAWABAN ANDA BENAR</b> <br><br>
                                     <p>Mengomunikasikan adalah menyampaikan hasil kegiatan atau aktvitas dari hasil
                                         inferensi kepada orang lain secara langsung
                                         atau melalui sosial media.</p>
-
                                     <center>
                                         <img src="/SUB BAB 1/IMAGE/mengkomunikasikan.png" alt="gambar objek"
                                             style="width: 20%;">
                                     </center>
+                                </section>
+                                <section class="hide" id="salahTiga">
+                                    <div class="card bg-biru">
+                                        <b>JAWABAN ANDA BELUM TEPAT, SILAHKAN COBA LAGI</b>
+                                    </div>
+                                    <!-- BUTTON AWAL ULANG -->
+                                    <button class="btn-ulang" id="ulang3">ULANG</button>
+                                    <!-- BUTTON AKHIR ULANG -->
                                 </section>
                             </div>
                         </div>

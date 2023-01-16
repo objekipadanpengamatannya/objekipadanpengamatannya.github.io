@@ -23,7 +23,7 @@ const btnPetunjuk = document.getElementById("btnPetunjuk")
 
 btnPetunjuk.addEventListener('click', function () {
   document.getElementById("soalMuncul").classList.remove("hide");
-  document.getElementById("petunjukHilang").classList.add("hide");
+  document.getElementById("btnSelesai").classList.add("hide");
 })
 
 /*

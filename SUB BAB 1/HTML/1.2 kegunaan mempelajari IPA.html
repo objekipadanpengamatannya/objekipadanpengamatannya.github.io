@@ -104,21 +104,22 @@
                     </span>
                     <!-- Setup Petunjuk -->
                     <section class="hide" id="petunjukHilang">
-                        <p><b>PETUNJUK</b></p>
-                        1. Jawablah kolom yang kosong dengan huruf <b>A,B,C atau D</b> sesuai pilihan yang tersedia.
-                        <br>
-                        2. Tekan tombol <b>cek jawaban</b> untuk memeriksa jawban apakah benar atau salah. <br>
-                        3. Jika jawaban <b>benar</b>, maka kotak akan berwarna <b style="color: green;">hijau</b>.
-                        <br>
-                        4. jika jawaban <b>salah</b>, maka kotak akan berwarna <b style="color: red;">merah</b>.
-                        <br>
-                        5. Tekan tombol <b>ulang</b> untuk mereset jawaban. <br>
-                        6. Jika seluruh jawaban benar maka akan muncul tombol <b>materi selanjutnya</b>, maka materi
-                        selanjutnya dapat
-                        diakses.
-                        <br><br>
+                        <div class="card-informasi">
+                            <p><b>PETUNJUK</b></p>
+                            1. Jawablah kolom yang kosong dengan huruf <b>A,B,C atau D</b> sesuai pilihan yang tersedia.
+                            <br>
+                            2. Tekan tombol <b>cek jawaban</b> untuk memeriksa jawban apakah benar atau salah. <br>
+                            3. Jika jawaban <b>benar</b>, maka kotak akan berwarna <b style="color: green;">hijau</b>.
+                            <br>
+                            4. jika jawaban <b>salah</b>, maka kotak akan berwarna <b style="color: red;">merah</b>.
+                            <br>
+                            5. Tekan tombol <b>ulang</b> untuk mereset jawaban. <br>
+                            6. Jika seluruh jawaban benar maka akan muncul tombol <b>materi selanjutnya</b>, maka materi
+                            selanjutnya dapat
+                            diakses.
+                        </div>
                         <div class="btn-soal" id="btnPetunjuk">
-                            <button>Selesai Membaca</button>
+                            <button id="btnSelesai">Selesai Membaca</button>
                         </div>
                     </section>
                     <!-- Setup pertanyaan -->
@@ -158,7 +159,8 @@
                         <br>
                         <div class="btn-soal">
                             <button onclick="cekJawaban()">CEK JAWABAN</button>
-                            <button onclick="ulang()" onchange="a()">ULANG</button>
+                            <button onclick="ulang()">ULANG</button>
+                            <!-- <button onclick="ulang()" onchange="a()">ULANG</button> -->
                             <!-- <button id="muncul"><a href="/SUB BAB 1/HTML/1.3 objek dalam IPA.html">LANJUT MATERI
                                     BERIKUTNYA</a></button> -->
                         </div>
