@@ -7,8 +7,8 @@
 const videoIlmu = document.getElementById("videoIlmu");
 
 videoIlmu.onended = function () {
-  document.getElementById("qw").classList.add("hide");
-  document.getElementById("we").classList.remove("hide");
+  // document.getElementById("qw").classList.add("hide");
+  // document.getElementById("we").classList.remove("hide");
   // setup memunculkan soal latihan
   document.getElementById("ket").classList.add("hide");
   document.getElementById("soal").classList.remove("hide");
@@ -39,7 +39,7 @@ btnSatuA.addEventListener('click', function () {
 })
 btnSatuB.addEventListener('click', function () {
   document.getElementById("salahSatu").classList.remove("hide");
-  document.getElementById("soalDua").classList.remove("hide");
+  // document.getElementById("soalDua").classList.remove("hide");
   btnSatuB.style.background = "red";
 
   btnSatuA.disabled = true;
@@ -49,7 +49,7 @@ btnSatuB.addEventListener('click', function () {
 })
 btnSatuC.addEventListener('click', function () {
   document.getElementById("salahSatu").classList.remove("hide");
-  document.getElementById("soalDua").classList.remove("hide");
+  // document.getElementById("soalDua").classList.remove("hide");
   btnSatuC.style.background = "red";
 
   btnSatuA.disabled = true;
@@ -59,7 +59,7 @@ btnSatuC.addEventListener('click', function () {
 })
 btnSatuD.addEventListener('click', function () {
   document.getElementById("salahSatu").classList.remove("hide");
-  document.getElementById("soalDua").classList.remove("hide");
+  // document.getElementById("soalDua").classList.remove("hide");
   btnSatuD.style.background = "red";
 
   btnSatuA.disabled = true;
@@ -78,7 +78,7 @@ const btnDuaD = document.getElementById("btnDuaD");
 btnDuaA.addEventListener('click', function () {
   document.getElementById("salahDua").classList.remove("hide");
   // document.getElementById("soalTiga").classList.remove("hide");
-  btnDuaA.style.background = "green";
+  btnDuaA.style.background = "red";
 
   btnDuaA.disabled = true;
   btnDuaB.disabled = true;
@@ -114,6 +114,45 @@ btnDuaD.addEventListener('click', function () {
   btnDuaB.disabled = true;
   btnDuaC.disabled = true;
   btnDuaD.disabled = true;
+
+  document.getElementById("qw").classList.add("hide");
+  document.getElementById("we").classList.remove("hide");
+})
+
+// SETUP TOMBOL ULANG
+
+//  ulang 1
+
+const ulang1 = document.getElementById("ulang1");
+
+ulang1.addEventListener("click", function () {
+  btnSatuA.style.background = "";
+  btnSatuB.style.background = "";
+  btnSatuC.style.background = "";
+  btnSatuD.style.background = "";
+  document.getElementById("salahSatu").classList.add("hide");
+
+  btnSatuA.disabled = false;
+  btnSatuB.disabled = false;
+  btnSatuC.disabled = false;
+  btnSatuD.disabled = false;
+})
+
+//  ulang 2
+
+const ulang2 = document.getElementById("ulang2");
+
+ulang2.addEventListener("click", function () {
+  btnDuaA.style.background = "";
+  btnDuaB.style.background = "";
+  btnDuaC.style.background = "";
+  btnDuaD.style.background = "";
+  document.getElementById("salahDua").classList.add("hide");
+
+  btnDuaA.disabled = false;
+  btnDuaB.disabled = false;
+  btnDuaC.disabled = false;
+  btnDuaD.disabled = false;
 })
 
 /*
