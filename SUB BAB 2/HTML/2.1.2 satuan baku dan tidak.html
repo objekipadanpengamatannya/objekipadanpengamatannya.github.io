@@ -53,6 +53,87 @@
                     yang lainnya. Contoh
                     satuan tidak baku yaitu jengkal, hasta, depa, telapak kaki, Langkah kaki, dll
                 </p>
+                <!--  -->
+                <div class="kotak-judul"><img src="/IMAGE/picture.png" alt="baca" style="width: 40px;">&nbsp;&nbsp;
+                    <b>Mari Mengamati</b></div>
+                <center>
+                    <h4>Tabel satuan tidak baku</h4>
+                    <br>
+                    <table style="width: 85%;">
+                        <tr style="height: 25px;">
+                            <th style="width: 10%;">No</th>
+                            <th style="width: 30%;">Gambar</th>
+                            <th style="width: 20%;">Keterangan</th>
+                            <th style="width: 40%;">Uraian</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>
+                                <br>
+                                <img src="/SUB BAB 1/IMAGE/jengkal.png" alt="gambar jengkal" style="width: 80%;">
+                                <p style="font-size: 0.7em; text-align: center;">Sumber. pribadi</p>
+                                <br>
+                            </td>
+                            <td>
+                                Jengkal
+                            </td>
+                            <td>
+                                1 jengkal adalah ukuran jarak antara ujung jempol dan ujung kelingking saat jari-jari
+                                tangan direnggangkan secara maksimal.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>
+                                <br>
+                                <img src="/SUB BAB 1/IMAGE/hasta.png" alt="gambar hasta" style="width: 90%;">
+                                <p style="font-size: 0.7em; text-align: center;">Sumber. pribadi</p>
+                                <br>
+                            </td>
+                            <td>
+                                Hasta
+                            </td>
+                            <td>
+                                1 hasta adalah ukuran jarak antara ujung jari terjauh (jari tengah) sampai ke ujung siku
+                                saat siku ditekuk dan jari-jari diluruskan secara maksimal.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>
+                                <br>
+                                <img src="/SUB BAB 1/IMAGE/Depa.png" alt="gambar depa" style="width: 90%;">
+                                <p style="font-size: 0.7em; text-align: center;">Sumber. pribadi</p>
+                                <br>
+                            </td>
+                            <td>
+                                Depa
+                            </td>
+                            <td>
+                                1 depa adalah ukuran jarak antara ujung jari kanan terjauh (jari tengah) sampai dengan
+                                ujung jari kiri terjauh saat kedua tangan dibentangkan secara maksimal dan jari-jari
+                                diluruskan.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>
+                                <br>
+                                <img src="/SUB BAB 1/IMAGE/Kaki.png" alt="gambar depa" style="width: 80%;">
+                                <p style="font-size: 0.7em; text-align: center;">Sumber. pribadi</p>
+                                <br>
+                            </td>
+                            <td>
+                                Telapak Kaki
+                            </td>
+                            <td>
+                                1 telapak kaki adalah ukuran jarak antara ujung tumit sampai dengan ujung jari kaki
+                                terjauh saat kaki diletakkan secara maksimal.
+                            </td>
+                        </tr>
+                    </table>
+                </center>
+                <!--  -->
                 <div class="kotak-judul"><img src="/IMAGE/baca.png" alt="baca" style="width: 40px;">&nbsp;&nbsp; <b>Mari
                         Membaca</b></div>
                 <p>
@@ -79,31 +160,40 @@
                         <div class="card-informasi">
                             <b>Petunjuk :</b> <br>
                             <ol>
-                                <li>Soal berupa pilihan ganda</li>
+                                <li>Soal berupa pilihan ganda.</li>
                                 <li>Pilihlah jawaban yang menurut kamu benar.</li>
+                                <li>Tekan Selesai membaca untuk membuka soal.</li>
                             </ol>
                             <div class="btn-soal">
-                                <button>Selesai Membaca</button>
+                                <button id="btnPetunjuk">Selesai Membaca</button>
                             </div>
                         </div>
                     </section>
-                    <section class="card-soal-isi">
+                    <section class="card-soal-isi hide" id="soal">
                         <span>1. Agar hasil pengukuran yang kita lakukan bernilai sama dengan orang lain, maka
                             satuan yang
                             diperlukan adalah . . . .</span><br>
-                        <button id="btnTigaA">Satuan baku yang disepakati semua orang</button>
-                        <button id="btnTigaB">Satuan yang biasa digunakan oleh masyarakat</button>
-                        <button id="btnTigaC">Satuan yang digunakan oleh negara lain.</button>
-                        <button id="btnTigaD">Satuan yang ditetapkan oleh pemerintah suatu negara
+                        <button id="btnSatuA">Satuan baku yang disepakati semua orang</button>
+                        <button id="btnSatuB">Satuan yang biasa digunakan oleh masyarakat</button>
+                        <button id="btnSatuC">Satuan yang digunakan oleh negara lain.</button>
+                        <button id="btnSatuD">Satuan yang ditetapkan oleh pemerintah suatu negara
                         </button>
 
-                        <section class="hide card bg-biru" id="benarTiga">JAWABAN ANDA BENAR</section>
-                        <section class="hide card bg-biru" id="salahTiga">
-                            <!-- <b>JAWABAN ANDA SALAH, JAWABAN YANG BENAR ADALAH MENGKOMUNIKASIKAN</b> <br><br> -->
-                            <p>Agar hasil pengukuran yang kita lakukan bernilai sama dengan orang lain, maka diperlukan
+                        <section class="hide card bg-biru" id="benarSatu"><b>JAWABAN ANDA BENAR</b> <br><br>
+                            <p>&nbsp;&nbsp;&nbsp; Agar hasil pengukuran yang kita lakukan bernilai sama dengan orang
+                                lain,
+                                maka diperlukan
                                 satuan baku yang telah disepakai oleh semua orang, tidak hanya oleh masyarakat atau
                                 negara tertentu, tetapi satuan baku yang disepakai oleh seluruh orang di dunia.
                             </p>
+                        </section>
+                        <section class="hide" id="salahSatu">
+                            <div class="card bg-biru">
+                                <b>JAWABAN ANDA BELUM TEPAT, SILAHKAN COBA LAGI</b>
+                            </div>
+                            <!-- BUTTON AWAL ULANG -->
+                            <button class="btn-ulang" id="ulang1">ULANG</button>
+                            <!-- BUTTON AKHIR ULANG -->
                         </section>
                     </section>
                 </div>
@@ -112,16 +202,24 @@
                 <div class="kotak-judul"><img src="/IMAGE/diskusi.png" alt="pembahasan">&nbsp;&nbsp;<b>Kesimpulan</b>
                 </div>
                 <div class="pembahasan">
-                    <p>
-                        Satuan baku adalah satuan yang menjadi patokan seluruh dunia. Keguanaan satuan baku dalam
-                        pengukuran.
-                    </p>
-                    <ol>
-                        <li>Agar dalam penggunaannya tidak terjadi kesalahan pengguna data yang digunakan.</li>
-                        <li>Agar bisa mengetahui fungsi dari misalnya panjang untuk dapat mengukur panjang / tekanan
-                            untuk dapat mengukur tekanan.</li>
-                        <li>Agar tidak terjadi perbedaan ditempat satu dengan tempat lainnya.</li>
-                    </ol>
+                    <span>
+                        <center>
+                            <b style="color: green;">KESIMPULAN AKAN MUNCUL SETELAH ANDA MENYELESAIKAN
+                                PERTANYAAN</b>
+                        </center>
+                    </span>
+                    <section class="hide">
+                        <p>
+                            Satuan baku adalah satuan yang menjadi patokan seluruh dunia. Keguanaan satuan baku dalam
+                            pengukuran.
+                        </p>
+                        <ol>
+                            <li>Agar dalam penggunaannya tidak terjadi kesalahan pengguna data yang digunakan.</li>
+                            <li>Agar bisa mengetahui fungsi dari misalnya panjang untuk dapat mengukur panjang / tekanan
+                                untuk dapat mengukur tekanan.</li>
+                            <li>Agar tidak terjadi perbedaan ditempat satu dengan tempat lainnya.</li>
+                        </ol>
+                    </section>
                 </div>
                 <!-- <div class="hilang">
                                 
@@ -136,7 +234,7 @@
             </div>
         </div>
     </div>
-    <script src="/SUB BAB 2/JS/pertanyaan.js"></script>
+    <script src="/SUB BAB 2/JS/satuan baku.js"></script>
     <script src="/JS/master.js"></script>
 </body>
 

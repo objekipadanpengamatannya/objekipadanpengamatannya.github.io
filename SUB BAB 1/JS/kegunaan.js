@@ -73,7 +73,7 @@ function cekJawaban() {
   if (score == 15) {
     document.getElementById("muncul").classList.remove("hide");
     document.getElementById("we").classList.remove("hide");
-    document.getElementById("qw").classList.remove("hide");
+    document.getElementById("qw").classList.add("hide");
   } else {
     // document.getElementById("muncul").style.display = "none";
   }
