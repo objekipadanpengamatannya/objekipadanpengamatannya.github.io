@@ -6,6 +6,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/IMAGE/favicon.png">
+    <!-- MathJax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <title>Objek IPA dan Pengamatannya</title>
 </head>
 
@@ -41,29 +44,133 @@
         <div class="container">
             <div class="container-content">
                 <div class="judul-materi">Macam-macam Besaran Turunan</div>
-                <h3><b>Konsentrasi</b></h3>
+                <h3><b>Konsentrasi Larutan</b></h3>
                 <br>
                 <p style="padding-left: 1em;">Konsentrasi merupakan besaran untuk mengukur suatu bahan makanan
-                    seperti asin dan manis.</p>
-                <center>
-                    Rumus Konsentrasi
+                    seperti asin dan manis. Konsentrasi larutan dengan perhitungan sebagai berikut:</p>
+                <center style="font-size: 1.2em;">
+                    \(K = \frac {massa \: zat \: terlarut \: (g)}{volume \: zat \: pelarut \: (L)}\)
                 </center>
                 <div class="kotak-judul"><img src="/IMAGE/materi.png"><b>&nbsp;Mari Membaca</b></div>
                 <p>
-                    Ketika kamu membuat teh manis, kamu dapat menambahkan gula ke dalam air teh agar terasa manis Makin
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ketika kamu membuat teh manis, kamu dapat menambahkan gula ke dalam
+                    air teh agar terasa manis Makin
                     banyak gula yang ditambahkan, teh akan terasa makin manis. Besaran yang menyatakan banyaknya gula
                     dalam air teh tersebut dinamakan konsentrasi (K). Konsentrasi larutan adalah besaran yang
-                    menunjukkan kepekatan suatu larutan melalui perbandingan antara zat terlarut dengan pelarutnya. Ada
-                    banyak satuan konsentrasi larutan, salah satunya adalah gram per liter (g/L) Secara matematis,
-                    konsentrasi larutan dirumuskan sebagai berikut:
-                    K = massa zat terlarut (g)/volume zat pelarut(L)
+                    menunjukkan kepekatan suatu larutan melalui perbandingan antara zat terlarut dengan pelarutnya.
                 </p>
                 <div class="kotak-judul"><img src="/IMAGE/baca.png"><b>&nbsp;Contoh Soal</b></div>
                 <div class="card bg-peach-border">
-                    <p></p>
+                    <p>
+                        1. Edo melarutkan 20 gram gula ke dalam 2 liter air, berapakah
+                        konsentrasi larutan gula yang
+                        terbentuk dalam satuan g/L ?
+                        <h4>Penyelesaian:</h4>
+                        <button class="btn-contoh" id="klikDik1">Klik</button>
+                        <p class="hide" id="dik1">
+                            <br>
+                            Diketahui :
+                            <br>
+                            Massa terlarut = 20 gram
+                            <br>
+                            Volume pelarut = 2 liter
+                            <br>
+                        </p>
+                        <button class="btn-contoh hide" id="klikDit1">Klik</button>
+                        <p class="hide" id="dit1">Ditanyakan : Menentukan konsentrasi larutan</p> <br>
+                        <button class="btn-contoh hide" id="klikJaw1">Klik</button>
+                        <span class="hide" id="jaw1">
+                            <p>Jawab:</p>
+                            K = Massa terlarut/Volume pelarut
+                            <br>
+                            K = 20 gram / 2 liter
+                            <br>
+                            K = 10 g/L
+                            <br><br>
+                            <span>Jadi, konsentrasi larutan gula sebesar <b>10</b> g/L.</span>
+                        </span>
+                    </p>
+                    <br><br>
+                    <p>
+                        2. Lisa melarutkan 10 gram garam dapur kedalam 200mL air, berapakah
+                        konsentrasi larutan garam dalam
+                        satuan g/L ?
+                        <h4>Penyelesaian:</h4>
+                        <button class="btn-contoh" id="klikDik2">Klik</button>
+                        <p class="hide" id="dik2">
+                            <br>
+                            Diketahui :
+                            <br>
+                            Massa terlarut = 10 gram
+                            <br>
+                            Volume pelarut = 200 mL = 200/1000 = 0,02 L
+                            <br>
+                        </p>
+                        <button class="btn-contoh hide" id="klikDit2">Klik</button>
+                        <p class="hide" id="dit2">Ditanyakan : Menentukan konsentrasi larutan</p> <br>
+                        <button class="btn-contoh hide" id="klikJaw2">Klik</button>
+                        <span class="hide" id="jaw2">
+                            <p>Jawab:</p>
+                            K = Massa terlarut/Volume pelarut
+                            <br>
+                            K = 10 gram / 0,2 liter
+                            <br>
+                            K = 50 g/L
+                            <br><br>
+                            <span>Jadi, konsentrasi larutan garam sebesar <b>50</b> g/L.</span>
+                        </span>
+                    </p>
                 </div>
                 <div class="kotak-judul"><img src="/IMAGE/mencoba.png"><b>&nbsp;Mari Mencoba</b></div>
-                <div class="card bg-grey"></div>
+                <div class="card bg-grey">
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ibu melarutkan 50 gram gula ke dalam 5 liter air. Berapakan
+                        konsentrasi larutan gula yang terbentuk dalam satuan g/L ?
+                    </p>
+                    <br>
+                    <h4>Penyelesaian:</h4> <br>
+                    <p class="" id="dikPan">Diketahui :
+                        <br>
+                        Massa terlarut = <input type="text" style="width:50px; text-align: center;" maxlength="2"
+                            placeholder="..."> gram
+                        <br>
+                        Volume pelarut = <input type="text" style="width:50px; text-align: center;" maxlength="2"
+                            placeholder="..."> liter
+                    </p>
+                    <br>
+                    <p class="" id="ditPan">Ditanyakan : Menentukan konsentrasi larutan</p>
+                    <br>
+                    <span class="" id="jawPan">
+                        <p>Jawab:</p>
+                        <span>
+                            K = <input type="text" style="width:50px; text-align: center;" maxlength="2"
+                                placeholder="..."> gram / <input type="text" style="width:50px; text-align: center;"
+                                maxlength="2" placeholder="..."> liter
+                        </span>
+                        <br>
+                        <span>
+                            K = <input type="text" style="width:50px; text-align: center;" maxlength="2"
+                                placeholder="..."> gram / <input type="text" style="width:50px; text-align: center;"
+                                maxlength="2" placeholder="..."> liter
+                        </span>
+                        <br>
+                        <span>
+                            K = <input type="text" style="width:50px; text-align: center;" maxlength="2"
+                                placeholder="..."> g/L
+                        </span>
+                        <table>
+                            <tr></tr>
+                        </table>
+                        <br>
+                        <span>
+                            Jadi, konsentrasi larutan garam sebesar <b><input type="text"
+                                    style="width:50px; text-align: center;" maxlength="2" placeholder="..."></b>
+                            g/L.
+                        </span>
+                        <br><br>
+                        <button class="btn-contoh" id="klikDikPan">Cek</button>
+                    </span>
+                </div>
             </div>
             <div class="container-halaman">
                 <a class="halaman" href="/SUB BAB 2/HTML/2.3.4 Besaran turunan pertumbuhan.html">Selanjutnya</a>
@@ -71,6 +178,7 @@
         </div>
     </div>
     <script src="/JS/master.js"></script>
+    <script src="/SUB BAB 2/JS/konsentrasi.js"></script>
 </body>
 
 </html>

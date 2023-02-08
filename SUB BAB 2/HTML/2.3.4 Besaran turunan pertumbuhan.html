@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="/IMAGE/favicon.png">
     <title>Objek IPA dan Pengamatannya</title>
+    <!-- Memanggil mathjax -->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
 <body onload="ulang()">
@@ -48,20 +51,107 @@
                 <p>
                     Kamu dapat memantau laju pertumbuhan tanaman yang kamu miliki dengan mengukur tinggi tanaman dalam
                     selang waktu tertentu. Laju pertumbuhan ditentukan dengan perhitungan sebagai berikut:
-                    Laju pertumbuhan = pertambahan tinggi/selang waktu
+                    <br> <br>
+                    <center style="font-size: 1.2em;">
+                        \(laju \: pertumbuhan = \frac {pertambahan \: tinggi}{selang \:
+                        waktu}\)
+                    </center>
                 </p>
                 <div class="kotak-judul"><img src="/IMAGE/baca.png"><b>&nbsp; Contoh Soal</b></div>
                 <div class="card bg-peach-border">
-                    <p></p>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ahmad melakukan percobaan dengan menanam kedelai pada kapas yang
+                        basah. Pada awal pengukuran,
+                        tinggi kecambah kedelai 3 cm dari permukaan kapas. Lima hari kemudian tinggi kecamah kedelai 7
+                        cm. Hitunglah laju pertumbuhan tanaman kedelai tiap harinya!
+                    </p>
+                    <br>
+                    <h4>Penyelesaian:</h4> <br>
+                    <button class="btn-contoh" id="klikDik1">Klik</button>
+                    <p class="hide" id="dik1">Diketahui : <br>
+                        Tinggi awal = 3 cm <br>
+                        Tinggi akhir = 7 cm <br>
+                        Selang waktu = 5 hari</p>
+                    <button class="btn-contoh hide" id="klikDit1">Klik</button>
+                    <p class="hide" id="dit1">Ditanyakan : pertumbuhan tanaman</p> <br>
+                    <button class="btn-contoh hide" id="klikJaw1">Klik</button>
+                    <span class="hide" id="jaw1">
+                        <p>Jawab:</p>
+                        <span>\(laju \: pertumbuhan = \frac {pertambahan \: tinggi}{selang \:
+                            waktu}\)</span> <br>
+                        <span style="font-size: 1.3em; padding-left: 50px;">\( = \frac {7 \, cm \, - \, 3 \, cm}{5 \:
+                            hari}\)</span> <br> <br>
+                        <span style="font-size: 1.3em; padding-left: 50px;">\( = \frac {4 \, cm}{5 \:
+                            hari}\)</span> <br> <br>
+                        <span style="padding-left: 50px;">\( = {0,8 \, cm/hari}\)</span>
+                        <br><br>
+                        <span>Jadi, laju pertumbuhan tanaman sebesar <b>0,8</b> cm/hari.</span>
+                    </span>
                 </div>
                 <div class="kotak-judul"><img src="/IMAGE/mencoba.png"><b>&nbsp; Mari Mencoba</b></div>
-                <div class="card bg-grey"></div>
+                <div class="card bg-grey">
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Doni melakukan percobaan dengan menanam bibit pohon mangga. Pada
+                        awal pengukuran,
+                        tinggi bibit pohon mangga 7 cm dari permukaan tanah. Enam hari kemudian tinggi bibit pohon
+                        mangga 19
+                        cm. Hitunglah lagu pertumbuhan tanaman bibit pohon mangga tiap harinya!
+                    </p>
+                    <br>
+                    <h4>Penyelesaian:</h4> <br>
+                    <p class="">Diketahui :
+                        <br>
+                        Tinggi awal = <input type="text" style="width:50px; text-align: center;" maxlength="2"
+                            placeholder="..." id="tAwalLat"> cm
+                        <br>
+                        Tinggi akhir = <input type="text" style="width:50px; text-align: center;" maxlength="2"
+                            placeholder="..." id="tAkhirLat"> cm
+                        <br>
+                        Selang waktu = <input type="text" style="width:50px; text-align: center;" maxlength="2"
+                            placeholder="..." id="selangWaktuLat"> hari
+                    </p>
+                    <br>
+                    <p class="" id="ditPanLat">Ditanyakan : pertumbuhan tanaman</p>
+                    <br>
+                    <span class="" id="jawPanLat">
+                        <p>Jawab:</p>
+                        <span>
+                            = <input type="text" style="width:50px; text-align: center;" maxlength="2"
+                                placeholder="..."> cm - <input type="text" style="width:50px; text-align: center;"
+                                maxlength="2" placeholder="..."> cm / <input type="text"
+                                style="width:50px; text-align: center;" maxlength="2" placeholder="..."> hari
+                        </span>
+                        <br>
+                        <span>
+                            = <input type="text" style="width:50px; text-align: center;" maxlength="2"
+                                placeholder="..."> cm / <input type="text" style="width:50px; text-align: center;"
+                                maxlength="2" placeholder="..."> hari
+                        </span>
+                        <br>
+                        <span>
+                            = <input type="text" style="width:50px; text-align: center;" maxlength="2" placeholder="..."
+                                id="hasilLat"> cm/hari
+                        </span>
+                        <table>
+                            <tr></tr>
+                        </table>
+                        <br>
+                        <span>
+                            Jadi, laju pertumbuhan tanaman sebesar <b><input type="text"
+                                    style="width:50px; text-align: center;" maxlength="2" placeholder="..."></b>
+                            cm/hari.
+                        </span>
+                        <br><br>
+                        <button class="btn-contoh" onclick="cekLatihan()">Cek</button>
+                    </span>
+                </div>
             </div>
             <div class="container-halaman">
                 <a class="halaman" href="/SUB BAB 2/HTML/2.3.5 Latihan.html">Selanjutnya</a>
             </div>
         </div>
         <script src="/JS/master.js"></script>
+        <script src="/SUB BAB 2/JS/laju pertumbuhan.js"></script>
 </body>
 
 </html>
