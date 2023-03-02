@@ -565,6 +565,23 @@ input {
   color: black;
 }
 
+.btn-reset {
+  text-decoration: none;
+  background: red;
+  border: none;
+  padding: 0.25em;
+  font-size: 1rem;
+  border-radius: 5px;
+  width: 60px;
+  color: whitesmoke;
+}
+
+.btn-reset:hover {
+  background-color: rgba(255, 140, 0, 0.212);
+  cursor: pointer;
+  color: black;
+}
+
 /*
 ********************
 *** SETUP MOBILE ***

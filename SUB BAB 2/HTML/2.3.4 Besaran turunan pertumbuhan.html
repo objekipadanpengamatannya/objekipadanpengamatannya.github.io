@@ -12,7 +12,7 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </head>
 
-<body onload="ulang()">
+<body>
     <header>
         <div class="burgerMenu">☰ Menu</div>
         <h1>PENGUKURAN SEBAGIAN DARI PENGAMATAN</h1>
@@ -24,14 +24,14 @@
                 <a href="/Index.html"><img src="/IMAGE/logo.png" alt="home" style="width: 50%;"></a>
             </center>
 
-            <a class="dropdownBtnSatu">PENYELIDIKAN IPA</a>
+            <a class="dropdownBtnSatu">I. PENYELIDIKAN IPA</a>
             <div class="dropdownContainer dropdownContainerSatu">
                 <a href="/SUB BAB 1/HTML/1.1 penyelidikan.html">1.1 Penyelidikan IPA</a>
                 <a href="/SUB BAB 1/HTML/1.2 kegunaan mempelajari IPA.html">1.2 Kegunaan Mempalajari IPA</a>
                 <a href="/SUB BAB 1/HTML/1.3 objek dalam IPA.html">1.3 Objek Dalam IPA</a>
                 <a href="">Kuis 1</a>
             </div>
-            <a class="dropdownBtnDua">PENGUKURAN SEBAGIAN DARI PENGAMATAN</a>
+            <a class="dropdownBtnDua">II. PENGUKURAN SEBAGIAN DARI PENGAMATAN</a>
             <div class="dropdownContainer dropdownContainerDua">
                 <a href="/SUB BAB 2/HTML/2.1 pengukuran.html">2.1 Pengukuran</a>
                 <a href="/SUB BAB 2/HTML/2.1.1 besaran.html">2.2 Besaran Pokok</a>
@@ -45,6 +45,11 @@
             <div class="container-content">
                 <div class="judul-materi">Macam-macam Besaran Turunan</div>
                 <h3><b>Laju pertumbuhan</b></h3>
+                <br>
+                <center>
+                    <img src="/SUB BAB 2/IMAGE/laju pertumbuhan.jpg" alt="ilustrasi" width="400px" height="200px">
+                    <figcaption>Gambar ... Ilustrasi laju pertumbuhan</figcaption>
+                </center>
                 <br>
                 <p style="padding-left: 1em;">Laju pertumbuhan merupakan suatu pengukuran terhadap tanaman yang kita
                     miliki.</p>
@@ -102,13 +107,13 @@
                     <p class="">Diketahui :
                         <br>
                         Tinggi awal = <input type="text" style="width:50px; text-align: center;" maxlength="2"
-                            placeholder="..." id="tAwalLat"> cm
+                            placeholder="..." id="tAwalLat" /> cm
                         <br>
                         Tinggi akhir = <input type="text" style="width:50px; text-align: center;" maxlength="2"
-                            placeholder="..." id="tAkhirLat"> cm
+                            placeholder="..." id="tAkhirLat" /> cm
                         <br>
                         Selang waktu = <input type="text" style="width:50px; text-align: center;" maxlength="2"
-                            placeholder="..." id="selangWaktuLat"> hari
+                            placeholder="..." id="selangWaktuLat" /> hari
                     </p>
                     <br>
                     <p class="" id="ditPanLat">Ditanyakan : pertumbuhan tanaman</p>
@@ -116,16 +121,18 @@
                     <span class="" id="jawPanLat">
                         <p>Jawab:</p>
                         <span>
-                            = <input type="text" style="width:50px; text-align: center;" maxlength="2"
-                                placeholder="..."> cm - <input type="text" style="width:50px; text-align: center;"
-                                maxlength="2" placeholder="..."> cm / <input type="text"
-                                style="width:50px; text-align: center;" maxlength="2" placeholder="..."> hari
+                            = <input type="text" style="width:50px; text-align: center;" maxlength="2" placeholder="..."
+                                id="tAkhirJaw"> cm - <input type="text" style="width:50px; text-align: center;"
+                                maxlength="2" placeholder="..." id="tAwalJaw"> cm / <input type="text"
+                                style="width:50px; text-align: center;" maxlength="2" placeholder="..."
+                                id="selangWaktuJaw">
+                            hari
                         </span>
                         <br>
                         <span>
-                            = <input type="text" style="width:50px; text-align: center;" maxlength="2"
-                                placeholder="..."> cm / <input type="text" style="width:50px; text-align: center;"
-                                maxlength="2" placeholder="..."> hari
+                            = <input type="text" style="width:50px; text-align: center;" maxlength="2" placeholder="..."
+                                id="hasilT"> cm / <input type="text" style="width:50px; text-align: center;"
+                                maxlength="2" placeholder="..." id="selangWaktuJaw2"> hari
                         </span>
                         <br>
                         <span>
@@ -138,16 +145,22 @@
                         <br>
                         <span>
                             Jadi, laju pertumbuhan tanaman sebesar <b><input type="text"
-                                    style="width:50px; text-align: center;" maxlength="2" placeholder="..."></b>
+                                    style="width:50px; text-align: center;" maxlength="2" placeholder="..."
+                                    id="hasilLatKes"></b>
                             cm/hari.
                         </span>
                         <br><br>
-                        <button class="btn-contoh" onclick="cekLatihan()">Cek</button>
+                        <button class="btn-contoh" id="cek">Cek</button>
+                        <button class="btn-reset" id="reset">Ulang</button>
                     </span>
                 </div>
             </div>
             <div class="container-halaman">
-                <a class="halaman" href="/SUB BAB 2/HTML/2.3.5 Latihan.html">Selanjutnya</a>
+                <a class="halaman" href="/SUB BAB 2/HTML/2.3 Besaran Turunan.html">1</a>
+                <a class="halaman" href="/SUB BAB 2/HTML/2.3.2 Besaran turunan volume.html">2</a>
+                <a class="halaman" href="/SUB BAB 2/HTML/2.3.3 Besaran turunan konsentrasi.html">3</a>
+                <a class="halaman active" href="#">4</a>
+                <a class="halaman" href="#">Selanjutnya</a>
             </div>
         </div>
         <script src="/JS/master.js"></script>

@@ -57,3 +57,83 @@ klikJaw2.addEventListener('click', function () {
     klikJaw2.classList.add("hide");
     jaw2.classList.remove("hide");
 })
+
+/*
+ *********************************
+ *** SETUP TOMBOL KLIK LATIHAN ***
+ *********************************
+ */
+
+//  Setup Latihan
+
+// memanggil id dari html
+const btnCek = document.getElementById("cek");
+const btnReset = document.getElementById("reset");
+
+// memangil function agar berjalan
+btnCek.addEventListener('click', diketahui);
+btnReset.addEventListener('click', diketahuiReset);
+
+//membuat function
+function diketahui() {
+    let mTerlarutLat = document.getElementById("mTerlarutLat").value;
+    let vTerlarutLat = document.getElementById("vTerlarutLat").value;
+    let mTerlarutLatJaw = document.getElementById("mTerlarutLatJaw").value;
+    let vTerlarutLatJaw = document.getElementById("vTerlarutLatJaw").value;
+    let terlarutLatHasil = document.getElementById("terlarutLatHasil").value;
+    let terlarutLatHasilKes = document.getElementById("terlarutLatHasilKes").value;
+
+    if (mTerlarutLat == 50) {
+        document.getElementById("mTerlarutLat").style.borderColor = "green";
+    } else {
+        document.getElementById("mTerlarutLat").style.borderColor = "red";
+    }
+
+    if (vTerlarutLat == 5) {
+        document.getElementById("vTerlarutLat").style.borderColor = "green";
+    } else {
+        document.getElementById("vTerlarutLat").style.borderColor = "red";
+    }
+
+    if (mTerlarutLatJaw == 50) {
+        document.getElementById("mTerlarutLatJaw").style.borderColor = "green";
+    } else {
+        document.getElementById("mTerlarutLatJaw").style.borderColor = "red";
+    }
+
+    if (vTerlarutLatJaw == 5) {
+        document.getElementById("vTerlarutLatJaw").style.borderColor = "green";
+    } else {
+        document.getElementById("vTerlarutLatJaw").style.borderColor = "red";
+    }
+
+    if (terlarutLatHasil == 10) {
+        document.getElementById("terlarutLatHasil").style.borderColor = "green";
+    } else {
+        document.getElementById("terlarutLatHasil").style.borderColor = "red";
+    }
+
+    if (terlarutLatHasilKes == 10) {
+        document.getElementById("terlarutLatHasilKes").style.borderColor = "green";
+    } else {
+        document.getElementById("terlarutLatHasilKes").style.borderColor = "red";
+    }
+}
+
+function diketahuiReset() {
+    // reset nilai value menjadi kosong
+    document.getElementById("mTerlarutLat").value = "";
+    document.getElementById("vTerlarutLat").value = "";
+    document.getElementById("mTerlarutLatJaw").value = "";
+    document.getElementById("vTerlarutLatJaw").value = "";
+    document.getElementById("terlarutLatHasil").value = "";
+    document.getElementById("terlarutLatHasilKes").value = "";
+
+    // reset border menjadi default
+    document.getElementById("mTerlarutLat").style.borderColor = "";
+    document.getElementById("vTerlarutLat").style.borderColor = "";
+    document.getElementById("mTerlarutLatJaw").style.borderColor = "";
+    document.getElementById("vTerlarutLatJaw").style.borderColor = "";
+    document.getElementById("terlarutLatHasil").style.borderColor = "";
+    document.getElementById("terlarutLatHasilKes").style.borderColor = "";
+}
