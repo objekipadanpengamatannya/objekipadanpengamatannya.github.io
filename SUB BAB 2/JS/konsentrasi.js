@@ -84,39 +84,39 @@ function diketahui() {
     let terlarutLatHasilKes = document.getElementById("terlarutLatHasilKes").value;
 
     if (mTerlarutLat == 50) {
-        document.getElementById("mTerlarutLat").style.borderColor = "green";
+        document.getElementById("mTerlarutLat").style = "border: 3px solid green";
     } else {
-        document.getElementById("mTerlarutLat").style.borderColor = "red";
+        document.getElementById("mTerlarutLat").style = "border: 3px solid red";
     }
 
     if (vTerlarutLat == 5) {
-        document.getElementById("vTerlarutLat").style.borderColor = "green";
+        document.getElementById("vTerlarutLat").style = "border: 3px solid green";
     } else {
-        document.getElementById("vTerlarutLat").style.borderColor = "red";
+        document.getElementById("vTerlarutLat").style = "border: 3px solid red";
     }
 
     if (mTerlarutLatJaw == 50) {
-        document.getElementById("mTerlarutLatJaw").style.borderColor = "green";
+        document.getElementById("mTerlarutLatJaw").style = "border: 3px solid green";
     } else {
-        document.getElementById("mTerlarutLatJaw").style.borderColor = "red";
+        document.getElementById("mTerlarutLatJaw").style = "border: 3px solid red";
     }
 
     if (vTerlarutLatJaw == 5) {
-        document.getElementById("vTerlarutLatJaw").style.borderColor = "green";
+        document.getElementById("vTerlarutLatJaw").style = "border: 3px solid green";
     } else {
-        document.getElementById("vTerlarutLatJaw").style.borderColor = "red";
+        document.getElementById("vTerlarutLatJaw").style = "border: 3px solid red";
     }
 
     if (terlarutLatHasil == 10) {
-        document.getElementById("terlarutLatHasil").style.borderColor = "green";
+        document.getElementById("terlarutLatHasil").style = "border: 3px solid green";
     } else {
-        document.getElementById("terlarutLatHasil").style.borderColor = "red";
+        document.getElementById("terlarutLatHasil").style = "border: 3px solid red";
     }
 
     if (terlarutLatHasilKes == 10) {
-        document.getElementById("terlarutLatHasilKes").style.borderColor = "green";
+        document.getElementById("terlarutLatHasilKes").style = "border: 3px solid green";
     } else {
-        document.getElementById("terlarutLatHasilKes").style.borderColor = "red";
+        document.getElementById("terlarutLatHasilKes").style = "border: 3px solid red";
     }
 }
 
@@ -130,10 +130,10 @@ function diketahuiReset() {
     document.getElementById("terlarutLatHasilKes").value = "";
 
     // reset border menjadi default
-    document.getElementById("mTerlarutLat").style.borderColor = "";
-    document.getElementById("vTerlarutLat").style.borderColor = "";
-    document.getElementById("mTerlarutLatJaw").style.borderColor = "";
-    document.getElementById("vTerlarutLatJaw").style.borderColor = "";
-    document.getElementById("terlarutLatHasil").style.borderColor = "";
-    document.getElementById("terlarutLatHasilKes").style.borderColor = "";
+    document.getElementById("mTerlarutLat").style = "";
+    document.getElementById("vTerlarutLat").style = "";
+    document.getElementById("mTerlarutLatJaw").style = "";
+    document.getElementById("vTerlarutLatJaw").style = "";
+    document.getElementById("terlarutLatHasil").style = "";
+    document.getElementById("terlarutLatHasilKes").style = "";
 }

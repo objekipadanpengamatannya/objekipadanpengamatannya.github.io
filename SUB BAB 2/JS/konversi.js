@@ -116,6 +116,18 @@ function cekKonversiPanjang() {
 
 }
 
+function cekKonversiPanjangReset() {
+    document.getElementById("convP1").value = "";
+    document.getElementById("convP2").value = "";
+    document.getElementById("convP3").value = "";
+
+
+    document.getElementById("convP1").style = "";
+    document.getElementById("convP2").style = "";
+    document.getElementById("convP3").style = "";
+
+}
+
 function cekKonversiMassa() {
     var convM1 = document.getElementById("convM1").value;
     var convM2 = document.getElementById("convM2").value;
@@ -138,7 +150,17 @@ function cekKonversiMassa() {
     } else {
         document.getElementById("convM3").style = "border: 3px solid red";
     }
+}
 
+function cekKonversiMassaReset() {
+    document.getElementById("convM1").value = "";
+    document.getElementById("convM2").value = "";
+    document.getElementById("convM3").value = "";
+
+
+    document.getElementById("convM1").style = "";
+    document.getElementById("convM2").style = "";
+    document.getElementById("convM3").style = "";
 }
 
 function cekKonversiWaktu() {
@@ -156,6 +178,14 @@ function cekKonversiWaktu() {
     } else {
         document.getElementById("convW2").style = "border: 3px solid red";
     }
+}
+
+function cekKonversiWaktuReset() {
+    document.getElementById("convW1").value = "";
+    document.getElementById("convW2").value = "";
+
+    document.getElementById("convW1").style = "";
+    document.getElementById("convW2").style = "";
 }
 
 // function ulang() {
